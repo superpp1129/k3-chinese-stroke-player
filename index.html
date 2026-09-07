@@ -1,0 +1,43 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>他們都愛我｜中文筆順播放器</title><link rel="stylesheet" href="styles.css"></head><body>
+<header><p class="eyebrow">K3 中文筆順播放器</p><h1>他們都愛我</h1><p class="intro">揀一個字，睇清楚每一筆。</p></header>
+<main><section class="character-grid" aria-label="生字"><article class="character-card">
+<button class="character-button" data-video="videos/我.mp4" data-char="我" aria-label="播放「我」字筆順">
+<span class="character">我</span><span class="play-mark">▶ 播放筆順</span></button>
+<a class="download" href="videos/我.mp4" download="我字彩色筆順動畫.mp4">↓ 下載影片</a>
+</article><article class="character-card">
+<button class="character-button" data-video="videos/有.mp4" data-char="有" aria-label="播放「有」字筆順">
+<span class="character">有</span><span class="play-mark">▶ 播放筆順</span></button>
+<a class="download" href="videos/有.mp4" download="有字彩色筆順動畫.mp4">↓ 下載影片</a>
+</article><article class="character-card">
+<button class="character-button" data-video="videos/爸.mp4" data-char="爸" aria-label="播放「爸」字筆順">
+<span class="character">爸</span><span class="play-mark">▶ 播放筆順</span></button>
+<a class="download" href="videos/爸.mp4" download="爸字彩色筆順動畫.mp4">↓ 下載影片</a>
+</article><article class="character-card">
+<button class="character-button" data-video="videos/媽.mp4" data-char="媽" aria-label="播放「媽」字筆順">
+<span class="character">媽</span><span class="play-mark">▶ 播放筆順</span></button>
+<a class="download" href="videos/媽.mp4" download="媽字彩色筆順動畫.mp4">↓ 下載影片</a>
+</article><article class="character-card">
+<button class="character-button" data-video="videos/姐.mp4" data-char="姐" aria-label="播放「姐」字筆順">
+<span class="character">姐</span><span class="play-mark">▶ 播放筆順</span></button>
+<a class="download" href="videos/姐.mp4" download="姐字彩色筆順動畫.mp4">↓ 下載影片</a>
+</article><article class="character-card">
+<button class="character-button" data-video="videos/妹.mp4" data-char="妹" aria-label="播放「妹」字筆順">
+<span class="character">妹</span><span class="play-mark">▶ 播放筆順</span></button>
+<a class="download" href="videos/妹.mp4" download="妹字彩色筆順動畫.mp4">↓ 下載影片</a>
+</article><article class="character-card">
+<button class="character-button" data-video="videos/弟.mp4" data-char="弟" aria-label="播放「弟」字筆順">
+<span class="character">弟</span><span class="play-mark">▶ 播放筆順</span></button>
+<a class="download" href="videos/弟.mp4" download="弟字彩色筆順動畫.mp4">↓ 下載影片</a>
+</article><article class="character-card">
+<button class="character-button" data-video="videos/哥.mp4" data-char="哥" aria-label="播放「哥」字筆順">
+<span class="character">哥</span><span class="play-mark">▶ 播放筆順</span></button>
+<a class="download" href="videos/哥.mp4" download="哥字彩色筆順動畫.mp4">↓ 下載影片</a>
+</article><article class="character-card">
+<button class="character-button" data-video="videos/和.mp4" data-char="和" aria-label="播放「和」字筆順">
+<span class="character">和</span><span class="play-mark">▶ 播放筆順</span></button>
+<a class="download" href="videos/和.mp4" download="和字彩色筆順動畫.mp4">↓ 下載影片</a>
+</article></section></main>
+<dialog id="player"><div class="dialog-top"><div><span class="small">正在播放</span><strong id="current-char"></strong></div><button id="close" aria-label="關閉">×</button></div>
+<video id="video" controls playsinline preload="metadata"></video><div class="dialog-actions"><button id="replay">↻ 重新播放</button><a id="dialog-download" download>↓ 下載影片</a></div></dialog>
+<script src="app.js"></script></body></html>
