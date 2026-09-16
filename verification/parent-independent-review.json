@@ -7,7 +7,7 @@
     "official_geometry.py cached key PNGs should be invalidated if source_sha256 changes in future rebuilds; current21 immutable sources and report hashes verified.",
     "publish_drive.py cached completed IDs should be refreshed when re-verifying after remote edits; current new uploads have exact download readbacks."
   ],
-  "summary": "No blocking code defects found in current scoped static-site change. Python7tests and DOM assertions pass; all21 MP4 source hashes, frame counts, codecs and complete decoding passed. Parent visually spotchecked 防7/警20 full progress sheets. Native browser and public deployment readbacks remain required; this is not an overall release-complete verdict.",
+  "summary": "No blocking code defects found. Python7tests and DOM assertions passed; all21 media checks passed. Subsequent native browser acceptance passed locally and publicly for47 triggers and21 downloads; all25 published assets match exactly.",
   "tests": [
     ".venv/bin/python3 -m unittest discover -s tests -v:7passed",
     "node tests/dom-test.js:21cards9quick8words17word-char buttons and modal checks passed",
@@ -23,5 +23,5 @@
     "publish_drive.py": "fa55c63d32319a0402bbe16077743d83af880af66aa910df766ddac8954cb32e",
     "browser_acceptance.py": "0be7c0ff4e0e694957f4aaae2cb1655779e3db064b025380909eb5fece051427"
   },
-  "followup_review": "Re-read current build.py including frozen geometry, metadata and complete renderer; reviewed explicit environment-selected test browser path. No code blockers. Real MP4 browser gate still required."
+  "followup_review": "Re-read current build.py and environment-selected browser launch. No code blockers. Browser/public release gates subsequently passed; see ui-local.json, ui-live.json and public-readback.json."
 }

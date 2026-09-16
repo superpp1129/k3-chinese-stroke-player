@@ -39,9 +39,9 @@ All21:1080×1080,30fps,H.264/yuv420p; draw2.0s, pause0.6s, intro0.7s, final3.0s.
 
 All21 returned IDs were listed in theme folder1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK. Their complete downloaded bytes equal the local MP4 bytes. Parent independently repeated all21 exact-byte readbacks. See drive-folder-verification.json and parent-drive-readback.json.
 
-## Tests and remaining publication gate
+## Final publication verification
 
-Python7tests and DOM assertions passed. Independent parent code/media review passed. Native browser and public Pages readback are tracked separately in ui-local.json, ui-live.json, and public-readback.json; do not infer a pass from this report before those files exist.
+Python7tests and DOM assertions passed. Independent parent code/media review passed. Actual native ARM64 Debian Chromium acceptance passed against both the local site and the public Pages URL:47 playback triggers,21 downloads, no page errors, and no horizontal overflow at390px phone width. All25 public assets, including every one of the21 MP4s, were fetched and matched byte-for-byte to the local verified release. See ui-local.json, ui-live.json, public-readback.json and publication.json. Phone layout was checked in a browser viewport, not on a physical iPhone.
 
 ## Reproducibility caveats
 
