@@ -156,7 +156,7 @@
         "豎",
         "橫折",
         "橫",
-        "豎鈎",
+        "豎",
         "橫",
         "豎",
         "橫折",
@@ -182,6 +182,2692 @@
         "豎",
         "橫折",
         "橫"
+      ]
+    },
+    {
+      "char": "祖",
+      "edb_id": "2870",
+      "bucket": "2001-3000",
+      "target": [
+        551.8,
+        551.2
+      ],
+      "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/2001-3000/2870.js",
+      "source_sha256": "06321865d7a287e6354b952be773f2ba72e988981aba7fe3318b6d5b74d07b63",
+      "strokes": 9,
+      "official_timeline": [
+        {
+          "start": 24,
+          "states": [
+            [
+              "shape_23"
+            ],
+            [
+              "shape_24"
+            ]
+          ],
+          "durations": [
+            24,
+            3
+          ]
+        },
+        {
+          "start": 48,
+          "states": [
+            [
+              "shape_19"
+            ],
+            [
+              "shape_20"
+            ],
+            [
+              "shape_21"
+            ],
+            [
+              "shape_22"
+            ]
+          ],
+          "durations": [
+            48,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 72,
+          "states": [
+            [
+              "shape_16"
+            ],
+            [
+              "shape_17"
+            ],
+            [
+              "shape_18"
+            ]
+          ],
+          "durations": [
+            72,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 96,
+          "states": [
+            [
+              "shape_14"
+            ],
+            [
+              "shape_15"
+            ]
+          ],
+          "durations": [
+            96,
+            3
+          ]
+        },
+        {
+          "start": 120,
+          "states": [
+            [
+              "shape_11"
+            ],
+            [
+              "shape_12"
+            ],
+            [
+              "shape_13"
+            ]
+          ],
+          "durations": [
+            120,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 144,
+          "states": [
+            [
+              "shape_7"
+            ],
+            [
+              "shape_8"
+            ],
+            [
+              "shape_9"
+            ],
+            [
+              "shape_10"
+            ]
+          ],
+          "durations": [
+            144,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 168,
+          "states": [
+            [
+              "shape_5"
+            ],
+            [
+              "shape_6"
+            ]
+          ],
+          "durations": [
+            168,
+            3
+          ]
+        },
+        {
+          "start": 192,
+          "states": [
+            [
+              "shape_3"
+            ],
+            [
+              "shape_4"
+            ]
+          ],
+          "durations": [
+            192,
+            3
+          ]
+        },
+        {
+          "start": 216,
+          "states": [
+            [
+              "shape"
+            ],
+            [
+              "shape_1"
+            ],
+            [
+              "shape_2"
+            ]
+          ],
+          "durations": [
+            216,
+            3,
+            3
+          ]
+        }
+      ],
+      "stroke_order": [
+        "點",
+        "橫撇",
+        "豎",
+        "點",
+        "豎",
+        "橫折",
+        "橫",
+        "橫",
+        "橫"
+      ],
+      "geometry": "official-edb",
+      "mapping_1_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "char": "父",
+      "edb_id": "2455",
+      "bucket": "2001-3000",
+      "target": [
+        594.6,
+        556.6
+      ],
+      "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/2001-3000/2455.js",
+      "source_sha256": "c74aefd1e16938049a7f365362f150458b41251f820970fad039abadbac44d7d",
+      "strokes": 4,
+      "official_timeline": [
+        {
+          "start": 24,
+          "states": [
+            [
+              "shape"
+            ],
+            [
+              "shape_1"
+            ],
+            [
+              "shape_2"
+            ]
+          ],
+          "durations": [
+            24,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 48,
+          "states": [
+            [
+              "shape_3"
+            ],
+            [
+              "shape_4"
+            ]
+          ],
+          "durations": [
+            48,
+            3
+          ]
+        },
+        {
+          "start": 72,
+          "states": [
+            [
+              "shape_5"
+            ],
+            [
+              "shape_6"
+            ],
+            [
+              "shape_7"
+            ],
+            [
+              "shape_8"
+            ]
+          ],
+          "durations": [
+            72,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 96,
+          "states": [
+            [
+              "shape_9"
+            ],
+            [
+              "shape_10"
+            ],
+            [
+              "shape_11"
+            ],
+            [
+              "shape_12"
+            ]
+          ],
+          "durations": [
+            96,
+            3,
+            3,
+            3
+          ]
+        }
+      ],
+      "stroke_order": [
+        "撇",
+        "點",
+        "撇",
+        "捺"
+      ],
+      "geometry": "official-edb",
+      "mapping_1_based": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "char": "母",
+      "edb_id": "2082",
+      "bucket": "2001-3000",
+      "target": [
+        538.1,
+        561.9
+      ],
+      "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/2001-3000/2082.js",
+      "source_sha256": "a29c8144669cd6af1adbdbd1b01494f6c9d50a7f414a18358b26483d235058ce",
+      "strokes": 5,
+      "official_timeline": [
+        {
+          "start": 24,
+          "states": [
+            [
+              "shape"
+            ],
+            [
+              "shape_1"
+            ],
+            [
+              "shape_2"
+            ],
+            [
+              "shape_3"
+            ],
+            [
+              "shape_4"
+            ]
+          ],
+          "durations": [
+            24,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 48,
+          "states": [
+            [
+              "shape_5"
+            ],
+            [
+              "shape_6"
+            ],
+            [
+              "shape_7"
+            ],
+            [
+              "shape_8"
+            ],
+            [
+              "shape_9"
+            ]
+          ],
+          "durations": [
+            48,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 72,
+          "states": [
+            [
+              "shape_10"
+            ],
+            [
+              "shape_11"
+            ]
+          ],
+          "durations": [
+            72,
+            3
+          ]
+        },
+        {
+          "start": 96,
+          "states": [
+            [
+              "shape_12"
+            ],
+            [
+              "shape_13"
+            ]
+          ],
+          "durations": [
+            96,
+            3
+          ]
+        },
+        {
+          "start": 120,
+          "states": [
+            [
+              "shape_14"
+            ],
+            [
+              "shape_15"
+            ],
+            [
+              "shape_16"
+            ],
+            [
+              "shape_17"
+            ],
+            [
+              "shape_18"
+            ]
+          ],
+          "durations": [
+            120,
+            3,
+            3,
+            3,
+            3
+          ]
+        }
+      ],
+      "stroke_order": [
+        "豎折",
+        "橫折鈎",
+        "點",
+        "點",
+        "橫"
+      ],
+      "geometry": "official-edb",
+      "mapping_1_based": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "char": "老",
+      "edb_id": "3230",
+      "bucket": "3001-4000",
+      "target": [
+        547.4,
+        531.8
+      ],
+      "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/3001-4000/3230.js",
+      "source_sha256": "3e2caca5a0b9749c7bdb9d6832f2959e3caf5d941f67422e23aff0fc180ff2cf",
+      "strokes": 6,
+      "official_timeline": [
+        {
+          "start": 24,
+          "states": [
+            [
+              "shape"
+            ],
+            [
+              "shape_1"
+            ],
+            [
+              "shape_2"
+            ]
+          ],
+          "durations": [
+            24,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 48,
+          "states": [
+            [
+              "shape_3"
+            ],
+            [
+              "shape_4"
+            ],
+            [
+              "shape_5"
+            ]
+          ],
+          "durations": [
+            48,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 72,
+          "states": [
+            [
+              "shape_6"
+            ],
+            [
+              "shape_7"
+            ],
+            [
+              "shape_8"
+            ],
+            [
+              "shape_9"
+            ]
+          ],
+          "durations": [
+            72,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 96,
+          "states": [
+            [
+              "shape_10"
+            ],
+            [
+              "shape_11"
+            ],
+            [
+              "shape_12"
+            ],
+            [
+              "shape_13"
+            ],
+            [
+              "shape_14"
+            ]
+          ],
+          "durations": [
+            96,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 120,
+          "states": [
+            [
+              "shape_15"
+            ],
+            [
+              "shape_16"
+            ]
+          ],
+          "durations": [
+            120,
+            3
+          ]
+        },
+        {
+          "start": 144,
+          "states": [
+            [
+              "shape_17"
+            ],
+            [
+              "shape_18"
+            ],
+            [
+              "shape_19"
+            ]
+          ],
+          "durations": [
+            144,
+            3,
+            3
+          ]
+        }
+      ],
+      "stroke_order": [
+        "橫",
+        "豎",
+        "橫",
+        "撇",
+        "撇",
+        "豎彎"
+      ],
+      "geometry": "official-edb",
+      "mapping_1_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "char": "師",
+      "edb_id": "1161",
+      "bucket": "1001-2000",
+      "target": [
+        537.4,
+        547.9
+      ],
+      "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/1001-2000/1161.js",
+      "source_sha256": "b752ead281c1493649db58dcb068f12f1c60be1269a81f9b2f2ca7629d9a6660",
+      "strokes": 10,
+      "official_timeline": [
+        {
+          "start": 24,
+          "states": [
+            [
+              "shape_24"
+            ],
+            [
+              "shape_25"
+            ]
+          ],
+          "durations": [
+            24,
+            3
+          ]
+        },
+        {
+          "start": 48,
+          "states": [
+            [
+              "shape_21"
+            ],
+            [
+              "shape_22"
+            ],
+            [
+              "shape_23"
+            ]
+          ],
+          "durations": [
+            48,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 72,
+          "states": [
+            [
+              "shape_18"
+            ],
+            [
+              "shape_19"
+            ],
+            [
+              "shape_20"
+            ]
+          ],
+          "durations": [
+            72,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 96,
+          "states": [
+            [
+              "shape_16"
+            ],
+            [
+              "shape_17"
+            ]
+          ],
+          "durations": [
+            96,
+            3
+          ]
+        },
+        {
+          "start": 120,
+          "states": [
+            [
+              "shape_13"
+            ],
+            [
+              "shape_14"
+            ],
+            [
+              "shape_15"
+            ]
+          ],
+          "durations": [
+            120,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 144,
+          "states": [
+            [
+              "shape_11"
+            ],
+            [
+              "shape_12"
+            ]
+          ],
+          "durations": [
+            144,
+            3
+          ]
+        },
+        {
+          "start": 168,
+          "states": [
+            [
+              "shape_8"
+            ],
+            [
+              "shape_9"
+            ],
+            [
+              "shape_10"
+            ]
+          ],
+          "durations": [
+            168,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 192,
+          "states": [
+            [
+              "shape_6"
+            ],
+            [
+              "shape_7"
+            ]
+          ],
+          "durations": [
+            192,
+            3
+          ]
+        },
+        {
+          "start": 216,
+          "states": [
+            [
+              "shape_3"
+            ],
+            [
+              "shape_4"
+            ],
+            [
+              "shape_5"
+            ]
+          ],
+          "durations": [
+            216,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 240,
+          "states": [
+            [
+              "shape"
+            ],
+            [
+              "shape_1"
+            ],
+            [
+              "shape_2"
+            ]
+          ],
+          "durations": [
+            240,
+            3,
+            3
+          ]
+        }
+      ],
+      "stroke_order": [
+        "撇",
+        "豎",
+        "橫折",
+        "橫",
+        "橫折",
+        "橫",
+        "橫",
+        "豎",
+        "橫折鈎",
+        "豎"
+      ],
+      "geometry": "official-edb",
+      "mapping_1_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "char": "消",
+      "edb_id": "2190",
+      "bucket": "2001-3000",
+      "target": [
+        538.5,
+        535.8
+      ],
+      "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/2001-3000/2190.js",
+      "source_sha256": "f5c73834c1c2b185b582638bb67bbd6fee258c02ce0b73627a277c4a8559c3ae",
+      "strokes": 10,
+      "official_timeline": [
+        {
+          "start": 24,
+          "states": [
+            [
+              "shape"
+            ],
+            [
+              "shape_1"
+            ]
+          ],
+          "durations": [
+            24,
+            3
+          ]
+        },
+        {
+          "start": 48,
+          "states": [
+            [
+              "shape_2"
+            ],
+            [
+              "shape_3"
+            ]
+          ],
+          "durations": [
+            48,
+            3
+          ]
+        },
+        {
+          "start": 72,
+          "states": [
+            [
+              "shape_4"
+            ],
+            [
+              "shape_5"
+            ],
+            [
+              "shape_6"
+            ]
+          ],
+          "durations": [
+            72,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 96,
+          "states": [
+            [
+              "shape_7"
+            ],
+            [
+              "shape_8"
+            ],
+            [
+              "shape_9"
+            ]
+          ],
+          "durations": [
+            96,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 120,
+          "states": [
+            [
+              "shape_10"
+            ],
+            [
+              "shape_11"
+            ]
+          ],
+          "durations": [
+            120,
+            3
+          ]
+        },
+        {
+          "start": 144,
+          "states": [
+            [
+              "shape_12"
+            ],
+            [
+              "shape_13"
+            ],
+            [
+              "shape_14"
+            ]
+          ],
+          "durations": [
+            144,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 168,
+          "states": [
+            [
+              "shape_15"
+            ],
+            [
+              "shape_16"
+            ],
+            [
+              "shape_17"
+            ],
+            [
+              "shape_18"
+            ]
+          ],
+          "durations": [
+            168,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 192,
+          "states": [
+            [
+              "shape_19"
+            ],
+            [
+              "shape_20"
+            ],
+            [
+              "shape_21"
+            ],
+            [
+              "shape_22"
+            ],
+            [
+              "shape_23"
+            ]
+          ],
+          "durations": [
+            192,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 216,
+          "states": [
+            [
+              "shape_24"
+            ],
+            [
+              "shape_25"
+            ],
+            [
+              "shape_26"
+            ]
+          ],
+          "durations": [
+            216,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 240,
+          "states": [
+            [
+              "shape_27"
+            ],
+            [
+              "shape_28"
+            ],
+            [
+              "shape_29"
+            ]
+          ],
+          "durations": [
+            240,
+            3,
+            3
+          ]
+        }
+      ],
+      "stroke_order": [
+        "點",
+        "點",
+        "提",
+        "豎",
+        "點",
+        "撇",
+        "豎",
+        "橫折鈎",
+        "橫",
+        "橫"
+      ],
+      "geometry": "official-edb",
+      "mapping_1_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "char": "防",
+      "edb_id": "4365",
+      "bucket": "4001-ZC",
+      "target": [
+        575.1,
+        574.5
+      ],
+      "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/4001-ZC/4365.js",
+      "source_sha256": "f81ca497a924e20901068f27ff19e1aafebc1b05759b7250c0009a3041a6c670",
+      "strokes": 7,
+      "official_timeline": [
+        {
+          "start": 24,
+          "states": [
+            [
+              "shape_21"
+            ],
+            [
+              "shape_22"
+            ],
+            [
+              "shape_23"
+            ]
+          ],
+          "durations": [
+            24,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 48,
+          "states": [
+            [
+              "shape_18"
+            ],
+            [
+              "shape_19"
+            ],
+            [
+              "shape_20"
+            ]
+          ],
+          "durations": [
+            48,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 72,
+          "states": [
+            [
+              "shape_14"
+            ],
+            [
+              "shape_15"
+            ],
+            [
+              "shape_16"
+            ],
+            [
+              "shape_17"
+            ]
+          ],
+          "durations": [
+            72,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 96,
+          "states": [
+            [
+              "shape_12"
+            ],
+            [
+              "shape_13"
+            ]
+          ],
+          "durations": [
+            96,
+            3
+          ]
+        },
+        {
+          "start": 120,
+          "states": [
+            [
+              "shape_8"
+            ],
+            [
+              "shape_9"
+            ],
+            [
+              "shape_10"
+            ],
+            [
+              "shape_11"
+            ]
+          ],
+          "durations": [
+            120,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 144,
+          "states": [
+            [
+              "shape_4"
+            ],
+            [
+              "shape_5"
+            ],
+            [
+              "shape_6"
+            ],
+            [
+              "shape_7"
+            ]
+          ],
+          "durations": [
+            144,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 168,
+          "states": [
+            [
+              "shape"
+            ],
+            [
+              "shape_1"
+            ],
+            [
+              "shape_2"
+            ],
+            [
+              "shape_3"
+            ]
+          ],
+          "durations": [
+            168,
+            3,
+            3,
+            3
+          ]
+        }
+      ],
+      "stroke_order": [
+        "橫撇",
+        "彎鈎",
+        "豎",
+        "點",
+        "橫",
+        "橫折鈎",
+        "撇"
+      ],
+      "geometry": "official-edb",
+      "mapping_1_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "char": "員",
+      "edb_id": "0590",
+      "bucket": "0001-1000",
+      "target": [
+        525.9,
+        556.9
+      ],
+      "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/0001-1000/0590.js",
+      "source_sha256": "dc471933f36bf28a008abadbf8c40ba31a60636ad16442c744270fc3b2818d04",
+      "strokes": 10,
+      "official_timeline": [
+        {
+          "start": 24,
+          "states": [
+            [
+              "shape_30"
+            ],
+            [
+              "shape_31"
+            ]
+          ],
+          "durations": [
+            24,
+            3
+          ]
+        },
+        {
+          "start": 48,
+          "states": [
+            [
+              "shape_26"
+            ],
+            [
+              "shape_27"
+            ],
+            [
+              "shape_28"
+            ],
+            [
+              "shape_29"
+            ]
+          ],
+          "durations": [
+            48,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 72,
+          "states": [
+            [
+              "shape_23"
+            ],
+            [
+              "shape_24"
+            ],
+            [
+              "shape_25"
+            ]
+          ],
+          "durations": [
+            72,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 96,
+          "states": [
+            [
+              "shape_20"
+            ],
+            [
+              "shape_21"
+            ],
+            [
+              "shape_22"
+            ]
+          ],
+          "durations": [
+            96,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 120,
+          "states": [
+            [
+              "shape_15"
+            ],
+            [
+              "shape_16"
+            ],
+            [
+              "shape_17"
+            ],
+            [
+              "shape_18"
+            ],
+            [
+              "shape_19"
+            ]
+          ],
+          "durations": [
+            120,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 144,
+          "states": [
+            [
+              "shape_12"
+            ],
+            [
+              "shape_13"
+            ],
+            [
+              "shape_14"
+            ]
+          ],
+          "durations": [
+            144,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 168,
+          "states": [
+            [
+              "shape_9"
+            ],
+            [
+              "shape_10"
+            ],
+            [
+              "shape_11"
+            ]
+          ],
+          "durations": [
+            168,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 192,
+          "states": [
+            [
+              "shape_6"
+            ],
+            [
+              "shape_7"
+            ],
+            [
+              "shape_8"
+            ]
+          ],
+          "durations": [
+            192,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 216,
+          "states": [
+            [
+              "shape_3"
+            ],
+            [
+              "shape_4"
+            ],
+            [
+              "shape_5"
+            ]
+          ],
+          "durations": [
+            216,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 240,
+          "states": [
+            [
+              "shape"
+            ],
+            [
+              "shape_1"
+            ],
+            [
+              "shape_2"
+            ]
+          ],
+          "durations": [
+            240,
+            3,
+            3
+          ]
+        }
+      ],
+      "stroke_order": [
+        "豎",
+        "橫折",
+        "橫",
+        "豎",
+        "橫折",
+        "橫",
+        "橫",
+        "橫",
+        "撇",
+        "點"
+      ],
+      "geometry": "official-edb",
+      "mapping_1_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "char": "警",
+      "edb_id": "3861",
+      "bucket": "3001-4000",
+      "target": [
+        564.9,
+        541.1
+      ],
+      "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/3001-4000/3861.js",
+      "source_sha256": "b53f03bbd6c4e2a2eede093a975a4de07cf984a55a4145730a465d80bd9cc056",
+      "strokes": 20,
+      "official_timeline": [
+        {
+          "start": 24,
+          "states": [
+            [
+              "shape_50"
+            ],
+            [
+              "shape_51"
+            ]
+          ],
+          "durations": [
+            24,
+            3
+          ]
+        },
+        {
+          "start": 48,
+          "states": [
+            [
+              "shape_48"
+            ],
+            [
+              "shape_49"
+            ]
+          ],
+          "durations": [
+            48,
+            3
+          ]
+        },
+        {
+          "start": 72,
+          "states": [
+            [
+              "shape_46"
+            ],
+            [
+              "shape_47"
+            ]
+          ],
+          "durations": [
+            72,
+            3
+          ]
+        },
+        {
+          "start": 96,
+          "states": [
+            [
+              "shape_44"
+            ],
+            [
+              "shape_45"
+            ]
+          ],
+          "durations": [
+            96,
+            3
+          ]
+        },
+        {
+          "start": 120,
+          "states": [
+            [
+              "shape_42"
+            ],
+            [
+              "shape_43"
+            ]
+          ],
+          "durations": [
+            120,
+            3
+          ]
+        },
+        {
+          "start": 144,
+          "states": [
+            [
+              "shape_39"
+            ],
+            [
+              "shape_40"
+            ],
+            [
+              "shape_41"
+            ]
+          ],
+          "durations": [
+            144,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 168,
+          "states": [
+            [
+              "shape_37"
+            ],
+            [
+              "shape_38"
+            ]
+          ],
+          "durations": [
+            168,
+            3
+          ]
+        },
+        {
+          "start": 192,
+          "states": [
+            [
+              "shape_34"
+            ],
+            [
+              "shape_35"
+            ],
+            [
+              "shape_36"
+            ]
+          ],
+          "durations": [
+            192,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 216,
+          "states": [
+            [
+              "shape_32"
+            ],
+            [
+              "shape_33"
+            ]
+          ],
+          "durations": [
+            216,
+            3
+          ]
+        },
+        {
+          "start": 240,
+          "states": [
+            [
+              "shape_29"
+            ],
+            [
+              "shape_30"
+            ],
+            [
+              "shape_31"
+            ]
+          ],
+          "durations": [
+            240,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 264,
+          "states": [
+            [
+              "shape_27"
+            ],
+            [
+              "shape_28"
+            ]
+          ],
+          "durations": [
+            264,
+            3
+          ]
+        },
+        {
+          "start": 288,
+          "states": [
+            [
+              "shape_24"
+            ],
+            [
+              "shape_25"
+            ],
+            [
+              "shape_26"
+            ]
+          ],
+          "durations": [
+            288,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 312,
+          "states": [
+            [
+              "shape_21"
+            ],
+            [
+              "shape_22"
+            ],
+            [
+              "shape_23"
+            ]
+          ],
+          "durations": [
+            312,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 336,
+          "states": [
+            [
+              "shape_19"
+            ],
+            [
+              "shape_20"
+            ]
+          ],
+          "durations": [
+            336,
+            3
+          ]
+        },
+        {
+          "start": 360,
+          "states": [
+            [
+              "shape_15"
+            ],
+            [
+              "shape_16"
+            ],
+            [
+              "shape_17"
+            ],
+            [
+              "shape_18"
+            ]
+          ],
+          "durations": [
+            360,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 384,
+          "states": [
+            [
+              "shape_12"
+            ],
+            [
+              "shape_13"
+            ],
+            [
+              "shape_14"
+            ]
+          ],
+          "durations": [
+            384,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 408,
+          "states": [
+            [
+              "shape_9"
+            ],
+            [
+              "shape_10"
+            ],
+            [
+              "shape_11"
+            ]
+          ],
+          "durations": [
+            408,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 432,
+          "states": [
+            [
+              "shape_7"
+            ],
+            [
+              "shape_8"
+            ]
+          ],
+          "durations": [
+            432,
+            3
+          ]
+        },
+        {
+          "start": 456,
+          "states": [
+            [
+              "shape_3"
+            ],
+            [
+              "shape_4"
+            ],
+            [
+              "shape_5"
+            ],
+            [
+              "shape_6"
+            ]
+          ],
+          "durations": [
+            456,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 480,
+          "states": [
+            [
+              "shape"
+            ],
+            [
+              "shape_1"
+            ],
+            [
+              "shape_2"
+            ]
+          ],
+          "durations": [
+            480,
+            3,
+            3
+          ]
+        }
+      ],
+      "stroke_order": [
+        "橫",
+        "豎",
+        "橫",
+        "撇",
+        "撇",
+        "橫折鈎",
+        "豎",
+        "橫折",
+        "橫",
+        "撇",
+        "橫",
+        "撇",
+        "捺",
+        "點",
+        "橫",
+        "橫",
+        "橫",
+        "豎",
+        "橫折",
+        "橫"
+      ],
+      "geometry": "official-edb",
+      "mapping_1_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "char": "察",
+      "edb_id": "1038",
+      "bucket": "1001-2000",
+      "target": [
+        580.0,
+        530.9
+      ],
+      "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/1001-2000/1038.js",
+      "source_sha256": "e3c9e12dd819ae507251463c266d1a51dabe5dff0e416192ae12fb83b0ac2b36",
+      "strokes": 14,
+      "official_timeline": [
+        {
+          "start": 24,
+          "states": [
+            [
+              "shape_37"
+            ],
+            [
+              "shape_38"
+            ]
+          ],
+          "durations": [
+            24,
+            3
+          ]
+        },
+        {
+          "start": 48,
+          "states": [
+            [
+              "shape_35"
+            ],
+            [
+              "shape_36"
+            ]
+          ],
+          "durations": [
+            48,
+            3
+          ]
+        },
+        {
+          "start": 72,
+          "states": [
+            [
+              "shape_31"
+            ],
+            [
+              "shape_32"
+            ],
+            [
+              "shape_33"
+            ],
+            [
+              "shape_34"
+            ]
+          ],
+          "durations": [
+            72,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 96,
+          "states": [
+            [
+              "shape_28"
+            ],
+            [
+              "shape_29"
+            ],
+            [
+              "shape_30"
+            ]
+          ],
+          "durations": [
+            96,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 120,
+          "states": [
+            [
+              "shape_24"
+            ],
+            [
+              "shape_25"
+            ],
+            [
+              "shape_26"
+            ],
+            [
+              "shape_27"
+            ]
+          ],
+          "durations": [
+            120,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 144,
+          "states": [
+            [
+              "shape_22"
+            ],
+            [
+              "shape_23"
+            ]
+          ],
+          "durations": [
+            144,
+            3
+          ]
+        },
+        {
+          "start": 168,
+          "states": [
+            [
+              "shape_20"
+            ],
+            [
+              "shape_21"
+            ]
+          ],
+          "durations": [
+            168,
+            3
+          ]
+        },
+        {
+          "start": 192,
+          "states": [
+            [
+              "shape_17"
+            ],
+            [
+              "shape_18"
+            ],
+            [
+              "shape_19"
+            ]
+          ],
+          "durations": [
+            192,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 216,
+          "states": [
+            [
+              "shape_14"
+            ],
+            [
+              "shape_15"
+            ],
+            [
+              "shape_16"
+            ]
+          ],
+          "durations": [
+            216,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 240,
+          "states": [
+            [
+              "shape_12"
+            ],
+            [
+              "shape_13"
+            ]
+          ],
+          "durations": [
+            240,
+            3
+          ]
+        },
+        {
+          "start": 264,
+          "states": [
+            [
+              "shape_9"
+            ],
+            [
+              "shape_10"
+            ],
+            [
+              "shape_11"
+            ]
+          ],
+          "durations": [
+            264,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 288,
+          "states": [
+            [
+              "shape_6"
+            ],
+            [
+              "shape_7"
+            ],
+            [
+              "shape_8"
+            ]
+          ],
+          "durations": [
+            288,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 312,
+          "states": [
+            [
+              "shape_3"
+            ],
+            [
+              "shape_4"
+            ],
+            [
+              "shape_5"
+            ]
+          ],
+          "durations": [
+            312,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 336,
+          "states": [
+            [
+              "shape"
+            ],
+            [
+              "shape_1"
+            ],
+            [
+              "shape_2"
+            ]
+          ],
+          "durations": [
+            336,
+            3,
+            3
+          ]
+        }
+      ],
+      "stroke_order": [
+        "點",
+        "點",
+        "橫鈎",
+        "撇",
+        "橫撇",
+        "點",
+        "點",
+        "橫撇",
+        "捺",
+        "橫",
+        "橫",
+        "豎鈎",
+        "撇",
+        "點"
+      ],
+      "geometry": "official-edb",
+      "mapping_1_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "char": "醫",
+      "edb_id": "4217",
+      "bucket": "4001-ZC",
+      "target": [
+        555.1,
+        539.1
+      ],
+      "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/4001-ZC/4217.js",
+      "source_sha256": "74891f7e57e213ca733fe6200b1285329a97c9e637ed2d7b9b4bf3273429f132",
+      "strokes": 18,
+      "official_timeline": [
+        {
+          "start": 24,
+          "states": [
+            [
+              "shape_50"
+            ],
+            [
+              "shape_51"
+            ]
+          ],
+          "durations": [
+            24,
+            3
+          ]
+        },
+        {
+          "start": 48,
+          "states": [
+            [
+              "shape_48"
+            ],
+            [
+              "shape_49"
+            ]
+          ],
+          "durations": [
+            48,
+            3
+          ]
+        },
+        {
+          "start": 72,
+          "states": [
+            [
+              "shape_46"
+            ],
+            [
+              "shape_47"
+            ]
+          ],
+          "durations": [
+            72,
+            3
+          ]
+        },
+        {
+          "start": 96,
+          "states": [
+            [
+              "shape_44"
+            ],
+            [
+              "shape_45"
+            ]
+          ],
+          "durations": [
+            96,
+            3
+          ]
+        },
+        {
+          "start": 120,
+          "states": [
+            [
+              "shape_42"
+            ],
+            [
+              "shape_43"
+            ]
+          ],
+          "durations": [
+            120,
+            3
+          ]
+        },
+        {
+          "start": 144,
+          "states": [
+            [
+              "shape_40"
+            ],
+            [
+              "shape_41"
+            ]
+          ],
+          "durations": [
+            144,
+            3
+          ]
+        },
+        {
+          "start": 168,
+          "states": [
+            [
+              "shape_36"
+            ],
+            [
+              "shape_37"
+            ],
+            [
+              "shape_38"
+            ],
+            [
+              "shape_39"
+            ]
+          ],
+          "durations": [
+            168,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 192,
+          "states": [
+            [
+              "shape_34"
+            ],
+            [
+              "shape_35"
+            ]
+          ],
+          "durations": [
+            192,
+            3
+          ]
+        },
+        {
+          "start": 216,
+          "states": [
+            [
+              "shape_30"
+            ],
+            [
+              "shape_31"
+            ],
+            [
+              "shape_32"
+            ],
+            [
+              "shape_33"
+            ]
+          ],
+          "durations": [
+            216,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 240,
+          "states": [
+            [
+              "shape_26"
+            ],
+            [
+              "shape_27"
+            ],
+            [
+              "shape_28"
+            ],
+            [
+              "shape_29"
+            ]
+          ],
+          "durations": [
+            240,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 264,
+          "states": [
+            [
+              "shape_23"
+            ],
+            [
+              "shape_24"
+            ],
+            [
+              "shape_25"
+            ]
+          ],
+          "durations": [
+            264,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 288,
+          "states": [
+            [
+              "shape_19"
+            ],
+            [
+              "shape_20"
+            ],
+            [
+              "shape_21"
+            ],
+            [
+              "shape_22"
+            ]
+          ],
+          "durations": [
+            288,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 312,
+          "states": [
+            [
+              "shape_16"
+            ],
+            [
+              "shape_17"
+            ],
+            [
+              "shape_18"
+            ]
+          ],
+          "durations": [
+            312,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 336,
+          "states": [
+            [
+              "shape_11"
+            ],
+            [
+              "shape_12"
+            ],
+            [
+              "shape_13"
+            ],
+            [
+              "shape_14"
+            ],
+            [
+              "shape_15"
+            ]
+          ],
+          "durations": [
+            336,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 360,
+          "states": [
+            [
+              "shape_8"
+            ],
+            [
+              "shape_9"
+            ],
+            [
+              "shape_10"
+            ]
+          ],
+          "durations": [
+            360,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 384,
+          "states": [
+            [
+              "shape_5"
+            ],
+            [
+              "shape_6"
+            ],
+            [
+              "shape_7"
+            ]
+          ],
+          "durations": [
+            384,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 408,
+          "states": [
+            [
+              "shape_3"
+            ],
+            [
+              "shape_4"
+            ]
+          ],
+          "durations": [
+            408,
+            3
+          ]
+        },
+        {
+          "start": 432,
+          "states": [
+            [
+              "shape"
+            ],
+            [
+              "shape_1"
+            ],
+            [
+              "shape_2"
+            ]
+          ],
+          "durations": [
+            432,
+            3,
+            3
+          ]
+        }
+      ],
+      "stroke_order": [
+        "橫",
+        "撇",
+        "橫",
+        "橫",
+        "撇",
+        "點",
+        "豎折",
+        "撇",
+        "橫折彎",
+        "橫撇",
+        "捺",
+        "橫",
+        "豎",
+        "橫折",
+        "撇",
+        "豎彎",
+        "橫",
+        "橫"
+      ],
+      "geometry": "official-edb",
+      "mapping_1_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "char": "生",
+      "edb_id": "2605",
+      "bucket": "2001-3000",
+      "target": [
+        550.9,
+        538.3
+      ],
+      "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/2001-3000/2605.js",
+      "source_sha256": "8f0709b2fc42e6ea6ca790697278c01c7ace7b4994a3cd05546cc097b9c0d2a9",
+      "strokes": 5,
+      "official_timeline": [
+        {
+          "start": 24,
+          "states": [
+            [
+              "shape_14"
+            ],
+            [
+              "shape_15"
+            ],
+            [
+              "shape_16"
+            ]
+          ],
+          "durations": [
+            24,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 48,
+          "states": [
+            [
+              "shape_11"
+            ],
+            [
+              "shape_12"
+            ],
+            [
+              "shape_13"
+            ]
+          ],
+          "durations": [
+            48,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 72,
+          "states": [
+            [
+              "shape_8"
+            ],
+            [
+              "shape_9"
+            ],
+            [
+              "shape_10"
+            ]
+          ],
+          "durations": [
+            72,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 96,
+          "states": [
+            [
+              "shape_4"
+            ],
+            [
+              "shape_5"
+            ],
+            [
+              "shape_6"
+            ],
+            [
+              "shape_7"
+            ]
+          ],
+          "durations": [
+            96,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "start": 120,
+          "states": [
+            [
+              "shape"
+            ],
+            [
+              "shape_1"
+            ],
+            [
+              "shape_2"
+            ],
+            [
+              "shape_3"
+            ]
+          ],
+          "durations": [
+            120,
+            3,
+            3,
+            3
+          ]
+        }
+      ],
+      "stroke_order": [
+        "撇",
+        "橫",
+        "橫",
+        "豎",
+        "橫"
+      ],
+      "geometry": "official-edb",
+      "mapping_1_based": [
+        1,
+        2,
+        3,
+        4,
+        5
       ]
     }
   ]
