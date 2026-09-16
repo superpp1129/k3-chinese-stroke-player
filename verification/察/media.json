@@ -1,0 +1,23 @@
+{
+  "char": "察",
+  "strokes": 14,
+  "path": "site/videos/察.mp4",
+  "bytes": 385714,
+  "sha256": "fea2044bed8e773451ec612ce109f7af56b8febf83fd168648516a26ed805f0a",
+  "frames": 1203,
+  "duration": 40.1,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 85,
+  "visual_review": "passed: six samples per stroke and completed glyph; verification/visual-review.json"
+}

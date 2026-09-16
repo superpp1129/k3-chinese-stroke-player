@@ -1,0 +1,388 @@
+{
+  "url": "http://127.0.0.1:8877/",
+  "buttons_exercised": 47,
+  "character_cards": 21,
+  "word_cards": 8,
+  "downloads": 21,
+  "native_playback_checks": [
+    {
+      "char": "我",
+      "src": "videos/我.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 21.9,
+      "paused": false
+    },
+    {
+      "char": "有",
+      "src": "videos/有.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 19.3,
+      "paused": false
+    },
+    {
+      "char": "爸",
+      "src": "videos/爸.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "媽",
+      "src": "videos/媽.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 37.5,
+      "paused": false
+    },
+    {
+      "char": "姐",
+      "src": "videos/姐.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "妹",
+      "src": "videos/妹.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "弟",
+      "src": "videos/弟.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 21.9,
+      "paused": false
+    },
+    {
+      "char": "哥",
+      "src": "videos/哥.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 29.7,
+      "paused": false
+    },
+    {
+      "char": "和",
+      "src": "videos/和.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "爸",
+      "src": "videos/爸.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "爸",
+      "src": "videos/爸.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "媽",
+      "src": "videos/媽.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 37.5,
+      "paused": false
+    },
+    {
+      "char": "媽",
+      "src": "videos/媽.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 37.5,
+      "paused": false
+    },
+    {
+      "char": "祖",
+      "src": "videos/祖.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 27.1,
+      "paused": false
+    },
+    {
+      "char": "父",
+      "src": "videos/父.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 14.1,
+      "paused": false
+    },
+    {
+      "char": "祖",
+      "src": "videos/祖.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 27.1,
+      "paused": false
+    },
+    {
+      "char": "母",
+      "src": "videos/母.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 16.7,
+      "paused": false
+    },
+    {
+      "char": "老",
+      "src": "videos/老.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 19.3,
+      "paused": false
+    },
+    {
+      "char": "師",
+      "src": "videos/師.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 29.7,
+      "paused": false
+    },
+    {
+      "char": "消",
+      "src": "videos/消.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 29.7,
+      "paused": false
+    },
+    {
+      "char": "防",
+      "src": "videos/防.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 21.9,
+      "paused": false
+    },
+    {
+      "char": "員",
+      "src": "videos/員.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 29.7,
+      "paused": false
+    },
+    {
+      "char": "警",
+      "src": "videos/警.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 55.7,
+      "paused": false
+    },
+    {
+      "char": "察",
+      "src": "videos/察.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 40.1,
+      "paused": false
+    },
+    {
+      "char": "醫",
+      "src": "videos/醫.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 50.5,
+      "paused": false
+    },
+    {
+      "char": "生",
+      "src": "videos/生.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 16.7,
+      "paused": false
+    },
+    {
+      "char": "我",
+      "src": "videos/我.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 21.9,
+      "paused": false
+    },
+    {
+      "char": "有",
+      "src": "videos/有.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 19.3,
+      "paused": false
+    },
+    {
+      "char": "爸",
+      "src": "videos/爸.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "媽",
+      "src": "videos/媽.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 37.5,
+      "paused": false
+    },
+    {
+      "char": "姐",
+      "src": "videos/姐.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "妹",
+      "src": "videos/妹.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "弟",
+      "src": "videos/弟.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 21.9,
+      "paused": false
+    },
+    {
+      "char": "哥",
+      "src": "videos/哥.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 29.7,
+      "paused": false
+    },
+    {
+      "char": "和",
+      "src": "videos/和.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "祖",
+      "src": "videos/祖.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 27.1,
+      "paused": false
+    },
+    {
+      "char": "父",
+      "src": "videos/父.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 14.1,
+      "paused": false
+    },
+    {
+      "char": "母",
+      "src": "videos/母.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 16.7,
+      "paused": false
+    },
+    {
+      "char": "老",
+      "src": "videos/老.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 19.3,
+      "paused": false
+    },
+    {
+      "char": "師",
+      "src": "videos/師.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 29.7,
+      "paused": false
+    },
+    {
+      "char": "消",
+      "src": "videos/消.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 29.7,
+      "paused": false
+    },
+    {
+      "char": "防",
+      "src": "videos/防.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 21.9,
+      "paused": false
+    },
+    {
+      "char": "員",
+      "src": "videos/員.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 29.7,
+      "paused": false
+    },
+    {
+      "char": "警",
+      "src": "videos/警.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 55.7,
+      "paused": false
+    },
+    {
+      "char": "察",
+      "src": "videos/察.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 40.1,
+      "paused": false
+    },
+    {
+      "char": "醫",
+      "src": "videos/醫.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 50.5,
+      "paused": false
+    },
+    {
+      "char": "生",
+      "src": "videos/生.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 16.7,
+      "paused": false
+    }
+  ],
+  "page_errors": [],
+  "phone_width": 390,
+  "horizontal_overflow": false
+}

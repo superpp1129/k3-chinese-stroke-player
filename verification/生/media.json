@@ -1,0 +1,23 @@
+{
+  "char": "生",
+  "strokes": 5,
+  "path": "site/videos/生.mp4",
+  "bytes": 128481,
+  "sha256": "06857b4ed27fc5c28d0dfb954bdfc7cea765a591ab2bd4107ddedbded4f58a58",
+  "frames": 501,
+  "duration": 16.7,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 31,
+  "visual_review": "passed: six samples per stroke and completed glyph; verification/visual-review.json"
+}

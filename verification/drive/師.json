@@ -1,0 +1,10 @@
+{
+  "char": "師",
+  "id": "1ElkjIs5uNHjh4WqmbVUDEzYBcRj2UrRn",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1ElkjIs5uNHjh4WqmbVUDEzYBcRj2UrRn/view",
+  "bytes": 240599,
+  "sha256": "7161fc426002edefa96afdc8ecc87327874805cd26b3ee150589df898bf1356a",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

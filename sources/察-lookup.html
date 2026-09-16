@@ -1,0 +1,552 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-HK" xml:lang="zh-HK">
+
+    <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-THZ49RG');</script>
+<!-- End Google Tag Manager -->	
+        <title>香港小學學習字詞表</title>
+        
+        <script src="Scripts/floating.js" type="text/javascript"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	/* text-align: justify; */
+	background-color:#FFFFFF;
+}
+#II{
+	float:right;
+}
+#p1{
+	font-size: 78%;
+}
+
+#topBanner {
+	background-image: url(assets/bgTop.gif);
+}
+
+div.topright{
+	display:block;
+
+	/*set the div in the top right corner*/
+	position:absolute;
+	right:0;
+	width:160px;
+}
+
+#textbox {
+	width:93%;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 35px;
+}
+#btnCollapse {
+	position:fixed;
+	width:25px;
+	height:100px;
+	z-index:500;
+	left: 0;
+	top: 110px;
+	visibility: visible;
+}
+#yellowbox {
+	background-color:#FFFFCC;
+	padding: 10px;
+	border: 1px solid #009900;
+    margin-bottom: 20px;
+}
+
+a#li2 {
+    text-decoration: none;
+}
+
+
+.topnavi{
+text-decoration: none;
+	color: #990000;
+	font-weight: bold;
+	font-size: 11pt;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.topnavien{
+	color: #990000;
+	font-size: 8pt;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+text-decoration: none;
+}
+
+.tit{
+text-decoration: none;
+	color: #990000;
+	font-weight: bold;
+	font-size: 31pt;
+	margin-left: 26px;
+	text-shadow: 2px 1px #998000;
+	font-family: Arial, Helvetica,SimHei;
+}
+
+.msie_alert {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+	background-color:#FFC04C;
+	padding: 10px 15px 10px 15px;
+	border-bottom: 1px solid #999999;
+}
+
+.handpointer{
+	cursor:pointer;
+}
+
+-->
+</style>
+
+<script src="js/jquery-3.5.0.js"></script>
+<script src="Scripts/mymouse.js"></script>
+
+
+<script type="text/javascript">
+// fix for position:fixed in IE6
+function move_box() {
+    var offset = 110; // set offset (likely equal to your css top)
+    var element = document.getElementById('btnCollapse');
+
+    element.style.top = (document.documentElement.scrollTop + offset) + 'px';
+}
+</script>
+<!--[if lt IE 7]>
+<style type="text/css">
+#btnCollapse {
+	position:absolute;
+	width:20px;
+	height:100px;
+	z-index:1;
+	left: 0;
+	top: 110px;
+	visibility: visible;
+}
+</style>
+<script type="text/javascript">
+	window.setInterval(move_box, 100);
+</script>
+<![endif]-->
+
+<link rel="stylesheet" href="css/common.css" type="text/css">
+<link rel="stylesheet" href="css/unsemantic/unsemantic-grid-responsive.css">
+
+<script type="text/javascript" src="js/jquery-3.5.0.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<style type="text/css">
+html {
+	overflow: hidden;
+}
+</style>
+
+</head>
+<script language=JavaScript>
+
+	   function doSoundyp(ydanp) {
+	var yp= ydanp.split(" ");
+	var audio = document.createElement('audio');
+audio.src = "/EmbziciwebRes/jyutping/"+yp[0]+".mp3";
+  audio.play();
+	var count=0;
+audio.addEventListener("ended", function() {
+    count ++;
+    audio.src = "/EmbziciwebRes/jyutping/"+yp[count]+".mp3";//"saat1.mp3";
+   if(count>yp.length-1) {count=0;}
+    else {audio.play(); }
+   },false);
+   }
+//-------------------------
+    function doSoundhp(ydanp) {
+	var yp= ydanp.split(" ");
+//	alert("ydanp="+ydanp);
+	var audio = document.createElement('audio');
+audio.src = "/EmbziciwebRes/pinyin/"+yp[0]+".mp3";
+  audio.play();
+	var count=0;
+audio.addEventListener("ended", function() {
+    count ++;
+    audio.src = "/EmbziciwebRes/pinyin/"+yp[count]+".mp3";//"saat1.mp3";
+   if(count>yp.length-1) {count=0;}
+    else {audio.play(); }
+   },false);
+}
+//------------------------
+
+//---------------------
+        var appendixPopup = null;
+        function MM_openBrWindow(theURL,winName,features) {
+            if (appendixPopup && !appendixPopup.closed) {
+                appendixPopup.close();
+            }
+            appendixPopup = window.open(theURL,winName,features);
+        }
+    </script>
+
+<body>
+
+	  
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THZ49RG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+    <script language="JavaScript">
+        (function () {  // Show warning for MS Internet Explorer
+            var trident = {
+              string: navigator.userAgent.match(/Trident\/(\d+)/)
+            };
+
+            trident.version = trident.string ? parseInt(trident.string[1], 10) : null;
+
+            if (trident.string) {
+              document.body.innerHTML = '<div class="msie_alert">Internet Explorer <span style="font-size:12pt;">或不能妥善顯示本頁內容，建議使用其他瀏覽器。</span></div>' + document.body.innerHTML;
+            }
+        })();
+    </script>
+
+
+<div class="content">
+
+  <h1>搜尋結果</h1>
+
+
+
+		<div class="content_text">
+
+
+        
+        
+        
+
+      <div class="content_left">
+   <!-- Stkdemo display -->
+        <iframe width='300px' height='370px' src='/EmbziciwebRes/stkdemo_js/1001-2000/1038.html?lang=ch' scrolling='no' style='border: 0px;'></iframe>
+      </div>
+
+      <div class="content_right">
+
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+
+<tr>
+
+
+
+
+
+</tr>
+
+<tr>
+
+
+
+
+</tr>
+
+</table>
+
+
+                <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                <tr>
+                    <td width="50%" bgcolor="#00ACA2" class="headerWhite">部首</td>
+				    <td bgcolor="#00ACA2" class="headerWhite">總筆畫數</td>
+                </tr>
+				<tr>
+                    <td>宀部</td>
+                    <td>
+                        14 畫
+					</td>
+				</tr>
+				</table>
+                <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                
+                <tr>
+                    <td colspan="2" bgcolor="#00ACA2" class="headerWhite"><div align="center">字音</div></td>
+				</tr>
+                <tr>
+                  <td width="50%" bgcolor="#00ACA2" class="headerWhite">普通話</td>
+                  <td width="50%" bgcolor="#00ACA2" class="headerWhite">粵語</td>
+                </tr>
+				<tr>
+                    <td class="pinyin12"><strong>
+                        chɑ́<span class='handpointer'><img id='v16hp' onclick="doSoundhp('cha2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span><br />
+                        <br />
+                                            </strong></td>
+				    <td>
+                        
+                            <span class="jyutping12"><strong> caat3<span class='handpointer'><img id='v16' onclick="doSoundyp('caat3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></strong></span>〔刷〕<br />
+                            <span class="jyutping12"><strong> </strong></span><br />
+                            <span class="jyutping12"><strong> </strong></span>
+                       
+                    </td>
+				</tr>
+                
+				</table>
+                
+
+       </div>
+
+        <div class="content_bottom">
+            
+
+            
+            
+            <script language="JavaScript">
+                function updateTblCi(v) {
+                    var ie4 = (document.all);
+                    var tbl = document.getElementById("tblCi");
+                    var rx = tbl.rows;
+                    for (var i=0; i<rx.length; i++) {
+                        if (rx[i].className == "ks1" || rx[i].className == "eng1") {
+                            rx[i].style.display = (v == "ks1" || v == "ks12") ? (ie4) ? "block" : "table-row" : "none";
+                        } else if (rx[i].className == "ks2" || rx[i].className == "eng2") {
+                            rx[i].style.display = (v == "ks2" || v == "ks12") ? (ie4) ? "block" : "table-row" : "none";
+                        }
+                    }
+                }
+            </script>
+            <table id="tblCi" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="4" valign="top" bgcolor="#00ACA2" class="headerWhite">小學學習字詞表</td>
+                </tr>
+                <tr>
+                  <td colspan="4" valign="top" bgcolor="#a1e5fe" style="padding:5px 15px;font-weight:bold; line-height: 40px;">
+                        <strong>詞語顯示：</strong><br>
+                        <label><input type="radio" name="showKS" value="ks1" onClick="updateTblCi(this.value)">
+                        第一學習階段<span class="checkmark"></span></label>
+                        <label><input type="radio" name="showKS" value="ks2" onClick="updateTblCi(this.value)">
+                        第二學習階段<span class="checkmark"></span></label>
+                        <label><input type="radio" name="showKS" value="ks12" onClick="updateTblCi(this.value)" checked>
+                      第一及第二學習階段<span class="checkmark"></span></label>
+                      </td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">察看</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  chɑ́kɑ̀n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('cha2 kan4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> caat3 hon3<span class='handpointer'><img id='v16' onclick="doSoundyp('caat3 hon3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">察覺</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  chɑ́jué<span class='handpointer'><img id='v16hp' onclick="doSoundhp('cha2 jue2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> caat3 gok3<span class='handpointer'><img id='v16' onclick="doSoundyp('caat3 gok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">考察</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  kɑ̌ochɑ́<span class='handpointer'><img id='v16hp' onclick="doSoundhp('kao3-B cha2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> haau2 caat3<span class='handpointer'><img id='v16' onclick="doSoundyp('haau2 caat3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">偵察</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  zhēnchɑ́<span class='handpointer'><img id='v16hp' onclick="doSoundhp('zhen1 cha2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> zing1 caat3<span class='handpointer'><img id='v16' onclick="doSoundyp('zing1 caat3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">視察</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  shìchɑ́<span class='handpointer'><img id='v16hp' onclick="doSoundhp('shi4 cha2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> si6 caat3<span class='handpointer'><img id='v16' onclick="doSoundyp('si6 caat3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">監察</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  jiɑ̄nchɑ́<span class='handpointer'><img id='v16hp' onclick="doSoundhp('jian1 cha2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gaam1 caat3<span class='handpointer'><img id='v16' onclick="doSoundyp('gaam1 caat3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">檢察</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  jiɑ̌nchɑ́<span class='handpointer'><img id='v16hp' onclick="doSoundhp('jian3-B cha2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gim2 caat3<span class='handpointer'><img id='v16' onclick="doSoundyp('gim2 caat3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">警察</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  jǐngchɑ́<span class='handpointer'><img id='v16hp' onclick="doSoundhp('jing3-B cha2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ging2 caat3<span class='handpointer'><img id='v16' onclick="doSoundyp('ging2 caat3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">觀察</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guɑ̄nchɑ́<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guan1 cha2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gun1 caat3<span class='handpointer'><img id='v16' onclick="doSoundyp('gun1 caat3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                
+                
+            </table>
+            
+
+	    <!-- <p align="right"><span class="smallchn">[ <a href="../lexlist_zixing/searchpane.jsp"
+ target="leftFrame" title="leftFrame"
+ onClick="top.mainFrame.location='../lexlist_zixing/resultzixing.jsp?id=1038&sortBy=stroke&jpC=lshk';">▲按此往《常用字形表》&nbsp;
+		<span xml:lang="en" lang="en">
+
+		</span>察
+	    </a> ]</span></p> -->
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+
+        
+
+        </div>
+
+
+
+</div>
+
+<div class="footer">
+
+<a href="#" class="top_btn" onclick="window.parent.parent.scrollTo(0,0)">返回頁首</a>
+
+  <p>香港特別行政區政府教育局 課程發展處中國語文教育組<br>
+© 香港教育局
+</p>
+
+  <a href="https://www.w3.org/WAI/WCAG2AA-Conformance.html" target="_blank"><img src="images/wcag2.1AA-v.png" alt="wcag2.1AA-v"></a>
+</div>
+
+</div>
+
+<style>
+.content_right .headerWhite {
+  border: 2px #fff solid;
+}
+.headerWhite {
+  background-color: #007099;
+  color: #fff;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.content_bottom .headerWhite {
+  padding: 5px 15px;
+}
+.pinyin, .pinyinGreen, .pinyinPurple, .pinyin12, .jyutping, .jyutpingGreen, .jyutpingPurple, .jyutping12 {
+    font-family: Arial, "lucida sans unicode",  "DejaVu Sans", sans-serif;
+}
+</style>
+
+    </body>
+</html>

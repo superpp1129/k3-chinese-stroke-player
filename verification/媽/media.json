@@ -1,0 +1,23 @@
+{
+  "char": "媽",
+  "strokes": 13,
+  "path": "site/videos/媽.mp4",
+  "bytes": 342134,
+  "sha256": "33952edaa80dfa6dfc9dc04dfcb6ca1c9b5e9bebf08762b9de081efa74fe4535",
+  "frames": 1125,
+  "duration": 37.5,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 79,
+  "visual_review": "passed: six samples per stroke and completed glyph; verification/visual-review.json"
+}

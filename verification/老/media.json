@@ -1,0 +1,23 @@
+{
+  "char": "老",
+  "strokes": 6,
+  "path": "site/videos/老.mp4",
+  "bytes": 173287,
+  "sha256": "561dd823e24cd01a18b1c34396afd85735a7081879de0606a810220a12c152f0",
+  "frames": 579,
+  "duration": 19.3,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 37,
+  "visual_review": "passed: six samples per stroke and completed glyph; verification/visual-review.json"
+}

@@ -1,0 +1,23 @@
+{
+  "char": "父",
+  "strokes": 4,
+  "path": "site/videos/父.mp4",
+  "bytes": 114116,
+  "sha256": "957bbae854b1cd250ee7cbabb81325802f70c6ed1cd1616cc6ec4a4f4a40a5ed",
+  "frames": 423,
+  "duration": 14.1,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 25,
+  "visual_review": "passed: six samples per stroke and completed glyph; verification/visual-review.json"
+}

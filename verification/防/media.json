@@ -1,0 +1,23 @@
+{
+  "char": "防",
+  "strokes": 7,
+  "path": "site/videos/防.mp4",
+  "bytes": 189978,
+  "sha256": "46e32abfa633c16d4a5f77adcbdfca4b11b62ee1770e3d29c7874b0a19ffea3e",
+  "frames": 657,
+  "duration": 21.9,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 43,
+  "visual_review": "passed: six samples per stroke and completed glyph; verification/visual-review.json"
+}

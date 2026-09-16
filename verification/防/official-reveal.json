@@ -1,0 +1,220 @@
+{
+  "character": "防",
+  "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/4001-ZC/4365.js",
+  "source_sha256": "f81ca497a924e20901068f27ff19e1aafebc1b05759b7250c0009a3041a6c670",
+  "geometry": "EDB CreateJS full filled outlines, original 1080 coordinates",
+  "mapping": "Identity: chronological EDB timeline -> rendered stroke",
+  "strokes": [
+    {
+      "stroke": 1,
+      "final_shapes": [
+        "shape_23"
+      ],
+      "source_states": [
+        [
+          "shape_21"
+        ],
+        [
+          "shape_22"
+        ],
+        [
+          "shape_23"
+        ]
+      ],
+      "thresholds": [
+        0.34367993474006653,
+        0.6313245296478271,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0
+      ],
+      "pixels": 16930
+    },
+    {
+      "stroke": 2,
+      "final_shapes": [
+        "shape_20"
+      ],
+      "source_states": [
+        [
+          "shape_18"
+        ],
+        [
+          "shape_19"
+        ],
+        [
+          "shape_20"
+        ]
+      ],
+      "thresholds": [
+        0.300087034702301,
+        0.7389566898345947,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0
+      ],
+      "pixels": 14030
+    },
+    {
+      "stroke": 3,
+      "final_shapes": [
+        "shape_17"
+      ],
+      "source_states": [
+        [
+          "shape_14"
+        ],
+        [
+          "shape_15"
+        ],
+        [
+          "shape_16"
+        ],
+        [
+          "shape_17"
+        ]
+      ],
+      "thresholds": [
+        0.17495855689048767,
+        0.37759360671043396,
+        0.6551594138145447,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixels": 38694
+    },
+    {
+      "stroke": 4,
+      "final_shapes": [
+        "shape_13"
+      ],
+      "source_states": [
+        [
+          "shape_12"
+        ],
+        [
+          "shape_13"
+        ]
+      ],
+      "thresholds": [
+        0.6411982774734497,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0
+      ],
+      "pixels": 10157
+    },
+    {
+      "stroke": 5,
+      "final_shapes": [
+        "shape_11"
+      ],
+      "source_states": [
+        [
+          "shape_8"
+        ],
+        [
+          "shape_9"
+        ],
+        [
+          "shape_10"
+        ],
+        [
+          "shape_11"
+        ]
+      ],
+      "thresholds": [
+        0.23228640854358673,
+        0.4994523823261261,
+        0.8165155053138733,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixels": 26571
+    },
+    {
+      "stroke": 6,
+      "final_shapes": [
+        "shape_7"
+      ],
+      "source_states": [
+        [
+          "shape_4"
+        ],
+        [
+          "shape_5"
+        ],
+        [
+          "shape_6"
+        ],
+        [
+          "shape_7"
+        ]
+      ],
+      "thresholds": [
+        0.219838485121727,
+        0.37740078568458557,
+        0.819469690322876,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixels": 45324
+    },
+    {
+      "stroke": 7,
+      "final_shapes": [
+        "shape_3"
+      ],
+      "source_states": [
+        [
+          "shape"
+        ],
+        [
+          "shape_1"
+        ],
+        [
+          "shape_2"
+        ],
+        [
+          "shape_3"
+        ]
+      ],
+      "thresholds": [
+        0.21610045433044434,
+        0.502491295337677,
+        0.8057862520217896,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixels": 29872
+    }
+  ]
+}

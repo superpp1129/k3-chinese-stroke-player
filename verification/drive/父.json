@@ -1,0 +1,10 @@
+{
+  "char": "父",
+  "id": "1F67HDctsIg2TM5o_1k45DhXrPlVNkiz5",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1F67HDctsIg2TM5o_1k45DhXrPlVNkiz5/view",
+  "bytes": 114116,
+  "sha256": "957bbae854b1cd250ee7cbabb81325802f70c6ed1cd1616cc6ec4a4f4a40a5ed",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

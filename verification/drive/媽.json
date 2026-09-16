@@ -1,0 +1,10 @@
+{
+  "char": "媽",
+  "id": "1LdvvToggTja8PzhUBmutpDkX6098WEsJ",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1LdvvToggTja8PzhUBmutpDkX6098WEsJ/view",
+  "bytes": 342134,
+  "sha256": "33952edaa80dfa6dfc9dc04dfcb6ca1c9b5e9bebf08762b9de081efa74fe4535",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

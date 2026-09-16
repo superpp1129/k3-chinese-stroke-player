@@ -4,3 +4,11 @@ test-results/
 __pycache__/
 *.pyc
 k3-chinese-stroke-player-preview.zip
+.venv/
+# Reproducible intermediate masks/samples stay local; review sheets and reports are versioned.
+verification/*/key-*
+verification/*/trial-*
+verification/*/candidate-*
+verification/*/official-*.png
+verification/*/official-*.svg
+verification/*/s??-f??.png

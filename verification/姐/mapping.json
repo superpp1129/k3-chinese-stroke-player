@@ -1,0 +1,193 @@
+{
+  "char": "姐",
+  "edb_id": "0892",
+  "bucket": "0001-1000",
+  "target": [
+    555.4,
+    537.1
+  ],
+  "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/0001-1000/0892.js",
+  "source_sha256": "f0f090821ad468dbfe25125dfd2b6c0e38c2adc3edaa6be3d329150d675d4c51",
+  "strokes": 8,
+  "official_timeline": [
+    {
+      "start": 24,
+      "states": [
+        [
+          "shape_20"
+        ],
+        [
+          "shape_21"
+        ],
+        [
+          "shape_22"
+        ],
+        [
+          "shape_23"
+        ]
+      ],
+      "durations": [
+        24,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 48,
+      "states": [
+        [
+          "shape_17"
+        ],
+        [
+          "shape_18"
+        ],
+        [
+          "shape_19"
+        ]
+      ],
+      "durations": [
+        48,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 72,
+      "states": [
+        [
+          "shape_14"
+        ],
+        [
+          "shape_15"
+        ],
+        [
+          "shape_16"
+        ]
+      ],
+      "durations": [
+        72,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 96,
+      "states": [
+        [
+          "shape_11"
+        ],
+        [
+          "shape_12"
+        ],
+        [
+          "shape_13"
+        ]
+      ],
+      "durations": [
+        96,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 120,
+      "states": [
+        [
+          "shape_7"
+        ],
+        [
+          "shape_8"
+        ],
+        [
+          "shape_9"
+        ],
+        [
+          "shape_10"
+        ]
+      ],
+      "durations": [
+        120,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 144,
+      "states": [
+        [
+          "shape_5"
+        ],
+        [
+          "shape_6"
+        ]
+      ],
+      "durations": [
+        144,
+        3
+      ]
+    },
+    {
+      "start": 168,
+      "states": [
+        [
+          "shape_3"
+        ],
+        [
+          "shape_4"
+        ]
+      ],
+      "durations": [
+        168,
+        3
+      ]
+    },
+    {
+      "start": 192,
+      "states": [
+        [
+          "shape"
+        ],
+        [
+          "shape_1"
+        ],
+        [
+          "shape_2"
+        ]
+      ],
+      "durations": [
+        192,
+        3,
+        3
+      ]
+    }
+  ],
+  "candidate_geometry_sha256": "e4fcebaec74b9a53077e2d6e067fdfdca4470aa36f23246c7a03f96e5ab000c6",
+  "candidate_count": 8,
+  "mapping_1_based": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "overlap_iou": [
+    0.165,
+    0.0976,
+    0.2659,
+    0.5275,
+    0.2727,
+    0.0671,
+    0.5872,
+    0.5665
+  ],
+  "translation": [
+    98.09999999999997,
+    -0.6999999999999886
+  ],
+  "comparison": "verification/姐/comparison.jpg"
+}

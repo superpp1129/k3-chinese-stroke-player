@@ -1,0 +1,191 @@
+[
+  {
+    "char": "我",
+    "sha256": "666e10dbb4c787d46c9d5cc2725b5f490d63be6c0eaec26dd48d29ceb2f21959",
+    "frames": 657,
+    "duration": 21.9,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "original-frozen-geometry"
+  },
+  {
+    "char": "有",
+    "sha256": "132a66988020389b58147e31a9be3fad9d8aec0906bd672b5dce26564d8f9574",
+    "frames": 579,
+    "duration": 19.3,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "original-frozen-geometry"
+  },
+  {
+    "char": "爸",
+    "sha256": "80899b458747c7addcd2b1dd809cf497882c95331f0c7b322fce8cdfe8324139",
+    "frames": 735,
+    "duration": 24.5,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "original-frozen-geometry"
+  },
+  {
+    "char": "媽",
+    "sha256": "33952edaa80dfa6dfc9dc04dfcb6ca1c9b5e9bebf08762b9de081efa74fe4535",
+    "frames": 1125,
+    "duration": 37.5,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "original-frozen-geometry"
+  },
+  {
+    "char": "姐",
+    "sha256": "b5c07b676028fa0405a10370013307b26c08f3f50710fbc4d98f8c04c46e8497",
+    "frames": 735,
+    "duration": 24.5,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "original-frozen-geometry"
+  },
+  {
+    "char": "妹",
+    "sha256": "5eee2b491c70f43cdd177a8d548d44ff1a013467062cc2bf4e4d94f4c8caa5c4",
+    "frames": 735,
+    "duration": 24.5,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "original-frozen-geometry"
+  },
+  {
+    "char": "弟",
+    "sha256": "05bce7ed69f2c961dda4c3f35d3f3229243f2678a0ab51aaaf2b860354edd270",
+    "frames": 657,
+    "duration": 21.9,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "original-frozen-geometry"
+  },
+  {
+    "char": "哥",
+    "sha256": "c2c6e1bc6c5d88063a9b3ca9d18a9578ddb2434b39ec0e7f3ac312c18b70b878",
+    "frames": 891,
+    "duration": 29.7,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "original-frozen-geometry"
+  },
+  {
+    "char": "和",
+    "sha256": "a97f24e9025fe4f0b1687976ce14c25a8f79d0fb80cd79d61d245445078e845b",
+    "frames": 735,
+    "duration": 24.5,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "original-frozen-geometry"
+  },
+  {
+    "char": "祖",
+    "sha256": "280efeaf617db892a4b3e52121363226e46bd874d70f72e76a525ce67ef5a675",
+    "frames": 813,
+    "duration": 27.1,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "passed"
+  },
+  {
+    "char": "父",
+    "sha256": "957bbae854b1cd250ee7cbabb81325802f70c6ed1cd1616cc6ec4a4f4a40a5ed",
+    "frames": 423,
+    "duration": 14.1,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "passed"
+  },
+  {
+    "char": "母",
+    "sha256": "021a1a6019870d418e294e7f5e2f2b37f3c7716a819230ada5a29a8cfb3cc3ed",
+    "frames": 501,
+    "duration": 16.7,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "passed"
+  },
+  {
+    "char": "老",
+    "sha256": "561dd823e24cd01a18b1c34396afd85735a7081879de0606a810220a12c152f0",
+    "frames": 579,
+    "duration": 19.3,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "passed"
+  },
+  {
+    "char": "師",
+    "sha256": "7161fc426002edefa96afdc8ecc87327874805cd26b3ee150589df898bf1356a",
+    "frames": 891,
+    "duration": 29.7,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "passed"
+  },
+  {
+    "char": "消",
+    "sha256": "34c8a955892eb2a3755f5d8b7be2c776c0d4f47ef8846179f825b11d10904449",
+    "frames": 891,
+    "duration": 29.7,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "passed"
+  },
+  {
+    "char": "防",
+    "sha256": "46e32abfa633c16d4a5f77adcbdfca4b11b62ee1770e3d29c7874b0a19ffea3e",
+    "frames": 657,
+    "duration": 21.9,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "passed"
+  },
+  {
+    "char": "員",
+    "sha256": "6608c36ba9fdfaf4db22c17b3296a7f08c4cb432fb8d21c9ab36acc5464f25d0",
+    "frames": 891,
+    "duration": 29.7,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "passed"
+  },
+  {
+    "char": "警",
+    "sha256": "5b3054a91faf40d188e4a823cce994f742c8a7d07d5d7e9824b1d5b6412a1c7d",
+    "frames": 1671,
+    "duration": 55.7,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "passed"
+  },
+  {
+    "char": "察",
+    "sha256": "fea2044bed8e773451ec612ce109f7af56b8febf83fd168648516a26ed805f0a",
+    "frames": 1203,
+    "duration": 40.1,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "passed"
+  },
+  {
+    "char": "醫",
+    "sha256": "f3177aa9fe03a6ab0590b3d8aefe17309c99e7b47a8ef37fe11e23cedfa9041a",
+    "frames": 1515,
+    "duration": 50.5,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "passed"
+  },
+  {
+    "char": "生",
+    "sha256": "06857b4ed27fc5c28d0dfb954bdfc7cea765a591ab2bd4107ddedbded4f58a58",
+    "frames": 501,
+    "duration": 16.7,
+    "full_decode": "passed",
+    "source_hash": "passed",
+    "official_reveal": "passed"
+  }
+]

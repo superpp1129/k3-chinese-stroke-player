@@ -1,0 +1,259 @@
+{
+  "char": "媽",
+  "edb_id": "0948",
+  "bucket": "0001-1000",
+  "target": [
+    522.5,
+    546.9
+  ],
+  "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/0001-1000/0948.js",
+  "source_sha256": "66d7dd10e3c324aa249f9a237b6b08ddb3ac29027e4bb6bc1cb53f0dade839a6",
+  "strokes": 13,
+  "official_timeline": [
+    {
+      "start": 24,
+      "states": [
+        [
+          "shape_36"
+        ],
+        [
+          "shape_37"
+        ],
+        [
+          "shape_38"
+        ],
+        [
+          "shape_39"
+        ]
+      ],
+      "durations": [
+        24,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 48,
+      "states": [
+        [
+          "shape_33"
+        ],
+        [
+          "shape_34"
+        ],
+        [
+          "shape_35"
+        ]
+      ],
+      "durations": [
+        48,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 72,
+      "states": [
+        [
+          "shape_30"
+        ],
+        [
+          "shape_31"
+        ],
+        [
+          "shape_32"
+        ]
+      ],
+      "durations": [
+        72,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 96,
+      "states": [
+        [
+          "shape_27"
+        ],
+        [
+          "shape_28"
+        ],
+        [
+          "shape_29"
+        ]
+      ],
+      "durations": [
+        96,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 120,
+      "states": [
+        [
+          "shape_24"
+        ],
+        [
+          "shape_25"
+        ],
+        [
+          "shape_26"
+        ]
+      ],
+      "durations": [
+        120,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 144,
+      "states": [
+        [
+          "shape_21"
+        ],
+        [
+          "shape_22"
+        ],
+        [
+          "shape_23"
+        ]
+      ],
+      "durations": [
+        144,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 168,
+      "states": [
+        [
+          "shape_18"
+        ],
+        [
+          "shape_19"
+        ],
+        [
+          "shape_20"
+        ]
+      ],
+      "durations": [
+        168,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 192,
+      "states": [
+        [
+          "shape_14",
+          "shape_13"
+        ],
+        [
+          "shape_16",
+          "shape_15"
+        ],
+        [
+          "shape_17"
+        ]
+      ],
+      "durations": [
+        192,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 216,
+      "states": [
+        [
+          "shape_8"
+        ],
+        [
+          "shape_9"
+        ],
+        [
+          "shape_10"
+        ],
+        [
+          "shape_11"
+        ],
+        [
+          "shape_12"
+        ]
+      ],
+      "durations": [
+        216,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 240,
+      "states": [
+        [
+          "shape_6"
+        ],
+        [
+          "shape_7"
+        ]
+      ],
+      "durations": [
+        240,
+        3
+      ]
+    },
+    {
+      "start": 264,
+      "states": [
+        [
+          "shape_4"
+        ],
+        [
+          "shape_5"
+        ]
+      ],
+      "durations": [
+        264,
+        3
+      ]
+    },
+    {
+      "start": 288,
+      "states": [
+        [
+          "shape_2"
+        ],
+        [
+          "shape_3"
+        ]
+      ],
+      "durations": [
+        288,
+        3
+      ]
+    },
+    {
+      "start": 312,
+      "states": [
+        [
+          "shape"
+        ],
+        [
+          "shape_1"
+        ]
+      ],
+      "durations": [
+        312,
+        3
+      ]
+    }
+  ]
+}

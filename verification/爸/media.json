@@ -1,0 +1,23 @@
+{
+  "char": "爸",
+  "strokes": 8,
+  "path": "site/videos/爸.mp4",
+  "bytes": 193086,
+  "sha256": "80899b458747c7addcd2b1dd809cf497882c95331f0c7b322fce8cdfe8324139",
+  "frames": 735,
+  "duration": 24.5,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 49,
+  "visual_review": "passed: six samples per stroke and completed glyph; verification/visual-review.json"
+}

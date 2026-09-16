@@ -1,0 +1,10 @@
+{
+  "char": "老",
+  "id": "1ghgYXNgIwLaJ8yd1SFZXGqIlk_nPD6Ug",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1ghgYXNgIwLaJ8yd1SFZXGqIlk_nPD6Ug/view",
+  "bytes": 173287,
+  "sha256": "561dd823e24cd01a18b1c34396afd85735a7081879de0606a810220a12c152f0",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

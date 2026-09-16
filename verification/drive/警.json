@@ -1,0 +1,10 @@
+{
+  "char": "警",
+  "id": "1hoDMQTk-mEqFXfy2e9W1CNyqrFmNOtBF",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1hoDMQTk-mEqFXfy2e9W1CNyqrFmNOtBF/view",
+  "bytes": 506277,
+  "sha256": "5b3054a91faf40d188e4a823cce994f742c8a7d07d5d7e9824b1d5b6412a1c7d",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

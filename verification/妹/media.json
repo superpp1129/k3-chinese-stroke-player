@@ -1,0 +1,23 @@
+{
+  "char": "妹",
+  "strokes": 8,
+  "path": "site/videos/妹.mp4",
+  "bytes": 199298,
+  "sha256": "5eee2b491c70f43cdd177a8d548d44ff1a013467062cc2bf4e4d94f4c8caa5c4",
+  "frames": 735,
+  "duration": 24.5,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 49,
+  "visual_review": "passed: six samples per stroke and completed glyph; verification/visual-review.json"
+}

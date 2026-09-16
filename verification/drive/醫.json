@@ -1,0 +1,10 @@
+{
+  "char": "醫",
+  "id": "19FVLLqVH_SXO-SSjYK6tSdpJemS0gJyL",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/19FVLLqVH_SXO-SSjYK6tSdpJemS0gJyL/view",
+  "bytes": 502871,
+  "sha256": "f3177aa9fe03a6ab0590b3d8aefe17309c99e7b47a8ef37fe11e23cedfa9041a",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

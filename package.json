@@ -4,8 +4,8 @@
   "private": true,
   "description": "獨立 K3 中文筆順播放器",
   "scripts": {
-    "test": "node tests/dom-test.js && python -m unittest discover -s tests -v",
-    "serve": "python -m http.server 8877 --directory site"
+    "test": "node tests/dom-test.js && python3 -m unittest discover -s tests -v",
+    "serve": "python3 -m http.server 8877 --directory site"
   },
   "devDependencies": {
     "jsdom": "^30.0.1",

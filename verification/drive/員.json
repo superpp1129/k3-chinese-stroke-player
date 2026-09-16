@@ -1,0 +1,10 @@
+{
+  "char": "員",
+  "id": "1S485cLYX1Nt2sUhADeVNnFEzp6AeQVDP",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1S485cLYX1Nt2sUhADeVNnFEzp6AeQVDP/view",
+  "bytes": 251611,
+  "sha256": "6608c36ba9fdfaf4db22c17b3296a7f08c4cb432fb8d21c9ab36acc5464f25d0",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

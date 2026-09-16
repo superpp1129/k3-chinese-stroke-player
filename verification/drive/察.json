@@ -1,0 +1,10 @@
+{
+  "char": "察",
+  "id": "16-X0tJzh8ZYdqLL6_e5VhfkFcMkUY7oW",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/16-X0tJzh8ZYdqLL6_e5VhfkFcMkUY7oW/view",
+  "bytes": 385714,
+  "sha256": "fea2044bed8e773451ec612ce109f7af56b8febf83fd168648516a26ed805f0a",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

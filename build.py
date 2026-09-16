@@ -20,10 +20,10 @@ SITE = ROOT / "site"
 SIZE = 1080
 FPS = 30
 SCALE = 0.90
-DRAW_SECONDS = 1.15
-PAUSE_SECONDS = 0.28
+DRAW_SECONDS = 2.0
+PAUSE_SECONDS = 0.6
 INTRO_SECONDS = 0.70
-FINAL_SECONDS = 2.0
+FINAL_SECONDS = 3.0
 COLOURS = ["#E53935", "#1E63D5", "#111111", "#16A34A"]
 RGB_COLOURS = np.array([[229, 57, 53], [30, 99, 213], [17, 17, 17], [22, 163, 74]], dtype=np.uint8)
 BG = (255, 253, 247)
@@ -46,10 +46,34 @@ CHARACTERS = [
     {"char": "弟", "edb_id": "1238", "bucket": "1001-2000", "target": [539.8, 528.2], "strokes": 7,
      "stroke_order": ["點", "撇", "橫折", "橫", "豎折折鈎", "豎", "撇"]},
     {"char": "哥", "edb_id": "0581", "bucket": "0001-1000", "target": [552.3, 550.3], "strokes": 10,
-     "stroke_order": ["橫", "豎", "橫折", "橫", "豎鈎", "橫", "豎", "橫折", "橫", "豎鈎"]},
+     "stroke_order": ["橫", "豎", "橫折", "橫", "豎", "橫", "豎", "橫折", "橫", "豎鈎"]},
     {"char": "和", "edb_id": "0551", "bucket": "0001-1000", "target": [511.5, 550.2], "strokes": 8,
      "stroke_order": ["撇", "橫", "豎", "撇", "點", "豎", "橫折", "橫"]},
 ]
+
+# New characters use the official EDB filled outlines AND reveal keyframes.
+# Generic data is audited as a comparison only; it is not a production input.
+ADDED_ORDERS = {
+    '祖': '點 橫撇 豎 點 豎 橫折 橫 橫 橫',
+    '父': '撇 點 撇 捺',
+    '母': '豎折 橫折鈎 點 點 橫',
+    '老': '橫 豎 橫 撇 撇 豎彎',
+    '師': '撇 豎 橫折 橫 橫折 橫 橫 豎 橫折鈎 豎',
+    '消': '點 點 提 豎 點 撇 豎 橫折鈎 橫 橫',
+    '防': '橫撇 彎鈎 豎 點 橫 橫折鈎 撇',
+    '員': '豎 橫折 橫 豎 橫折 橫 橫 橫 撇 點',
+    '警': '橫 豎 橫 撇 撇 橫折鈎 豎 橫折 橫 撇 橫 撇 捺 點 橫 橫 橫 豎 橫折 橫',
+    '察': '點 點 橫鈎 撇 橫撇 點 點 橫撇 捺 橫 橫 豎鈎 撇 點',
+    '醫': '橫 撇 橫 橫 撇 點 豎折 撇 橫折彎 橫撇 捺 橫 豎 橫折 撇 豎彎 橫 橫',
+    '生': '撇 橫 橫 豎 橫',
+}
+for _char, _order in ADDED_ORDERS.items():
+    _source = json.loads((ROOT / 'sources' / f'{_char}.json').read_text())
+    _source['stroke_order'] = _order.split()
+    _source['geometry'] = 'official-edb'
+    _source['mapping_1_based'] = list(range(1, _source['strokes'] + 1))
+    assert len(_source['stroke_order']) == _source['strokes']
+    CHARACTERS.append(_source)
 
 
 def colour_for(index: int) -> str:
@@ -66,6 +90,9 @@ def optical_translation(bounds: tuple[float, float, float, float], target: tuple
 
 
 def data_path(char: str) -> Path:
+    frozen = ROOT / 'sources' / 'geometry' / f'{ord(char):x}.json'
+    if frozen.exists():
+        return frozen
     CACHE.mkdir(exist_ok=True)
     path = CACHE / f"{ord(char):x}.json"
     if not path.exists():
@@ -104,16 +131,17 @@ def raster_stroke(path_data: str, filename: Path, tx: float, ty: float) -> np.nd
     return np.asarray(Image.open(png_path).convert("RGBA"))[:, :, 3] > 10
 
 
-def render_character(item: dict, destination: Path) -> Path:
+def prepare_geometry(item: dict, work: Path):
+    if item.get('geometry') == 'official-edb':
+        from official_geometry import prepare
+        return prepare(item)
     char = item["char"]
     data = json.loads(data_path(char).read_text())
     paths, medians = data["strokes"], data["medians"]
     if len(paths) != item["strokes"]:
         raise ValueError(f"{char}: expected {item['strokes']} strokes, got {len(paths)}")
 
-    work = CACHE / f"render-{ord(char):x}"
-    shutil.rmtree(work, ignore_errors=True)
-    work.mkdir(parents=True)
+    work.mkdir(parents=True, exist_ok=True)
     initial_tx = (SIZE - 1024 * SCALE) / 2
     initial_ty = (SIZE - 1024 * SCALE) / 2
     trial = [raster_stroke(path, work / f"trial-{i}", initial_tx, initial_ty) for i, path in enumerate(paths)]
@@ -134,7 +162,16 @@ def render_character(item: dict, destination: Path) -> Path:
         progress_map[ys, xs] = progress[nearest]
         masks.append(mask)
         progress_maps.append(progress_map)
+    return masks, progress_maps
 
+
+def render_character(item: dict, destination: Path) -> Path:
+    """Stream RGB frames to ffmpeg; retain dense QA samples, not redundant PNGs."""
+    work = CACHE / f"slow-{ord(item['char']):x}"
+    work.mkdir(parents=True, exist_ok=True)
+    masks, progress_maps = prepare_geometry(item, work)
+    if len(masks) != item['strokes']:
+        raise ValueError('Official stroke-count mismatch')
     base = Image.new("RGB", (SIZE, SIZE), BG)
     draw = ImageDraw.Draw(base)
     draw.line((0, 0, SIZE, SIZE), fill=GRID, width=4)
@@ -146,11 +183,19 @@ def render_character(item: dict, destination: Path) -> Path:
     for mask in masks:
         base_array[mask] = GHOST
 
-    frames = work / "frames"
-    frames.mkdir()
+    evidence_dir = ROOT / 'verification' / item['char']
+    evidence_dir.mkdir(parents=True, exist_ok=True)
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    temporary = destination.with_suffix('.rendering.mp4')
+    command = ['ffmpeg','-loglevel','error','-y','-f','rawvideo','-pix_fmt','rgb24',
+               '-s',f'{SIZE}x{SIZE}','-r',str(FPS),'-i','-', '-an',
+               '-c:v','libx264','-threads','4','-preset','fast','-crf','18',
+               '-pix_fmt','yuv420p','-movflags','+faststart',str(temporary)]
     frame = 0
+    samples = []
+    process = subprocess.Popen(command, stdin=subprocess.PIPE)
 
-    def save(done, active=None, fraction=0.0):
+    def save(done, active=None, fraction=0.0, sample=None):
         nonlocal frame
         array = base_array.copy()
         for stroke in range(done):
@@ -158,44 +203,41 @@ def render_character(item: dict, destination: Path) -> Path:
         if active is not None:
             reveal = masks[active] & (progress_maps[active] <= fraction)
             array[reveal] = RGB_COLOURS[active % 4]
-        Image.fromarray(array).save(frames / f"frame_{frame:05d}.png", optimize=True)
+        if sample:
+            path = evidence_dir / f'{sample}.png'
+            Image.fromarray(array).save(path)
+            samples.append({'file':path.name,'frame':frame,'time':frame/FPS})
+        process.stdin.write(array.tobytes())
         frame += 1
 
-    for _ in range(round(INTRO_SECONDS * FPS)):
-        save(0)
-    for stroke in range(len(paths)):
-        drawing_frames = round(DRAW_SECONDS * FPS)
-        for step in range(drawing_frames):
-            save(stroke, stroke, (step + 1) / drawing_frames)
-        for _ in range(round(PAUSE_SECONDS * FPS)):
-            save(stroke + 1)
-    for _ in range(round(FINAL_SECONDS * FPS)):
-        save(len(paths))
-    assert frame == frame_count(len(paths))
-
-    destination.parent.mkdir(parents=True, exist_ok=True)
-    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-framerate", str(FPS), "-i", str(frames / "frame_%05d.png"),
-                    "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(destination)], check=True)
+    try:
+        for _ in range(round(INTRO_SECONDS * FPS)):
+            save(0)
+        for stroke in range(len(masks)):
+            drawing_frames = round(DRAW_SECONDS * FPS)
+            for step in range(drawing_frames):
+                sample = f's{stroke+1:02}-f{step+1:02}' if step in [5,17,29,41,53,59] else None
+                save(stroke, stroke, (step + 1) / drawing_frames, sample)
+            for _ in range(round(PAUSE_SECONDS * FPS)):
+                save(stroke + 1)
+        for hold in range(round(FINAL_SECONDS * FPS)):
+            save(len(masks), sample='final' if hold == 0 else None)
+        assert frame == frame_count(len(masks))
+    except BaseException:
+        process.stdin.close(); process.wait()
+        temporary.unlink(missing_ok=True)
+        raise
+    process.stdin.close()
+    if process.wait() != 0:
+        raise RuntimeError('ffmpeg encoding failed')
+    temporary.replace(destination)
+    (evidence_dir/'samples.json').write_text(json.dumps(samples,indent=2))
     return destination
 
 
 def page_html() -> str:
-    cards = []
-    for item in CHARACTERS:
-        char = item["char"]
-        filename = f"videos/{char}.mp4"
-        cards.append(f'''<article class="character-card">
-<button class="character-button" data-video="{filename}" data-char="{char}" aria-label="播放「{char}」字筆順">
-<span class="character">{char}</span><span class="play-mark">▶ 播放筆順</span></button>
-<a class="download" href="{filename}" download="{char}字彩色筆順動畫.mp4">↓ 下載影片</a>
-</article>''')
-    return f'''<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>他們都愛我｜中文筆順播放器</title><link rel="stylesheet" href="styles.css"></head><body>
-<header><p class="eyebrow">K3 中文筆順播放器</p><h1>他們都愛我</h1><p class="intro">揀一個字，睇清楚每一筆。</p></header>
-<main><section class="character-grid" aria-label="生字">{''.join(cards)}</section></main>
-<dialog id="player"><div class="dialog-top"><div><span class="small">正在播放</span><strong id="current-char"></strong></div><button id="close" aria-label="關閉">×</button></div>
-<video id="video" controls playsinline preload="metadata"></video><div class="dialog-actions"><button id="replay">↻ 重新播放</button><a id="dialog-download" download>↓ 下載影片</a></div></dialog>
-<script src="app.js"></script></body></html>'''
+    from ui import page_html as make_page
+    return make_page(CHARACTERS)
 
 
 def write_site(destination: Path = SITE, render_videos: bool = True):
@@ -209,9 +251,7 @@ def write_site(destination: Path = SITE, render_videos: bool = True):
             render_character(item, destination / "videos" / f"{item['char']}.mp4")
 
 
-CSS = r''':root{--ink:#202020;--muted:#6f6b64;--paper:#fffdf7;--line:#ece8de;--accent:#e53935}*{box-sizing:border-box}body{margin:0;background:#f7f3eb;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang HK",sans-serif}header{max-width:980px;margin:auto;padding:58px 24px 28px;text-align:center}.eyebrow{margin:0 0 10px;color:#a24735;font-size:15px;font-weight:750;letter-spacing:.16em}h1{margin:0;font-size:clamp(38px,7vw,64px);letter-spacing:.08em}.intro{margin:14px 0 0;color:var(--muted);font-size:18px}main{max-width:980px;margin:auto;padding:10px 24px 64px}.character-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.character-card{overflow:hidden;border:1px solid var(--line);border-radius:22px;background:white;box-shadow:0 8px 25px rgba(73,61,43,.06)}.character-button{display:flex;width:100%;min-height:210px;border:0;background:var(--paper);cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:16px}.character-button:hover,.character-button:focus-visible{background:#fff8e9;outline:3px solid #f6cf72;outline-offset:-3px}.character{font-family:"Kaiti TC","BiauKai","DFKai-SB",serif;font-size:100px;line-height:1}.play-mark{font-size:15px;font-weight:700;color:#765f4e}.download{display:block;padding:15px;text-align:center;text-decoration:none;color:#3f6296;font-weight:750;border-top:1px solid var(--line)}.download:hover{background:#f5f8fc}dialog{width:min(92vw,720px);border:0;border-radius:24px;padding:0;box-shadow:0 30px 90px #28231c55;background:white}dialog::backdrop{background:#27221dbd}.dialog-top{display:flex;align-items:center;justify-content:space-between;padding:18px 22px}.dialog-top>div{display:flex;align-items:baseline;gap:12px}.small{color:var(--muted)}#current-char{font-size:28px}#close{border:0;background:#f1eee7;border-radius:50%;width:44px;height:44px;font-size:30px;cursor:pointer}video{display:block;width:100%;aspect-ratio:1;background:var(--paper)}.dialog-actions{display:flex;gap:12px;padding:16px 20px 20px}.dialog-actions>*{flex:1;padding:14px;border-radius:12px;border:1px solid var(--line);background:white;color:var(--ink);text-align:center;text-decoration:none;font-size:16px;font-weight:750;cursor:pointer}@media(max-width:650px){header{padding-top:34px}.character-grid{grid-template-columns:repeat(2,1fr);gap:12px}.character-button{min-height:170px}.character{font-size:80px}main{padding-inline:14px}.dialog-actions{flex-direction:column}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}'''
-
-JS = r'''const dialog=document.querySelector('#player');const video=document.querySelector('#video');const label=document.querySelector('#current-char');const download=document.querySelector('#dialog-download');document.querySelectorAll('.character-button').forEach(button=>button.addEventListener('click',()=>{const src=button.dataset.video;label.textContent=button.dataset.char;video.src=src;download.href=src;download.download=`${button.dataset.char}字彩色筆順動畫.mp4`;dialog.showModal();video.play();}));document.querySelector('#close').addEventListener('click',()=>{video.pause();dialog.close();});document.querySelector('#replay').addEventListener('click',()=>{video.currentTime=0;video.play();});dialog.addEventListener('click',event=>{if(event.target===dialog){video.pause();dialog.close();}});'''
+from ui import CSS, JS
 
 
 if __name__ == "__main__":

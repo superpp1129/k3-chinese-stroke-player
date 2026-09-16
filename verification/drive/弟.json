@@ -1,0 +1,10 @@
+{
+  "char": "弟",
+  "id": "1hCTHAn6bU-h0SD7SnquT_1yUI14KCfTa",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1hCTHAn6bU-h0SD7SnquT_1yUI14KCfTa/view",
+  "bytes": 173069,
+  "sha256": "05bce7ed69f2c961dda4c3f35d3f3229243f2678a0ab51aaaf2b860354edd270",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

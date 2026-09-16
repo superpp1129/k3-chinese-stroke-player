@@ -1,0 +1,23 @@
+{
+  "char": "警",
+  "strokes": 20,
+  "path": "site/videos/警.mp4",
+  "bytes": 506277,
+  "sha256": "5b3054a91faf40d188e4a823cce994f742c8a7d07d5d7e9824b1d5b6412a1c7d",
+  "frames": 1671,
+  "duration": 55.7,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 121,
+  "visual_review": "passed: six samples per stroke and completed glyph; verification/visual-review.json"
+}

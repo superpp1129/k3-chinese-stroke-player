@@ -1,0 +1,23 @@
+{
+  "char": "姐",
+  "strokes": 8,
+  "path": "site/videos/姐.mp4",
+  "bytes": 184460,
+  "sha256": "b5c07b676028fa0405a10370013307b26c08f3f50710fbc4d98f8c04c46e8497",
+  "frames": 735,
+  "duration": 24.5,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 49,
+  "visual_review": "passed: six samples per stroke and completed glyph; verification/visual-review.json"
+}

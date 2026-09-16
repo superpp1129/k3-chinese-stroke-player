@@ -1,0 +1,23 @@
+{
+  "char": "醫",
+  "strokes": 18,
+  "path": "site/videos/醫.mp4",
+  "bytes": 502871,
+  "sha256": "f3177aa9fe03a6ab0590b3d8aefe17309c99e7b47a8ef37fe11e23cedfa9041a",
+  "frames": 1515,
+  "duration": 50.5,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 109,
+  "visual_review": "passed: six samples per stroke and completed glyph; verification/visual-review.json"
+}

@@ -1,0 +1,197 @@
+{
+  "char": "妹",
+  "edb_id": "0889",
+  "bucket": "0001-1000",
+  "target": [
+    546.9,
+    547.4
+  ],
+  "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/0001-1000/0889.js",
+  "source_sha256": "bdbcaecfadb0d9806e8d3fadaa07a4e9c11b849a46537010d120021fcac561f7",
+  "strokes": 8,
+  "official_timeline": [
+    {
+      "start": 24,
+      "states": [
+        [
+          "shape_21"
+        ],
+        [
+          "shape_22"
+        ],
+        [
+          "shape_23"
+        ],
+        [
+          "shape_24"
+        ]
+      ],
+      "durations": [
+        24,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 48,
+      "states": [
+        [
+          "shape_18"
+        ],
+        [
+          "shape_19"
+        ],
+        [
+          "shape_20"
+        ]
+      ],
+      "durations": [
+        48,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 72,
+      "states": [
+        [
+          "shape_15"
+        ],
+        [
+          "shape_16"
+        ],
+        [
+          "shape_17"
+        ]
+      ],
+      "durations": [
+        72,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 96,
+      "states": [
+        [
+          "shape_13"
+        ],
+        [
+          "shape_14"
+        ]
+      ],
+      "durations": [
+        96,
+        3
+      ]
+    },
+    {
+      "start": 120,
+      "states": [
+        [
+          "shape_10"
+        ],
+        [
+          "shape_11"
+        ],
+        [
+          "shape_12"
+        ]
+      ],
+      "durations": [
+        120,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 144,
+      "states": [
+        [
+          "shape_6"
+        ],
+        [
+          "shape_7"
+        ],
+        [
+          "shape_8"
+        ],
+        [
+          "shape_9"
+        ]
+      ],
+      "durations": [
+        144,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 168,
+      "states": [
+        [
+          "shape_3"
+        ],
+        [
+          "shape_4"
+        ],
+        [
+          "shape_5"
+        ]
+      ],
+      "durations": [
+        168,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 192,
+      "states": [
+        [
+          "shape"
+        ],
+        [
+          "shape_1"
+        ],
+        [
+          "shape_2"
+        ]
+      ],
+      "durations": [
+        192,
+        3,
+        3
+      ]
+    }
+  ],
+  "candidate_geometry_sha256": "10b03e84339e4b9033d1bd9a4b1fba91ab872f810af3f6633c667872e606a7c3",
+  "candidate_count": 8,
+  "mapping_1_based": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "overlap_iou": [
+    0.2347,
+    0.4988,
+    0.234,
+    0.1353,
+    0.544,
+    0.1821,
+    0.1312,
+    0.361
+  ],
+  "translation": [
+    86.59999999999997,
+    -18.900000000000034
+  ],
+  "comparison": "verification/妹/comparison.jpg"
+}

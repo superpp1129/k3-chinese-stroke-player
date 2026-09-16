@@ -1,0 +1,126 @@
+{
+  "character": "父",
+  "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/2001-3000/2455.js",
+  "source_sha256": "c74aefd1e16938049a7f365362f150458b41251f820970fad039abadbac44d7d",
+  "geometry": "EDB CreateJS full filled outlines, original 1080 coordinates",
+  "mapping": "Identity: chronological EDB timeline -> rendered stroke",
+  "strokes": [
+    {
+      "stroke": 1,
+      "final_shapes": [
+        "shape_2"
+      ],
+      "source_states": [
+        [
+          "shape"
+        ],
+        [
+          "shape_1"
+        ],
+        [
+          "shape_2"
+        ]
+      ],
+      "thresholds": [
+        0.44100862741470337,
+        0.7130088210105896,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0
+      ],
+      "pixels": 20280
+    },
+    {
+      "stroke": 2,
+      "final_shapes": [
+        "shape_4"
+      ],
+      "source_states": [
+        [
+          "shape_3"
+        ],
+        [
+          "shape_4"
+        ]
+      ],
+      "thresholds": [
+        0.6977576017379761,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0
+      ],
+      "pixels": 20027
+    },
+    {
+      "stroke": 3,
+      "final_shapes": [
+        "shape_8"
+      ],
+      "source_states": [
+        [
+          "shape_5"
+        ],
+        [
+          "shape_6"
+        ],
+        [
+          "shape_7"
+        ],
+        [
+          "shape_8"
+        ]
+      ],
+      "thresholds": [
+        0.2888885736465454,
+        0.5016540288925171,
+        0.7323801517486572,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixels": 55329
+    },
+    {
+      "stroke": 4,
+      "final_shapes": [
+        "shape_12"
+      ],
+      "source_states": [
+        [
+          "shape_9"
+        ],
+        [
+          "shape_10"
+        ],
+        [
+          "shape_11"
+        ],
+        [
+          "shape_12"
+        ]
+      ],
+      "thresholds": [
+        0.21658042073249817,
+        0.4759640693664551,
+        0.7436431050300598,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixels": 61971
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "char": "有",
+  "id": "1P4kyhLPNsCsYHQA27AAmRM0uInueu8pv",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1P4kyhLPNsCsYHQA27AAmRM0uInueu8pv/view",
+  "bytes": 165914,
+  "sha256": "132a66988020389b58147e31a9be3fad9d8aec0906bd672b5dce26564d8f9574",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

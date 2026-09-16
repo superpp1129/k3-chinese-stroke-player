@@ -1,0 +1,175 @@
+{
+  "char": "有",
+  "edb_id": "1828",
+  "bucket": "1001-2000",
+  "target": [
+    550.5,
+    534.7
+  ],
+  "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/1001-2000/1828.js",
+  "source_sha256": "90c02b7b205ab2a2374154bc6e4ec7f14d7f51a0645fbee2532eff92c14c623f",
+  "strokes": 6,
+  "official_timeline": [
+    {
+      "start": 24,
+      "states": [
+        [
+          "shape"
+        ],
+        [
+          "shape_1"
+        ],
+        [
+          "shape_2"
+        ],
+        [
+          "shape_3"
+        ],
+        [
+          "shape_4"
+        ]
+      ],
+      "durations": [
+        24,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 48,
+      "states": [
+        [
+          "shape_5"
+        ],
+        [
+          "shape_6"
+        ],
+        [
+          "shape_7"
+        ],
+        [
+          "shape_8"
+        ],
+        [
+          "shape_9"
+        ]
+      ],
+      "durations": [
+        48,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 72,
+      "states": [
+        [
+          "shape_10"
+        ],
+        [
+          "shape_11"
+        ],
+        [
+          "shape_12"
+        ]
+      ],
+      "durations": [
+        72,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 96,
+      "states": [
+        [
+          "shape_13"
+        ],
+        [
+          "shape_14"
+        ],
+        [
+          "shape_15"
+        ],
+        [
+          "shape_16"
+        ],
+        [
+          "shape_17"
+        ]
+      ],
+      "durations": [
+        96,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 120,
+      "states": [
+        [
+          "shape_18"
+        ],
+        [
+          "shape_19"
+        ],
+        [
+          "shape_20"
+        ]
+      ],
+      "durations": [
+        120,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 144,
+      "states": [
+        [
+          "shape_21"
+        ],
+        [
+          "shape_22"
+        ],
+        [
+          "shape_23"
+        ]
+      ],
+      "durations": [
+        144,
+        3,
+        3
+      ]
+    }
+  ],
+  "candidate_geometry_sha256": "cee2fb732f41de30a7b0c84880d2d47af0a9fda6fda795d99c77a57f2ee4c8e4",
+  "candidate_count": 6,
+  "mapping_1_based": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "overlap_iou": [
+    0.3328,
+    0.4868,
+    0.4244,
+    0.6017,
+    0.3135,
+    0.0032
+  ],
+  "translation": [
+    113.69999999999999,
+    -26.599999999999966
+  ],
+  "comparison": "verification/有/comparison.jpg"
+}

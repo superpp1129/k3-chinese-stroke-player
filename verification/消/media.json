@@ -1,0 +1,23 @@
+{
+  "char": "消",
+  "strokes": 10,
+  "path": "site/videos/消.mp4",
+  "bytes": 236818,
+  "sha256": "34c8a955892eb2a3755f5d8b7be2c776c0d4f47ef8846179f825b11d10904449",
+  "frames": 891,
+  "duration": 29.7,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 61,
+  "visual_review": "passed: six samples per stroke and completed glyph; verification/visual-review.json"
+}
