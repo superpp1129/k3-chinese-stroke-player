@@ -1,0 +1,23 @@
+{
+  "char": "城",
+  "strokes": 9,
+  "path": "site/videos/城.mp4",
+  "bytes": 267765,
+  "sha256": "0f9b1cf03a478ea2eaa0a81f37f3e6b8896bc00916d51e76702deda9109b2dbd",
+  "frames": 813,
+  "duration": 27.1,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 55,
+  "visual_review": "passed: six samples per stroke and completed encoded glyph; verification/visual-review.json"
+}

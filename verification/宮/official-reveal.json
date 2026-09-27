@@ -1,0 +1,315 @@
+{
+  "character": "宮",
+  "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/1001-2000/1016.js",
+  "source_sha256": "738c9e32a56acee1792707a522cff3986307717a0804e0ad92ce3fb3aaa870d8",
+  "geometry": "EDB CreateJS full filled outlines, original 1080 coordinates",
+  "mapping": "Identity: chronological EDB timeline -> rendered stroke",
+  "strokes": [
+    {
+      "stroke": 1,
+      "final_shapes": [
+        "shape_25"
+      ],
+      "source_states": [
+        [
+          "shape_24"
+        ],
+        [
+          "shape_25"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        []
+      ],
+      "thresholds": [
+        0.6653497815132141,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0
+      ],
+      "pixels": 8806
+    },
+    {
+      "stroke": 2,
+      "final_shapes": [
+        "shape_23"
+      ],
+      "source_states": [
+        [
+          "shape_22"
+        ],
+        [
+          "shape_23"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        []
+      ],
+      "thresholds": [
+        0.6329498887062073,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0
+      ],
+      "pixels": 11635
+    },
+    {
+      "stroke": 3,
+      "final_shapes": [
+        "shape_21"
+      ],
+      "source_states": [
+        [
+          "shape_18"
+        ],
+        [
+          "shape_19"
+        ],
+        [
+          "shape_20"
+        ],
+        [
+          "shape_21"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "thresholds": [
+        0.29461145401000977,
+        0.5938642024993896,
+        0.8484631776809692,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixels": 33400
+    },
+    {
+      "stroke": 4,
+      "final_shapes": [
+        "shape_17"
+      ],
+      "source_states": [
+        [
+          "shape_16"
+        ],
+        [
+          "shape_17"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        []
+      ],
+      "thresholds": [
+        0.5523546934127808,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0
+      ],
+      "pixels": 7658
+    },
+    {
+      "stroke": 5,
+      "final_shapes": [
+        "shape_15"
+      ],
+      "source_states": [
+        [
+          "shape_13"
+        ],
+        [
+          "shape_14"
+        ],
+        [
+          "shape_15"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        [],
+        []
+      ],
+      "thresholds": [
+        0.3859758973121643,
+        0.8023112416267395,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0
+      ],
+      "pixels": 16875
+    },
+    {
+      "stroke": 6,
+      "final_shapes": [
+        "shape_12"
+      ],
+      "source_states": [
+        [
+          "shape_11"
+        ],
+        [
+          "shape_12"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        []
+      ],
+      "thresholds": [
+        0.5958641767501831,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0
+      ],
+      "pixels": 7494
+    },
+    {
+      "stroke": 7,
+      "final_shapes": [
+        "shape_10"
+      ],
+      "source_states": [
+        [
+          "shape_9"
+        ],
+        [
+          "shape_10"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        []
+      ],
+      "thresholds": [
+        0.507622480392456,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0
+      ],
+      "pixels": 7211
+    },
+    {
+      "stroke": 8,
+      "final_shapes": [
+        "shape_8"
+      ],
+      "source_states": [
+        [
+          "shape_7"
+        ],
+        [
+          "shape_8"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        []
+      ],
+      "thresholds": [
+        0.5620330572128296,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0
+      ],
+      "pixels": 10954
+    },
+    {
+      "stroke": 9,
+      "final_shapes": [
+        "shape_6"
+      ],
+      "source_states": [
+        [
+          "shape_3"
+        ],
+        [
+          "shape_4"
+        ],
+        [
+          "shape_5"
+        ],
+        [
+          "shape_6"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "thresholds": [
+        0.2506429851055145,
+        0.5591421723365784,
+        0.8275932669639587,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixels": 29469
+    },
+    {
+      "stroke": 10,
+      "final_shapes": [
+        "shape_2"
+      ],
+      "source_states": [
+        [
+          "shape"
+        ],
+        [
+          "shape_1"
+        ],
+        [
+          "shape_2"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        [],
+        []
+      ],
+      "thresholds": [
+        0.38727378845214844,
+        0.7290570735931396,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0
+      ],
+      "pixels": 15040
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "char": "長",
+  "strokes": 8,
+  "path": "site/videos/長.mp4",
+  "bytes": 193171,
+  "sha256": "3532fb9faddd9c5ec077c06b5d6fe47eb7072ce5932390d7cbf73440310f8c57",
+  "frames": 735,
+  "duration": 24.5,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 49,
+  "visual_review": "passed: six samples per stroke and completed encoded glyph; verification/visual-review.json"
+}

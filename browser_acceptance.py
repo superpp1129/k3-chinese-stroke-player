@@ -9,8 +9,8 @@ with sync_playwright() as p:
     page=browser.new_page(viewport={'width':1280,'height':1000});errors=[]
     page.on('pageerror',lambda e:errors.append(str(e)))
     page.goto(url);page.wait_for_load_state('networkidle')
-    assert page.locator('.character-card').count()==21
-    assert page.locator('.word-card').count()==8
+    assert page.locator('.character-card').count()==43
+    assert page.locator('.word-card').count()==27
     page.screenshot(path=str(ROOT/'verification/ui-desktop.png'),full_page=True)
     checks=[]
     buttons=page.locator('[data-video]')
@@ -34,7 +34,7 @@ with sync_playwright() as p:
     page.locator('[aria-label="播放「防」字筆順"]').click();page.wait_for_function("document.querySelector('video').readyState>=2")
     page.screenshot(path=str(ROOT/'verification/ui-player-phone.png'))
     assert not errors,errors
-    report={'url':url,'buttons_exercised':len(checks),'character_cards':21,'word_cards':8,'downloads':21,'native_playback_checks':checks,'page_errors':errors,'phone_width':390,'horizontal_overflow':False}
+    report={'url':url,'buttons_exercised':len(checks),'character_cards':43,'word_cards':27,'downloads':43,'native_playback_checks':checks,'page_errors':errors,'phone_width':390,'horizontal_overflow':False}
     (ROOT/'verification'/('ui-live.json' if 'github.io' in url else 'ui-local.json')).write_text(json.dumps(report,ensure_ascii=False,indent=2))
-    print(json.dumps({'url':url,'buttons':len(checks),'downloads':21,'errors':errors},ensure_ascii=False))
+    print(json.dumps({'url':url,'buttons':len(checks),'downloads':43,'errors':errors},ensure_ascii=False))
     browser.close()

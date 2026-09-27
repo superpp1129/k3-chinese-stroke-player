@@ -1,0 +1,10 @@
+{
+  "char": "宮",
+  "id": "19gRH4qG1SRVpDKK7WlVb-FI0Tgtdv9jo",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/19gRH4qG1SRVpDKK7WlVb-FI0Tgtdv9jo/view",
+  "bytes": 239571,
+  "sha256": "2cb2088ca33b0393a2efb153bbdc6b60eaebdf70a91bf5240a3dbf0ed1effeb5",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

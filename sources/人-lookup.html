@@ -1,0 +1,2459 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-HK" xml:lang="zh-HK">
+
+    <head>
+	
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-THZ49RG');</script>
+	<!-- End Google Tag Manager -->
+	
+	
+	
+	
+        <title>香港小學學習字詞表</title>
+        
+        <script src="Scripts/floating.js" type="text/javascript"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	/* text-align: justify; */
+	background-color:#FFFFFF;
+}
+#II{
+	float:right;
+}
+#p1{
+	font-size: 78%;
+}
+
+#topBanner {
+	background-image: url(assets/bgTop.gif);
+}
+
+div.topright{
+	display:block;
+
+	/*set the div in the top right corner*/
+	position:absolute;
+	right:0;
+	width:160px;
+}
+
+#textbox {
+	width:93%;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 35px;
+}
+#btnCollapse {
+	position:fixed;
+	width:25px;
+	height:100px;
+	z-index:500;
+	left: 0;
+	top: 110px;
+	visibility: visible;
+}
+#yellowbox {
+	background-color:#FFFFCC;
+	padding: 10px;
+	border: 1px solid #009900;
+    margin-bottom: 20px;
+}
+
+a#li2 {
+    text-decoration: none;
+}
+
+
+.topnavi{
+text-decoration: none;
+	color: #990000;
+	font-weight: bold;
+	font-size: 11pt;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.topnavien{
+	color: #990000;
+	font-size: 8pt;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+text-decoration: none;
+}
+
+.tit{
+text-decoration: none;
+	color: #990000;
+	font-weight: bold;
+	font-size: 31pt;
+	margin-left: 26px;
+	text-shadow: 2px 1px #998000;
+	font-family: Arial, Helvetica,SimHei;
+}
+
+.msie_alert {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+	background-color:#FFC04C;
+	padding: 10px 15px 10px 15px;
+	border-bottom: 1px solid #999999;
+}
+
+.handpointer{
+	cursor:pointer;
+}
+
+-->
+</style>
+
+<script src="js/jquery-3.5.0.js"></script>
+<script src="Scripts/mymouse.js"></script>
+
+
+<script type="text/javascript">
+// fix for position:fixed in IE6
+function move_box() {
+    var offset = 110; // set offset (likely equal to your css top)
+    var element = document.getElementById('btnCollapse');
+
+    element.style.top = (document.documentElement.scrollTop + offset) + 'px';
+}
+</script>
+<!--[if lt IE 7]>
+<style type="text/css">
+#btnCollapse {
+	position:absolute;
+	width:20px;
+	height:100px;
+	z-index:1;
+	left: 0;
+	top: 110px;
+	visibility: visible;
+}
+</style>
+<script type="text/javascript">
+	window.setInterval(move_box, 100);
+</script>
+<![endif]-->
+
+<link rel="stylesheet" href="css/common.css" type="text/css">
+<link rel="stylesheet" href="css/unsemantic/unsemantic-grid-responsive.css">
+
+<script type="text/javascript" src="js/jquery-3.5.0.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<style type="text/css">
+html {
+	overflow: hidden;
+}
+</style>
+
+</head>
+<script language=JavaScript>
+
+	   function doSoundyp(ydanp) {
+	var yp= ydanp.split(" ");
+	var audio = document.createElement('audio');
+audio.src = "/EmbziciwebRes/jyutping/"+yp[0]+".mp3";
+  audio.play();
+	var count=0;
+audio.addEventListener("ended", function() {
+    count ++;
+    audio.src = "/EmbziciwebRes/jyutping/"+yp[count]+".mp3";//"saat1.mp3";
+   if(count>yp.length-1) {count=0;}
+    else {audio.play(); }
+   },false);
+   }
+//-------------------------
+    function doSoundhp(ydanp) {
+	var yp= ydanp.split(" ");
+//	alert("ydanp="+ydanp);
+	var audio = document.createElement('audio');
+audio.src = "/EmbziciwebRes/pinyin/"+yp[0]+".mp3";
+  audio.play();
+	var count=0;
+audio.addEventListener("ended", function() {
+    count ++;
+    audio.src = "/EmbziciwebRes/pinyin/"+yp[count]+".mp3";//"saat1.mp3";
+   if(count>yp.length-1) {count=0;}
+    else {audio.play(); }
+   },false);
+}
+//------------------------
+
+//---------------------
+        var appendixPopup = null;
+        function MM_openBrWindow(theURL,winName,features) {
+            if (appendixPopup && !appendixPopup.closed) {
+                appendixPopup.close();
+            }
+            appendixPopup = window.open(theURL,winName,features);
+        }
+    </script>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THZ49RG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+    <script language="JavaScript">
+        (function () {  // Show warning for MS Internet Explorer
+            var trident = {
+              string: navigator.userAgent.match(/Trident\/(\d+)/)
+            };
+
+            trident.version = trident.string ? parseInt(trident.string[1], 10) : null;
+
+            if (trident.string) {
+              document.body.innerHTML = '<div class="msie_alert">Internet Explorer <span style="font-size:12pt;">或不能妥善顯示本頁內容，建議使用其他瀏覽器。</span></div>' + document.body.innerHTML;
+            }
+        })();
+    </script>
+
+
+<div class="content">
+
+  <h1>搜尋結果</h1>
+
+
+
+		<div class="content_text">
+
+
+        
+        
+        
+
+      <div class="content_left">
+   <!-- Stkdemo display -->
+        <iframe width='300px' height='370px' src='/EmbziciwebRes/stkdemo_js/0001-1000/0067.html?lang=ch' scrolling='no' style='border: 0px;'></iframe>
+      </div>
+
+      <div class="content_right">
+
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+
+<tr>
+
+
+
+
+
+</tr>
+
+<tr>
+
+
+
+
+</tr>
+
+</table>
+
+
+                <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                <tr>
+                    <td width="50%" bgcolor="#00ACA2" class="headerWhite">部首</td>
+				    <td bgcolor="#00ACA2" class="headerWhite">總筆畫數</td>
+                </tr>
+				<tr>
+                    <td>人部</td>
+                    <td>
+                        2 畫
+					</td>
+				</tr>
+				</table>
+                <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                
+                <tr>
+                    <td colspan="2" bgcolor="#00ACA2" class="headerWhite"><div align="center">字音</div></td>
+				</tr>
+                <tr>
+                  <td width="50%" bgcolor="#00ACA2" class="headerWhite">普通話</td>
+                  <td width="50%" bgcolor="#00ACA2" class="headerWhite">粵語</td>
+                </tr>
+				<tr>
+                    <td class="pinyin12"><strong>
+                        rén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span><br />
+                        <br />
+                                            </strong></td>
+				    <td>
+                        
+                            <span class="jyutping12"><strong> jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></strong></span>〔仁〕<br />
+                            <span class="jyutping12"><strong> </strong></span><br />
+                            <span class="jyutping12"><strong> </strong></span>
+                       
+                    </td>
+				</tr>
+                
+				</table>
+                
+						<table width="100%" border="0" cellspacing="1" cellpadding="1">
+							<tr>
+								<td bgcolor="#00ACA2" class="headerWhite">《常用字字形表》註</td>
+							</tr>
+							<tr>
+								<td class="eng">獨體作<font face="標楷體" size="6">人</font>，左偏旁作<font face="標楷體" size="6">亻</font>。</td>
+							</tr>
+						</table>
+				
+
+       </div>
+
+        <div class="content_bottom">
+            
+
+            
+            
+            <script language="JavaScript">
+                function updateTblCi(v) {
+                    var ie4 = (document.all);
+                    var tbl = document.getElementById("tblCi");
+                    var rx = tbl.rows;
+                    for (var i=0; i<rx.length; i++) {
+                        if (rx[i].className == "ks1" || rx[i].className == "eng1") {
+                            rx[i].style.display = (v == "ks1" || v == "ks12") ? (ie4) ? "block" : "table-row" : "none";
+                        } else if (rx[i].className == "ks2" || rx[i].className == "eng2") {
+                            rx[i].style.display = (v == "ks2" || v == "ks12") ? (ie4) ? "block" : "table-row" : "none";
+                        }
+                    }
+                }
+            </script>
+            <table id="tblCi" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="4" valign="top" bgcolor="#00ACA2" class="headerWhite">小學學習字詞表</td>
+                </tr>
+                <tr>
+                  <td colspan="4" valign="top" bgcolor="#a1e5fe" style="padding:5px 15px;font-weight:bold; line-height: 40px;">
+                        <strong>詞語顯示：</strong><br>
+                        <label><input type="radio" name="showKS" value="ks1" onClick="updateTblCi(this.value)">
+                        第一學習階段<span class="checkmark"></span></label>
+                        <label><input type="radio" name="showKS" value="ks2" onClick="updateTblCi(this.value)">
+                        第二學習階段<span class="checkmark"></span></label>
+                        <label><input type="radio" name="showKS" value="ks12" onClick="updateTblCi(this.value)" checked>
+                      第一及第二學習階段<span class="checkmark"></span></label>
+                      </td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人口</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénkǒu<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 kou3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 hau2<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 hau2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人士</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénshì<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 shi4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 si6<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 si6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人工</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  réngōng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 gong1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 gung1<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 gung1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom" ><img src="assets/l_top.gif"></td>
+                    <td nowrap class="ci" >人才</td>
+                    <td style="width: 70%; "><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  réncɑ́i<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 cai2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 coi4<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 coi4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td >2</td>
+                </tr>
+                
+                <tr class="ks2">
+                    <td width="13" align="left" valign="top"  style="border-bottom:#007099 2px solid"><img src="assets/l_bottom.gif"></td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">人材</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  réncɑ́i<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 cai2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 coi4<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 coi4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人心</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénxīn<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 xin1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 sam1<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 sam1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人手</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénshǒu<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 shou3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 sau2<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 sau2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人民</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénmín<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 min2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 man4<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 man4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人民幣</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénmínbì<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 min2 bi4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 man4 bai6<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 man4 bai6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人生</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénshēng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 sheng1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 sang1<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 sang1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人生觀</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénshēngguɑ̄n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 sheng1 guan1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 sang1 gun1<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 sang1 gun1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人次</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  réncì<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 ci4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 ci3<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 ci3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom" ><img src="assets/l_top.gif"></td>
+                    <td nowrap class="ci" >人行道</td>
+                    <td style="width: 70%; "><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénxíngdɑ̀o<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 xing2 dao4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 hang4 dou6<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 hang4 dou6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td >1</td>
+                </tr>
+                
+                <tr class="ks1">
+                    <td width="13" align="left" valign="top"  style="border-bottom:#007099 2px solid"><img src="assets/l_bottom.gif"></td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">行人道</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  xíngréndɑ̀o<span class='handpointer'><img id='v16hp' onclick="doSoundhp('xing2 ren2 dao4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> hang4 jan4 dou6<span class='handpointer'><img id='v16' onclick="doSoundyp('hang4 jan4 dou6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人均</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénjūn<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 jun1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 gwan1<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 gwan1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人身</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénshēn<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 shen1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 san1<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 san1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人事</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénshì<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 shi4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 si6<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 si6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人性</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénxìng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 xing4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 sing3<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 sing3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人物</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénwù<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 wu4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 mat6<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 mat6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人流</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénliú<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 liu2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 lau4<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 lau4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人為</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénwéi<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 wei2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 wai4<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 wai4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人們</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénmen<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 men5-C')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 mun4<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 mun4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人員</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rényuɑ́n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 yuan2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 jyun4<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 jyun4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom" >&nbsp;</td>
+                    <td nowrap class="ci" >人家</td>
+                    <td style="width: 70%; "><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  ①rénjiɑ　②rénjiɑ̄<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 jia5-C ren2 jia1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ①jan4 gaa1 ②jan4 gaa1<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 gaa1 jan4 gaa1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td >1</td>
+                </tr>
+                
+                
+                
+                
+                <tr class="ks1">
+                    <td width="13" align="left" valign="top" style="border-bottom:#007099 2px solid">&nbsp; &nbsp;</td>
+                    <td class="ci" style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="context" style="border-bottom:#007099 2px solid">①把書還給人家 ②數戶人家</td>
+                    <td style="border-bottom:#007099 2px solid">&nbsp;</td>
+                </tr>
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人格</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  réngé<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 ge2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 gaak3<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 gaak3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人參</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénshēn<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 shen1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 sam1<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 sam1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人情</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénqíng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 qing2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 cing4<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 cing4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人情味</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénqíngwèi<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 qing2 wei4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 cing4 mei6<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 cing4 mei6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人蛇</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénshé<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 she2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 se4<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 se4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人造</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénzɑ̀o<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 zao4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 zou6<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 zou6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人間</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénjiɑ̄n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 jian1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 gaan1<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 gaan1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人道</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  réndɑ̀o<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 dao4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 dou6<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 dou6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人像</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénxiɑ̀ng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 xiang4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 zoeng6<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 zoeng6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人滿之患</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rén mɑ̌n zhī huɑ̀n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 man3-B zhi1 huan4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 mun5 zi1 waan6<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 mun5 zi1 waan6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人數</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénshù<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 shu4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 sou3<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 sou3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人質</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénzhì<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 zhi4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 zi3<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 zi3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人選</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénxuɑ̌n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 xuan3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 syun2<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 syun2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人頭</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  réntóu<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 tou2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 tau4<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 tau4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人類</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénlèi<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 lei4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 leoi6<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 leoi6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人權</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénquɑ́n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 quan2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 kyun4<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 kyun4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人體</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  réntǐ<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 ti3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 tai2<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 tai2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">人羣</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  rénqún<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 qun2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 kwan4<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 kwan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一鳴驚人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yì míng jīng rén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 ming2 jing1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 ming4 ging1 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 ming4 ging1 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom" >&nbsp;</td>
+                    <td nowrap class="ci" >大人</td>
+                    <td style="width: 70%; "><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  ①dɑ̀ren　②dɑ̀rén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('da4 ren5-A da4 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ①daai6 jan4 ②daai6 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('daai6 jan4 daai6 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td >1</td>
+                </tr>
+                
+                
+                
+                
+                <tr class="ks1">
+                    <td width="13" align="left" valign="top" style="border-bottom:#007099 2px solid">&nbsp; &nbsp;</td>
+                    <td class="ci" style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="context" style="border-bottom:#007099 2px solid">①大人小孩 ②父親大人</td>
+                    <td style="border-bottom:#007099 2px solid">&nbsp;</td>
+                </tr>
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom" >&nbsp;</td>
+                    <td nowrap class="ci" >女人</td>
+                    <td style="width: 70%; "><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  ①nǚren　②nǚrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('nv3-B ren5-D nv3-B ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ①neoi5 jan4 ②neoi5 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('neoi5 jan4 neoi5 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td >1</td>
+                </tr>
+                
+                
+                
+                
+                <tr class="ks1">
+                    <td width="13" align="left" valign="top" style="border-bottom:#007099 2px solid">&nbsp; &nbsp;</td>
+                    <td class="ci" style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="context" style="border-bottom:#007099 2px solid">①這是他的女人 (妻子) ②穿旗袍的女人</td>
+                    <td style="border-bottom:#007099 2px solid">&nbsp;</td>
+                </tr>
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">工人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  gōngrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('gong1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gung1 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('gung1 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">夫人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  fūren<span class='handpointer'><img id='v16hp' onclick="doSoundhp('fu1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> fu1 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('fu1 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">引人入勝</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yǐn rén rù shèng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yin3-B ren2 ru4 sheng4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan5 jan4 jap6 sing3<span class='handpointer'><img id='v16' onclick="doSoundyp('jan5 jan4 jap6 sing3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">文人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  wénrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('wen2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> man4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('man4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">主人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  zhǔ•rén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('zhu3-B ren2 zhu3-B ren5-D')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> zyu2 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('zyu2 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">主人翁</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  zhǔrénwēng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('zhu3-B ren2 weng1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> zyu2 jan4 jung1<span class='handpointer'><img id='v16' onclick="doSoundyp('zyu2 jan4 jung1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">他人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  tɑ̄rén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ta1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> taa1 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('taa1 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom" ><img src="assets/l_top.gif"></td>
+                    <td nowrap class="ci" >出人意料</td>
+                    <td style="width: 70%; "><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  chū rén yìliɑ̀o<span class='handpointer'><img id='v16hp' onclick="doSoundhp('chu1 ren2 yi4 liao4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ceot1 jan4 ji3 liu6<span class='handpointer'><img id='v16' onclick="doSoundyp('ceot1 jan4 ji3 liu6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td >1</td>
+                </tr>
+                
+                <tr class="ks1">
+                    <td width="13" align="left" valign="top"  style="border-bottom:#007099 2px solid"><img src="assets/l_bottom.gif"></td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">出人意表</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  chū rén yìbiɑ̌o<span class='handpointer'><img id='v16hp' onclick="doSoundhp('chu1 ren2 yi4 biao3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ceot1 jan4 ji3 biu2<span class='handpointer'><img id='v16' onclick="doSoundyp('ceot1 jan4 ji3 biu2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">古人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  gǔrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('gu3-B ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gu2 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('gu2 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">外人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  wɑ̀irén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('wai4 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ngoi6 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('ngoi6 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">外星人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  wɑ̀ixīngrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('wai4 xing1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ngoi6 sing1 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('ngoi6 sing1 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">巨人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  jùrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ju4 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> geoi6 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('geoi6 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">本人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  běnrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ben3-B ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> bun2 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('bun2 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">犯人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  fɑ̀n•rén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('fan4 ren2 fan4 ren5-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> faan6 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('faan6 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">名人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  míngrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ming2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ming4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('ming4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">成人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  chéngrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('cheng2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> sing4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('sing4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">扣人心弦</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  kòu rén xīn xiɑ́n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('kou4 ren2 xin1 xian2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> kau3 jan4 sam1 jin4<span class='handpointer'><img id='v16' onclick="doSoundyp('kau3 jan4 sam1 jin4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">老人家</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  lɑ̌o•rénjiɑ̄<span class='handpointer'><img id='v16hp' onclick="doSoundhp('lao3-B ren2 jia1 lao3-B ren5-D jia5-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> lou5 jan4 gaa1<span class='handpointer'><img id='v16' onclick="doSoundyp('lou5 jan4 gaa1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">行人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  xíngrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('xing2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> hang4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('hang4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom" >&nbsp;</td>
+                    <td nowrap class="ci" >別人</td>
+                    <td style="width: 70%; "><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  ①biérén　②biéren<span class='handpointer'><img id='v16hp' onclick="doSoundhp('bie2 ren2 bie2 ren5-C')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ①bit6 jan4 ②bit6 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('bit6 jan4 bit6 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td >1</td>
+                </tr>
+                
+                
+                
+                
+                <tr class="ks1">
+                    <td width="13" align="left" valign="top" style="border-bottom:#007099 2px solid">&nbsp; &nbsp;</td>
+                    <td class="ci" style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="context" style="border-bottom:#007099 2px solid">①家裏只有我，沒有別人 ②他很固執，不願接受別人的批評</td>
+                    <td style="border-bottom:#007099 2px solid">&nbsp;</td>
+                </tr>
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom" >&nbsp;</td>
+                    <td nowrap class="ci" >男人</td>
+                    <td style="width: 70%; "><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  ①nɑ́nren　②nɑ́nrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('nan2 ren5-C nan2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ①naam4 jan4 ②naam4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('naam4 jan4 naam4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td >1</td>
+                </tr>
+                
+                
+                
+                
+                <tr class="ks1">
+                    <td width="13" align="left" valign="top" style="border-bottom:#007099 2px solid">&nbsp; &nbsp;</td>
+                    <td class="ci" style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="context" style="border-bottom:#007099 2px solid">①這是她的男人 (丈夫) ②穿西裝的男人</td>
+                    <td style="border-bottom:#007099 2px solid">&nbsp;</td>
+                </tr>
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">私人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  sīrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('si1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> si1 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('si1 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">前人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  qiɑ́nrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('qian2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> cin4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('cin4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">客人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  kè•rén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ke4 ren2 ke4 ren5-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> haak3 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('haak3 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">後人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  hòurén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('hou4 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> hau6 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('hau6 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">為人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  wéirén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('wei2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> wai4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('wai4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">耐人尋味</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  nɑ̀i rén xún wèi<span class='handpointer'><img id='v16hp' onclick="doSoundhp('nai4 ren2 xun2 wei4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> noi6 jan4 cam4 mei6<span class='handpointer'><img id='v16' onclick="doSoundyp('noi6 jan4 cam4 mei6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">軍人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  jūnrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('jun1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwan1 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('gwan1 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">個人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  gèrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ge4 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> go3 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('go3 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">候選人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  hòuxuɑ̌nrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('hou4 xuan3-B ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> hau6 syun2 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('hau6 syun2 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">家人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  jiɑ̄rén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('jia1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gaa1 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('gaa1 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">恩人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  ēnrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('en1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan1 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('jan1 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">旁人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  pɑ́ngrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('pang2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> pong4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('pong4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">病人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  bìngrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('bing4 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> beng6 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('beng6 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">迷人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  mírén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('mi2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> mai4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('mai4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">做人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  zuòrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('zuo4 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> zou6 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('zou6 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">偉人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  wěirén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('wei3-B ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> wai5 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('wai5 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">動人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  dòngrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('dong4 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> dung6 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('dung6 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">商人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  shɑ̄ngrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('shang1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> soeng1 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('soeng1 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guórén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">婦人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  fùrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('fu4 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> fu5 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('fu5 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">專人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  zhuɑ̄nrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('zhuan1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> zyun1 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('zyun1 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">情人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  qíngrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('qing2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> cing4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('cing4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">眾人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  zhòngrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('zhong4 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> zung3 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('zung3 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">途人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  túrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('tu2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> tou4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('tou4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">華人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  Huɑ́rén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('hua2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> waa4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('waa4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">超人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  chɑ̄orén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('chao1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ciu1 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('ciu1 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">傭人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yōngrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yong1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jung4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('jung4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">感人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  gɑ̌nrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('gan3-B ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gam2 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('gam2 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">愛人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  ɑ̀iren<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ai4 ren5-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> oi3 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('oi3 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">路人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  lùrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('lu4 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> lou6 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('lou6 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">遊人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yóurén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('you2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jau4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('jau4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">僕人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  púrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('pu2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> buk6 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('buk6 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">敵人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  dírén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('di2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> dik6 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('dik6 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">親人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  qīnrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('qin1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> can1 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('can1 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">鮮為人知</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  xiɑ̌n wéi rén zhī<span class='handpointer'><img id='v16hp' onclick="doSoundhp('xian3-B wei2 ren2 zhi1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> sin2 wai4 jan4 zi1<span class='handpointer'><img id='v16' onclick="doSoundyp('sin2 wai4 jan4 zi1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">獵人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  lièrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('lie4 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> lip6 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('lip6 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">藝人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ngai6 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('ngai6 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">驕人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  jiɑ̄orén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('jiao1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> giu1 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('giu1 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">驚人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  jīngrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('jing1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ging1 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('ging1 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                
+                
+            </table>
+            
+
+	    <!-- <p align="right"><span class="smallchn">[ <a href="../lexlist_zixing/searchpane.jsp"
+ target="leftFrame" title="leftFrame"
+ onClick="top.mainFrame.location='../lexlist_zixing/resultzixing.jsp?id=0067&sortBy=stroke&jpC=lshk';">▲按此往《常用字形表》&nbsp;
+		<span xml:lang="en" lang="en">
+
+		</span>人
+	    </a> ]</span></p> -->
+
+
+
+
+
+            
+            
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+					<td bgcolor="#CAC9E4" valign="top" colspan="3" class="headerBlack"><a name="fb01" id="fb01"></a>小學學習字詞表　附表一　四字詞語</td>
+					<td nowrap="nowrap" bgcolor="#cac9e4" class="headerBlack"><div align="right"><a href="#fb01"><img src="assets/btnFubiaoExplain.gif" alt="說明" width="75" height="34" border="0" onClick="MM_openBrWindow('fubiao1_shuoming.htm','popup','scrollbars=yes,width=400,height=300')" /></a></div></td>
+					</tr>
+				</table>
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">人仰馬翻
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">人多勢眾
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">人定勝天
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">人山人海
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">人心惶惶
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">人才濟濟
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">人浮於事
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">不省人事
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">不近人情
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">天災人禍
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">引人注目
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">以貌取人
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">出人頭地
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">平易近人
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">目中無人
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">先聲奪人
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">曲終人散
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">自欺欺人
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">判若兩人
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">事在人為
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">咄咄逼人
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">夜闌人靜
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">前無古人
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">待人接物
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">後繼無人
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">怨天尤人
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">差強人意
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">息事寧人
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">旁若無人
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">動人心弦
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">推己及人
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">掩人耳目
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">善解人意
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">悲天憫人
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">無人問津
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">發人深省
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">萬人空巷
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">達官貴人
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">駭人聽聞
+				
+				</td>
+				
+				
+				</tr>
+				</table>
+				<BR>
+				
+			
+            
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td bgcolor="#CAC9E4" valign="top" colspan="1" class="headerBlack"><a name="fb02" id="fb02"></a>小學學習字詞表　附表二　多字熟語</td>
+                    <td nowrap="nowrap" bgcolor="#cac9e4" class="headerBlack"><div align="right"><a href="#fb02"><img src="assets/btnFubiaoExplain.gif" alt="說明" width="75" height="34" border="0" onClick="MM_openBrWindow('fubiao2_shuoming.htm','popup','scrollbars=yes,width=400,height=330')" /></a></div></td>
+                </tr>
+            </table>
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">一言驚醒夢中人</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">人無遠慮，必有近憂</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">人生七十古來稀</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">人算不如天算</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">人而無信，不知其可</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">十年樹木，百年樹人</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">三人行，必有我師焉</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">己所不欲，勿施於人</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">世上無難事，只怕有心人</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">吃得苦中苦，方為人上人</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">各有前因莫羨人</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">同是天涯淪落人</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">老吾老，以及人之老</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">助人為快樂之本</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">拒人千里之外</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">前無古人，後無來者</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">皇天不負有心人</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">得饒人處且饒人</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">眾人皆醉我獨醒</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">解鈴還須繫鈴人</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">路遙知馬力，日久見人心</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">慷他人之慨</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">賠了夫人又折兵</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">藝高人膽大</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">鷸蚌相爭，漁人得利</td>
+                </tr>
+                
+            </table>
+            <BR>
+            
+            
+            
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td bgcolor="#CAC9E4" valign="top" colspan="4" class="headerBlack"><a name="fb03" id="fb03"></a>小學學習字詞表　附表三　文言詞語</td>
+                    <td nowrap="nowrap" bgcolor="#cac9e4" class="headerBlack"><div align="right"><a href="#fb03"><img src="assets/btnFubiaoExplain.gif" alt="說明" width="75" height="34" border="0" onClick="MM_openBrWindow('fubiao3_shuoming.htm','popup','scrollbars=yes,width=400,height=290')" /></a></div></td>
+                </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                
+                
+                <tr>
+                    <td width="13" nowrap align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">士人</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> shìrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('shi4 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> si6 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('si6 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" nowrap align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">吾人</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> wúrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('wu2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ng4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('ng4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" nowrap align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">門人</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> ménrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('men2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> mun4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('mun4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" nowrap align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">故人</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> gùrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('gu4 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gu3 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('gu3 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" nowrap align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">寡人</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> guɑ̌rén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('gua3-B ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwaa2 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('gwaa2 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+            </table>
+            <BR>
+            
+            
+            
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td bgcolor="#CAC9E4" valign="top" colspan="4" class="headerBlack"><a name="fb04" id="fb04"></a>小學學習字詞表　附表四　專名術語</td>
+                    <td nowrap="nowrap" bgcolor="#cac9e4" class="headerBlack"><div align="right"><a href="#fb04"><img src="assets/btnFubiaoExplain.gif" alt="說明" width="75" height="34" border="0" onClick="MM_openBrWindow('fubiao4_shuoming.htm','popup','scrollbars=yes,width=400,height=370')" /></a></div></td>
+                </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                
+                
+                <tr>
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">人民大會堂</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> Rénmín Dɑ̀huìtɑ́ng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ren2 min2 da4 hui4 tang2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jan4 man4 daai6 wui6 tong4<span class='handpointer'><img id='v16' onclick="doSoundyp('jan4 man4 daai6 wui6 tong4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">中華人民共和國</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> Zhōnghuɑ́ Rénmín Gònghéguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('zhong1 hua2 ren2 min2 gong4 he2 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> zung1 waa4 jan4 man4 gung6 wo4 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('zung1 waa4 jan4 man4 gung6 wo4 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">猿人</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> yuɑ́nrén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yuan2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jyun4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('jyun4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+            </table>
+            <BR>
+            
+            
+            
+            
+            
+            
+
+
+
+        
+
+        </div>
+
+
+
+</div>
+
+<div class="footer">
+
+<a href="#" class="top_btn" onclick="window.parent.parent.scrollTo(0,0)">返回頁首</a>
+
+  <p>香港特別行政區政府教育局 課程發展處中國語文教育組<br>
+© 香港教育局
+</p>
+
+  <a href="https://www.w3.org/WAI/WCAG2AA-Conformance.html" target="_blank"><img src="images/wcag2.1AA-v.png" alt="wcag2.1AA-v"></a>
+</div>
+
+</div>
+
+<style>
+.content_right .headerWhite {
+  border: 2px #fff solid;
+}
+.headerWhite {
+  background-color: #007099;
+  color: #fff;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.content_bottom .headerWhite {
+  padding: 5px 15px;
+}
+.pinyin, .pinyinGreen, .pinyinPurple, .pinyin12, .jyutping, .jyutpingGreen, .jyutpingPurple, .jyutping12 {
+    font-family: Arial, "lucida sans unicode",  "DejaVu Sans", sans-serif;
+}
+</style>
+
+    </body>
+</html>

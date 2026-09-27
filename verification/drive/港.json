@@ -1,0 +1,10 @@
+{
+  "char": "港",
+  "id": "12bHVz0y87jJ9xhFW-_z1rguHRd1PtpjU",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/12bHVz0y87jJ9xhFW-_z1rguHRd1PtpjU/view",
+  "bytes": 334425,
+  "sha256": "248a426cdd4833bf0864c989b514cf50b727835c41ad010e1cf9cba2c9f0bef4",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

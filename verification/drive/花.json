@@ -1,0 +1,10 @@
+{
+  "char": "花",
+  "id": "1SAfGy_KCHbvWjJpUO7N0kK8whLx16PP9",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1SAfGy_KCHbvWjJpUO7N0kK8whLx16PP9/view",
+  "bytes": 201849,
+  "sha256": "f7ef89c07ae0f77196a226f951cc659bd74992241726057722b9ea6dc916274d",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

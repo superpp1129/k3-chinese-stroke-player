@@ -1,0 +1,10 @@
+{
+  "char": "巢",
+  "id": "1WqhiFATXgbr8JtkI-z0ua8KMXvozbekU",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1WqhiFATXgbr8JtkI-z0ua8KMXvozbekU/view",
+  "bytes": 289644,
+  "sha256": "58b80499d6a81db8324ea509c647197d34777f88779663b3dfad5dc9e3e93f35",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

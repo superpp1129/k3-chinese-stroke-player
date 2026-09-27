@@ -1,0 +1,23 @@
+{
+  "char": "萬",
+  "strokes": 13,
+  "path": "site/videos/萬.mp4",
+  "bytes": 347531,
+  "sha256": "ef42070b70c3bc553c262e1a371aca7c0cd8a78f00490f1fbf0ecb0bed08f0e3",
+  "frames": 1125,
+  "duration": 37.5,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 79,
+  "visual_review": "passed: six samples per stroke and completed encoded glyph; verification/visual-review.json"
+}

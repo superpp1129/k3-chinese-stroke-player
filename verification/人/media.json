@@ -1,0 +1,23 @@
+{
+  "char": "人",
+  "strokes": 2,
+  "path": "site/videos/人.mp4",
+  "bytes": 83478,
+  "sha256": "d67b7016fade105a1f2dd3c5f9202d6bcd24b925c07000541e2df6bb1ee73758",
+  "frames": 267,
+  "duration": 8.9,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 13,
+  "visual_review": "passed: six samples per stroke and completed encoded glyph; verification/visual-review.json"
+}

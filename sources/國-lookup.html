@@ -1,0 +1,1062 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-HK" xml:lang="zh-HK">
+
+    <head>
+	
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-THZ49RG');</script>
+	<!-- End Google Tag Manager -->
+	
+	
+	
+	
+        <title>香港小學學習字詞表</title>
+        
+        <script src="Scripts/floating.js" type="text/javascript"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	/* text-align: justify; */
+	background-color:#FFFFFF;
+}
+#II{
+	float:right;
+}
+#p1{
+	font-size: 78%;
+}
+
+#topBanner {
+	background-image: url(assets/bgTop.gif);
+}
+
+div.topright{
+	display:block;
+
+	/*set the div in the top right corner*/
+	position:absolute;
+	right:0;
+	width:160px;
+}
+
+#textbox {
+	width:93%;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 35px;
+}
+#btnCollapse {
+	position:fixed;
+	width:25px;
+	height:100px;
+	z-index:500;
+	left: 0;
+	top: 110px;
+	visibility: visible;
+}
+#yellowbox {
+	background-color:#FFFFCC;
+	padding: 10px;
+	border: 1px solid #009900;
+    margin-bottom: 20px;
+}
+
+a#li2 {
+    text-decoration: none;
+}
+
+
+.topnavi{
+text-decoration: none;
+	color: #990000;
+	font-weight: bold;
+	font-size: 11pt;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.topnavien{
+	color: #990000;
+	font-size: 8pt;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+text-decoration: none;
+}
+
+.tit{
+text-decoration: none;
+	color: #990000;
+	font-weight: bold;
+	font-size: 31pt;
+	margin-left: 26px;
+	text-shadow: 2px 1px #998000;
+	font-family: Arial, Helvetica,SimHei;
+}
+
+.msie_alert {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+	background-color:#FFC04C;
+	padding: 10px 15px 10px 15px;
+	border-bottom: 1px solid #999999;
+}
+
+.handpointer{
+	cursor:pointer;
+}
+
+-->
+</style>
+
+<script src="js/jquery-3.5.0.js"></script>
+<script src="Scripts/mymouse.js"></script>
+
+
+<script type="text/javascript">
+// fix for position:fixed in IE6
+function move_box() {
+    var offset = 110; // set offset (likely equal to your css top)
+    var element = document.getElementById('btnCollapse');
+
+    element.style.top = (document.documentElement.scrollTop + offset) + 'px';
+}
+</script>
+<!--[if lt IE 7]>
+<style type="text/css">
+#btnCollapse {
+	position:absolute;
+	width:20px;
+	height:100px;
+	z-index:1;
+	left: 0;
+	top: 110px;
+	visibility: visible;
+}
+</style>
+<script type="text/javascript">
+	window.setInterval(move_box, 100);
+</script>
+<![endif]-->
+
+<link rel="stylesheet" href="css/common.css" type="text/css">
+<link rel="stylesheet" href="css/unsemantic/unsemantic-grid-responsive.css">
+
+<script type="text/javascript" src="js/jquery-3.5.0.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<style type="text/css">
+html {
+	overflow: hidden;
+}
+</style>
+
+</head>
+<script language=JavaScript>
+
+	   function doSoundyp(ydanp) {
+	var yp= ydanp.split(" ");
+	var audio = document.createElement('audio');
+audio.src = "/EmbziciwebRes/jyutping/"+yp[0]+".mp3";
+  audio.play();
+	var count=0;
+audio.addEventListener("ended", function() {
+    count ++;
+    audio.src = "/EmbziciwebRes/jyutping/"+yp[count]+".mp3";//"saat1.mp3";
+   if(count>yp.length-1) {count=0;}
+    else {audio.play(); }
+   },false);
+   }
+//-------------------------
+    function doSoundhp(ydanp) {
+	var yp= ydanp.split(" ");
+//	alert("ydanp="+ydanp);
+	var audio = document.createElement('audio');
+audio.src = "/EmbziciwebRes/pinyin/"+yp[0]+".mp3";
+  audio.play();
+	var count=0;
+audio.addEventListener("ended", function() {
+    count ++;
+    audio.src = "/EmbziciwebRes/pinyin/"+yp[count]+".mp3";//"saat1.mp3";
+   if(count>yp.length-1) {count=0;}
+    else {audio.play(); }
+   },false);
+}
+//------------------------
+
+//---------------------
+        var appendixPopup = null;
+        function MM_openBrWindow(theURL,winName,features) {
+            if (appendixPopup && !appendixPopup.closed) {
+                appendixPopup.close();
+            }
+            appendixPopup = window.open(theURL,winName,features);
+        }
+    </script>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THZ49RG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+    <script language="JavaScript">
+        (function () {  // Show warning for MS Internet Explorer
+            var trident = {
+              string: navigator.userAgent.match(/Trident\/(\d+)/)
+            };
+
+            trident.version = trident.string ? parseInt(trident.string[1], 10) : null;
+
+            if (trident.string) {
+              document.body.innerHTML = '<div class="msie_alert">Internet Explorer <span style="font-size:12pt;">或不能妥善顯示本頁內容，建議使用其他瀏覽器。</span></div>' + document.body.innerHTML;
+            }
+        })();
+    </script>
+
+
+<div class="content">
+
+  <h1>搜尋結果</h1>
+
+
+
+		<div class="content_text">
+
+
+        
+        
+        
+
+      <div class="content_left">
+   <!-- Stkdemo display -->
+        <iframe width='300px' height='370px' src='/EmbziciwebRes/stkdemo_js/0001-1000/0729.html?lang=ch' scrolling='no' style='border: 0px;'></iframe>
+      </div>
+
+      <div class="content_right">
+
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+
+<tr>
+
+
+
+
+<td bgcolor="#00ACA2"  class="headerWhite" width="200">簡化字</td>
+
+
+
+</tr>
+
+<tr>
+
+
+
+  <td>
+                    <!--- Simplified Chinese display --->
+		       
+                         <span style="font-family: KaiTi, 標楷體, Microsoft YaHei; font-size: 45pt;">国</span>
+		       
+  </td>
+
+
+
+</tr>
+
+</table>
+
+
+                <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                <tr>
+                    <td width="50%" bgcolor="#00ACA2" class="headerWhite">部首</td>
+				    <td bgcolor="#00ACA2" class="headerWhite">總筆畫數</td>
+                </tr>
+				<tr>
+                    <td>囗部</td>
+                    <td>
+                        11 畫
+					</td>
+				</tr>
+				</table>
+                <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                
+                <tr>
+                    <td colspan="2" bgcolor="#00ACA2" class="headerWhite"><div align="center">字音</div></td>
+				</tr>
+                <tr>
+                  <td width="50%" bgcolor="#00ACA2" class="headerWhite">普通話</td>
+                  <td width="50%" bgcolor="#00ACA2" class="headerWhite">粵語</td>
+                </tr>
+				<tr>
+                    <td class="pinyin12"><strong>
+                        guó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span><br />
+                        <br />
+                                            </strong></td>
+				    <td>
+                        
+                            <span class="jyutping12"><strong> gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></strong></span>〔郭〕<br />
+                            <span class="jyutping12"><strong> </strong></span><br />
+                            <span class="jyutping12"><strong> </strong></span>
+                       
+                    </td>
+				</tr>
+                
+				</table>
+                
+
+       </div>
+
+        <div class="content_bottom">
+            
+
+            
+            
+            <script language="JavaScript">
+                function updateTblCi(v) {
+                    var ie4 = (document.all);
+                    var tbl = document.getElementById("tblCi");
+                    var rx = tbl.rows;
+                    for (var i=0; i<rx.length; i++) {
+                        if (rx[i].className == "ks1" || rx[i].className == "eng1") {
+                            rx[i].style.display = (v == "ks1" || v == "ks12") ? (ie4) ? "block" : "table-row" : "none";
+                        } else if (rx[i].className == "ks2" || rx[i].className == "eng2") {
+                            rx[i].style.display = (v == "ks2" || v == "ks12") ? (ie4) ? "block" : "table-row" : "none";
+                        }
+                    }
+                }
+            </script>
+            <table id="tblCi" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="4" valign="top" bgcolor="#00ACA2" class="headerWhite">小學學習字詞表</td>
+                </tr>
+                <tr>
+                  <td colspan="4" valign="top" bgcolor="#a1e5fe" style="padding:5px 15px;font-weight:bold; line-height: 40px;">
+                        <strong>詞語顯示：</strong><br>
+                        <label><input type="radio" name="showKS" value="ks1" onClick="updateTblCi(this.value)">
+                        第一學習階段<span class="checkmark"></span></label>
+                        <label><input type="radio" name="showKS" value="ks2" onClick="updateTblCi(this.value)">
+                        第二學習階段<span class="checkmark"></span></label>
+                        <label><input type="radio" name="showKS" value="ks12" onClick="updateTblCi(this.value)" checked>
+                      第一及第二學習階段<span class="checkmark"></span></label>
+                      </td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guórén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國土</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guótǔ<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 tu3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 tou2<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 tou2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國內</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guónèi<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 nei4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 noi6<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 noi6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國文</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guówén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 wen2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 man4<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 man4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國王</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guówɑ́ng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 wang2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 wong4<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 wong4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國外</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guówɑ̀i<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 wai4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 ngoi6<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 ngoi6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國民</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guómín<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 min2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 man4<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 man4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國防</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guófɑ́ng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 fang2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 fong4<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 fong4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國界</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guójiè<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 jie4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 gaai3<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 gaai3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國家</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guójiɑ̄<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 jia1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 gaa1<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 gaa1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國庫</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guókù<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 ku4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 fu3<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 fu3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國產</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guóchɑ̌n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 chan3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 caan2<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 caan2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國會</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guóhuì<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 hui4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 wui6 [gwok3 wui2]<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 wui6 gwok3 wui2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國旗</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guóqí<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 qi2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 kei4<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 kei4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國歌</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guógē<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 ge1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 go1<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 go1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國語</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guóyǔ<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 yu3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 jyu5<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 jyu5')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國際</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guójì<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 ji4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 zai3<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 zai3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國慶</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guóqìng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 qing4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 hing3<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 hing3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">國籍</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  guójí<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 ji2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 zik6<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 zik6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">亡國</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  wɑ́ngguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('wang2 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> mong4 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('mong4 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">中國</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  Zhōngguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('zhong1 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> zung1 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('zung1 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">王國</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  wɑ́ngguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('wang2 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> wong4 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('wong4 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">出國</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  chūguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('chu1 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ceot1 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('ceot1 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">外國</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  wɑ̀iguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('wai4 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ngoi6 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('ngoi6 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">共和國</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  gònghéguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('gong4 he2 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gung6 wo4 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('gung6 wo4 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">法國</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  Fɑ̌guó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('fa3-B guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> faat3 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('faat3 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">南國</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  nɑ́nguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('nan2 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> naam4 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('naam4 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">帝國</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  dìguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('di4 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> dai3 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('dai3 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">建國</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  jiɑ̀nguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('jian4 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gin3 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('gin3 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">美國</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  Měiguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('mei3-B guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> mei5 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('mei5 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">英國</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  Yīngguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ying1 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jing1 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('jing1 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">祖國</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  zǔguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('zu3-B guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> zou2 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('zou2 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">愛國</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  ɑ̀iguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('ai4 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> oi3 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('oi3 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                
+                
+            </table>
+            
+
+	    <!-- <p align="right"><span class="smallchn">[ <a href="../lexlist_zixing/searchpane.jsp"
+ target="leftFrame" title="leftFrame"
+ onClick="top.mainFrame.location='../lexlist_zixing/resultzixing.jsp?id=0729&sortBy=stroke&jpC=lshk';">▲按此往《常用字形表》&nbsp;
+		<span xml:lang="en" lang="en">
+
+		</span>國
+	    </a> ]</span></p> -->
+
+
+
+
+
+            
+            
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+					<td bgcolor="#CAC9E4" valign="top" colspan="3" class="headerBlack"><a name="fb01" id="fb01"></a>小學學習字詞表　附表一　四字詞語</td>
+					<td nowrap="nowrap" bgcolor="#cac9e4" class="headerBlack"><div align="right"><a href="#fb01"><img src="assets/btnFubiaoExplain.gif" alt="說明" width="75" height="34" border="0" onClick="MM_openBrWindow('fubiao1_shuoming.htm','popup','scrollbars=yes,width=400,height=300')" /></a></div></td>
+					</tr>
+				</table>
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">國泰民安
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">喪權辱國
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">盡忠報國
+				
+				</td>
+				
+				
+				</tr>
+				</table>
+				<BR>
+				
+			
+            
+            
+            
+            
+            
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td bgcolor="#CAC9E4" valign="top" colspan="4" class="headerBlack"><a name="fb04" id="fb04"></a>小學學習字詞表　附表四　專名術語</td>
+                    <td nowrap="nowrap" bgcolor="#cac9e4" class="headerBlack"><div align="right"><a href="#fb04"><img src="assets/btnFubiaoExplain.gif" alt="說明" width="75" height="34" border="0" onClick="MM_openBrWindow('fubiao4_shuoming.htm','popup','scrollbars=yes,width=400,height=370')" /></a></div></td>
+                </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                
+                
+                <tr>
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">三國</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> Sɑ̄n Guó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('san1 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> saam1 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('saam1 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">三國演義</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> Sɑ̄n Guó Yɑ̌nyì<span class='handpointer'><img id='v16hp' onclick="doSoundhp('san1 guo2 yan3-B yi4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> saam1 gwok3 jin2 ji6<span class='handpointer'><img id='v16' onclick="doSoundyp('saam1 gwok3 jin2 ji6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">中華人民共和國</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> Zhōnghuɑ́ Rénmín Gònghéguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('zhong1 hua2 ren2 min2 gong4 he2 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> zung1 waa4 jan4 man4 gung6 wo4 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('zung1 waa4 jan4 man4 gung6 wo4 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">中華民國</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> Zhōnghuɑ́ Mínguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('zhong1 hua2 min2 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> zung1 waa4 man4 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('zung1 waa4 man4 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">五代十國</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> Wǔ Dɑ̀i Shí Guó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('wu3-B dai4 shi2 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ng5 doi6 sap6 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('ng5 doi6 sap6 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" align="left" valign="bottom" ><img src="assets/l_top.gif"></td>
+                    <td class="ci" >阿聯酋</td>
+                    <td ><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> Āliɑ́nqiú<span class='handpointer'><img id='v16hp' onclick="doSoundhp('a1 lian2 qiu2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> aa3 lyun4 jau4<span class='handpointer'><img id='v16' onclick="doSoundyp('aa3 lyun4 jau4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                <tr>
+                    <td width="13" align="left" valign="top" style="border-bottom:#007099 2px solid"><img src="assets/l_bottom.gif"></td>
+                    <td class="ci" style="border-bottom:#007099 2px solid">阿拉伯聯合酋長國</td>
+                    <td style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> Ālɑ̄bó Liɑ́nhé Qiúzhɑ̌ngguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('a1 la1 bo2 lian2 he2 qiu2 zhang3-B guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> aa3 laai1 baak3 lyun4 hap6 jau4 zoeng2 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('aa3 laai1 baak3 lyun4 hap6 jau4 zoeng2 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td>&nbsp;</td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">泰國</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> Tɑ̀iguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('tai4 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> taai3 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('taai3 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">國務院</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> Guówùyuɑ̀n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 wu4 yuan4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 mou6 jyun2<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 mou6 jyun2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">國民黨</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> Guómíndɑ̌ng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 min2 dang3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 man4 dong2<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 man4 dong2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">國父紀念館</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> Guófù Jìniɑ̀nguɑ̌n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('guo2 fu4 ji4 nian4 guan3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> gwok3 fu6 gei2 nim6 gun2<span class='handpointer'><img id='v16' onclick="doSoundyp('gwok3 fu6 gei2 nim6 gun2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">德國</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> Déguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('de2 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> dak1 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('dak1 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">聯合國</td>
+                    <td  style="border-bottom:#007099 2px solid"><div class="pinyinPurple"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音"> Liɑ́nhéguó<span class='handpointer'><img id='v16hp' onclick="doSoundhp('lian2 he2 guo2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingPurple"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> lyun4 hap6 gwok3<span class='handpointer'><img id='v16' onclick="doSoundyp('lyun4 hap6 gwok3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                </tr>
+                
+                
+            </table>
+            <BR>
+            
+            
+            
+            
+            
+            
+
+
+
+        
+
+        </div>
+
+
+
+</div>
+
+<div class="footer">
+
+<a href="#" class="top_btn" onclick="window.parent.parent.scrollTo(0,0)">返回頁首</a>
+
+  <p>香港特別行政區政府教育局 課程發展處中國語文教育組<br>
+© 香港教育局
+</p>
+
+  <a href="https://www.w3.org/WAI/WCAG2AA-Conformance.html" target="_blank"><img src="images/wcag2.1AA-v.png" alt="wcag2.1AA-v"></a>
+</div>
+
+</div>
+
+<style>
+.content_right .headerWhite {
+  border: 2px #fff solid;
+}
+.headerWhite {
+  background-color: #007099;
+  color: #fff;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.content_bottom .headerWhite {
+  padding: 5px 15px;
+}
+.pinyin, .pinyinGreen, .pinyinPurple, .pinyin12, .jyutping, .jyutpingGreen, .jyutpingPurple, .jyutping12 {
+    font-family: Arial, "lucida sans unicode",  "DejaVu Sans", sans-serif;
+}
+</style>
+
+    </body>
+</html>

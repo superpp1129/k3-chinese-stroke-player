@@ -75,6 +75,17 @@ for _char, _order in ADDED_ORDERS.items():
     assert len(_source['stroke_order']) == _source['strokes']
     CHARACTERS.append(_source)
 
+# The expansion is rendered directly from each official EDB chronological
+# reveal timeline.  Numbered labels avoid inventing stroke-type terminology:
+# the frozen states are the authoritative order and shape evidence.
+NEW_CHARACTERS = '們中國是人在香港北京長城鳥巢故宮慶節煙花萬里'
+for _char in NEW_CHARACTERS:
+    _source = json.loads((ROOT / 'sources' / f'{_char}.json').read_text())
+    _source['stroke_order'] = [f'官方第{i}筆' for i in range(1, _source['strokes'] + 1)]
+    _source['geometry'] = 'official-edb'
+    _source['mapping_1_based'] = list(range(1, _source['strokes'] + 1))
+    CHARACTERS.append(_source)
+
 
 def colour_for(index: int) -> str:
     return COLOURS[index % 4]
@@ -245,7 +256,11 @@ def write_site(destination: Path = SITE, render_videos: bool = True):
     (destination / "index.html").write_text(page_html())
     (destination / "styles.css").write_text(CSS)
     (destination / "app.js").write_text(JS)
-    (destination / "manifest.json").write_text(json.dumps({"theme": "他們都愛我", "characters": CHARACTERS}, ensure_ascii=False, indent=2))
+    (destination / "manifest.json").write_text(json.dumps({
+        "themes": ["他們都愛我", "我愛中國"],
+        "count": len(CHARACTERS),
+        "characters": CHARACTERS,
+    }, ensure_ascii=False, indent=2))
     if render_videos:
         for item in CHARACTERS:
             render_character(item, destination / "videos" / f"{item['char']}.mp4")

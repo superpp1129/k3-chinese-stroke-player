@@ -1,0 +1,23 @@
+{
+  "char": "故",
+  "strokes": 9,
+  "path": "site/videos/故.mp4",
+  "bytes": 258768,
+  "sha256": "1c7b488a391282f4dc6c7a46f2940d408dbb2a32ec8f54eb6bfa78feb1fd3dda",
+  "frames": 813,
+  "duration": 27.1,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 55,
+  "visual_review": "passed: six samples per stroke and completed encoded glyph; verification/visual-review.json"
+}

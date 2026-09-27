@@ -1,0 +1,23 @@
+{
+  "char": "中",
+  "strokes": 4,
+  "path": "site/videos/中.mp4",
+  "bytes": 103155,
+  "sha256": "f14902a8a36c15268618fc6636c5d2e0fec160fa652cdd2e01c08213ca4364f5",
+  "frames": 423,
+  "duration": 14.1,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 25,
+  "visual_review": "passed: six samples per stroke and completed encoded glyph; verification/visual-review.json"
+}

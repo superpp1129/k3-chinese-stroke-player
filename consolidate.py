@@ -1,12 +1,13 @@
-"""Assert complete21 coverage and assemble durable production manifest."""
+"""Assert complete43 coverage and assemble the durable production manifest."""
 import json,hashlib
 from pathlib import Path
 import build
+import ui
 ROOT=Path(__file__).resolve().parent
-EXPECTED=list('我有爸媽姐妹弟哥和祖父母老師消防員警察醫生')
+EXPECTED=list('我有爸媽姐妹弟哥和祖父母老師消防員警察醫生們中國是人在香港北京長城鳥巢故宮慶節煙花萬里')
 def load(p):return json.loads((ROOT/p).read_text())
 if __name__=='__main__':
-    assert [i['char'] for i in build.CHARACTERS]==EXPECTED and len(set(EXPECTED))==21
+    assert [i['char'] for i in build.CHARACTERS]==EXPECTED and len(set(EXPECTED))==43
     assert set(load('verification/visual-review.json')['approved'])==set(EXPECTED)
     rows=[]
     for i in build.CHARACTERS:
@@ -18,6 +19,6 @@ if __name__=='__main__':
         drive=ROOT/f'verification/drive/{c}.json'
         if drive.exists():row['drive']=json.loads(drive.read_text())
         rows.append(row)
-    out={'characters':EXPECTED,'count':len(rows),'original_count':9,'added_count':12,'word_cards':['爸爸','媽媽','祖父','祖母','老師','消防員','警察','醫生'],'timing':{'draw':2.0,'pause':0.6,'intro':0.7,'final':3.0,'fps':30,'width':1080,'height':1080},'visual_review':'visual-review.json','records':rows}
+    out={'characters':EXPECTED,'count':len(rows),'previous_count':21,'china_added_count':22,'original_quick_count':9,'old_reading_words':list(ui.OLD_READING_WORDS),'homework_words':list(ui.HOMEWORK_WORDS),'china_reading_words':list(ui.CHINA_READING_WORDS),'timing':{'draw':2.0,'pause':0.6,'intro':0.7,'final':3.0,'fps':30,'width':1080,'height':1080},'visual_review':'visual-review.json','source_audit':'china-source-audit.json','records':rows}
     (ROOT/'verification/manifest.json').write_text(json.dumps(out,ensure_ascii=False,indent=2))
     print(json.dumps({'count':len(rows),'drive_verified':sum('drive'in x for x in rows),'media_visual_pass':sum(x['visual_pass'] for x in rows)},ensure_ascii=False))

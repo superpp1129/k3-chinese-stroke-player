@@ -1,0 +1,10 @@
+{
+  "char": "城",
+  "id": "1ykM-vRHQZJmvznyHQnCC24CeiMyistdV",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1ykM-vRHQZJmvznyHQnCC24CeiMyistdV/view",
+  "bytes": 267765,
+  "sha256": "0f9b1cf03a478ea2eaa0a81f37f3e6b8896bc00916d51e76702deda9109b2dbd",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

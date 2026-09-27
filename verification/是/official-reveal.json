@@ -1,0 +1,336 @@
+{
+  "character": "是",
+  "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/1001-2000/1776.js",
+  "source_sha256": "1f0a1fa6bb1fd45a4f24a0b28b18ef5ae71efcc6c7612af00a68b078eb5c1a97",
+  "geometry": "EDB CreateJS full filled outlines, original 1080 coordinates",
+  "mapping": "Identity: chronological EDB timeline -> rendered stroke",
+  "strokes": [
+    {
+      "stroke": 1,
+      "final_shapes": [
+        "shape_3"
+      ],
+      "source_states": [
+        [
+          "shape"
+        ],
+        [
+          "shape_1"
+        ],
+        [
+          "shape_2"
+        ],
+        [
+          "shape_3"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "thresholds": [
+        0.34163224697113037,
+        0.5825890898704529,
+        0.807369589805603,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixels": 14913
+    },
+    {
+      "stroke": 2,
+      "final_shapes": [
+        "shape_7"
+      ],
+      "source_states": [
+        [
+          "shape_4"
+        ],
+        [
+          "shape_5"
+        ],
+        [
+          "shape_6"
+        ],
+        [
+          "shape_7"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "thresholds": [
+        0.3218955397605896,
+        0.6011620759963989,
+        0.7995526194572449,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixels": 32808
+    },
+    {
+      "stroke": 3,
+      "final_shapes": [
+        "shape_10"
+      ],
+      "source_states": [
+        [
+          "shape_8"
+        ],
+        [
+          "shape_9"
+        ],
+        [
+          "shape_10"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        [],
+        []
+      ],
+      "thresholds": [
+        0.3980010151863098,
+        0.7247433662414551,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0
+      ],
+      "pixels": 7541
+    },
+    {
+      "stroke": 4,
+      "final_shapes": [
+        "shape_13"
+      ],
+      "source_states": [
+        [
+          "shape_11"
+        ],
+        [
+          "shape_12"
+        ],
+        [
+          "shape_13"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        [],
+        []
+      ],
+      "thresholds": [
+        0.4155733585357666,
+        0.7666374444961548,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0
+      ],
+      "pixels": 6524
+    },
+    {
+      "stroke": 5,
+      "final_shapes": [
+        "shape_17"
+      ],
+      "source_states": [
+        [
+          "shape_14"
+        ],
+        [
+          "shape_15"
+        ],
+        [
+          "shape_16"
+        ],
+        [
+          "shape_17"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "thresholds": [
+        0.28104057908058167,
+        0.5101240873336792,
+        0.7451294660568237,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixels": 37924
+    },
+    {
+      "stroke": 6,
+      "final_shapes": [
+        "shape_20"
+      ],
+      "source_states": [
+        [
+          "shape_18"
+        ],
+        [
+          "shape_19"
+        ],
+        [
+          "shape_20"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        [],
+        []
+      ],
+      "thresholds": [
+        0.375600665807724,
+        0.7116626501083374,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0
+      ],
+      "pixels": 17060
+    },
+    {
+      "stroke": 7,
+      "final_shapes": [
+        "shape_23"
+      ],
+      "source_states": [
+        [
+          "shape_21"
+        ],
+        [
+          "shape_22"
+        ],
+        [
+          "shape_23"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        [],
+        []
+      ],
+      "thresholds": [
+        0.4262368381023407,
+        0.7588708996772766,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0
+      ],
+      "pixels": 7034
+    },
+    {
+      "stroke": 8,
+      "final_shapes": [
+        "shape_27"
+      ],
+      "source_states": [
+        [
+          "shape_24"
+        ],
+        [
+          "shape_25"
+        ],
+        [
+          "shape_26"
+        ],
+        [
+          "shape_27"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "thresholds": [
+        0.3379875123500824,
+        0.577630877494812,
+        0.8164098858833313,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixels": 25993
+    },
+    {
+      "stroke": 9,
+      "final_shapes": [
+        "shape_31"
+      ],
+      "source_states": [
+        [
+          "shape_28"
+        ],
+        [
+          "shape_29"
+        ],
+        [
+          "shape_30"
+        ],
+        [
+          "shape_31"
+        ]
+      ],
+      "excluded_nonfilled_shapes": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "thresholds": [
+        0.2218524068593979,
+        0.4224766492843628,
+        0.6703444719314575,
+        1.0000001192092896
+      ],
+      "keyframe_difference_pixels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixels": 44117
+    }
+  ]
+}

@@ -30,11 +30,19 @@ def shapes_for(item):
         shapes[m[1]]={'path':decode(m[3]),'transform':list(map(float,m[4].split(','))),'colour':m[2]}
     return shapes
 
+def svg_transform(values):
+    """Convert the translation/scale subset used by the frozen EDB sources."""
+    if len(values)==2:
+        return f'translate({values[0]} {values[1]})'
+    if len(values)==4:
+        return f'translate({values[0]} {values[1]}) scale({values[2]} {values[3]})'
+    raise ValueError(f'Unsupported CreateJS transform: {values}')
+
 def official_mask(shapes,names,dest):
     paths=''
     for name in names:
-        sh=shapes[name];t=sh['transform'];assert len(t)==2, t
-        paths+=f'<path d="{sh["path"]}" transform="translate({t[0]} {t[1]})" fill="black"/>'
+        sh=shapes[name];t=sh['transform']
+        paths+=f'<path d="{sh["path"]}" transform="{svg_transform(t)}" fill="black"/>'
     svg=dest.with_suffix('.svg');png=dest.with_suffix('.png')
     svg.write_text('<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080">'+paths+'</svg>')
     subprocess.run(['sips','-s','format','png',str(svg),'--out',str(png)],check=True,stdout=subprocess.DEVNULL)

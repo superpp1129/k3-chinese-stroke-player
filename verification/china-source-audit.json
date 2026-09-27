@@ -1,0 +1,249 @@
+{
+  "characters": "們中國是人在香港北京長城鳥巢故宮慶節煙花萬里",
+  "count": 22,
+  "method": "Unique exact-character EDB search result; listed stroke count equals decoded chronological CreateJS timelines; each raw JS SHA-256 verified; full filled outline reveal states reconstructed exactly",
+  "records": [
+    {
+      "char": "們",
+      "edb_id": "0182",
+      "bucket": "0001-1000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/0001-1000/0182.js",
+      "source_sha256": "c22ce847c36abf070d5730bc2aace618d6eb091e07fb696cfc4e71b662061d98",
+      "listed_strokes": 10,
+      "decoded_strokes": 10,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "中",
+      "edb_id": "0020",
+      "bucket": "0001-1000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/0001-1000/0020.js",
+      "source_sha256": "e49754e77842612b961eb008092bc62d7b1937fb6a91f429dc2f23d9a6b388f3",
+      "listed_strokes": 4,
+      "decoded_strokes": 4,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "國",
+      "edb_id": "0729",
+      "bucket": "0001-1000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/0001-1000/0729.js",
+      "source_sha256": "66c40762bead9e3d3d10d9652bc792103bcf06b7ec707c9848eec6e82145f202",
+      "listed_strokes": 11,
+      "decoded_strokes": 11,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "是",
+      "edb_id": "1776",
+      "bucket": "1001-2000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/1001-2000/1776.js",
+      "source_sha256": "1f0a1fa6bb1fd45a4f24a0b28b18ef5ae71efcc6c7612af00a68b078eb5c1a97",
+      "listed_strokes": 9,
+      "decoded_strokes": 9,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "人",
+      "edb_id": "0067",
+      "bucket": "0001-1000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/0001-1000/0067.js",
+      "source_sha256": "c30195b14b1eca4c1eac1ba292b3a6216d3bd1270ef632db535660f348206b51",
+      "listed_strokes": 2,
+      "decoded_strokes": 2,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "在",
+      "edb_id": "0737",
+      "bucket": "0001-1000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/0001-1000/0737.js",
+      "source_sha256": "544e4282993464658b254985926199e37c5b29ac01cc83fee461b79822a0d271",
+      "listed_strokes": 6,
+      "decoded_strokes": 6,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "香",
+      "edb_id": "4575",
+      "bucket": "4001-ZC",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/4001-ZC/4575.js",
+      "source_sha256": "f2c364b9efb8ebdf951793fb0bd6de8250b14c9722cc8d6c049149aaafa12928",
+      "listed_strokes": 9,
+      "decoded_strokes": 9,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "港",
+      "edb_id": "2238",
+      "bucket": "2001-3000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/2001-3000/2238.js",
+      "source_sha256": "980931dcb1804f58b0dc41d1f096cbe3827427be77da8837fa85c8a724c097f4",
+      "listed_strokes": 12,
+      "decoded_strokes": 12,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "北",
+      "edb_id": "0411",
+      "bucket": "0001-1000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/0001-1000/0411.js",
+      "source_sha256": "d6fa8ad5c7758a53810e43e28bd219c46d60057cabe85540f9dcf83a146a5cc4",
+      "listed_strokes": 5,
+      "decoded_strokes": 5,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "京",
+      "edb_id": "0064",
+      "bucket": "0001-1000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/0001-1000/0064.js",
+      "source_sha256": "bea491b4df0a9f7c5ca4f044e0ec9dfc60a1b6490268292a8644761832e39484",
+      "listed_strokes": 8,
+      "decoded_strokes": 8,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "長",
+      "edb_id": "4331",
+      "bucket": "4001-ZC",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/4001-ZC/4331.js",
+      "source_sha256": "fd44e713e9d7bf8b31b15e1d3da98bad4e547482d22543c64a1765b06cdb5178",
+      "listed_strokes": 8,
+      "decoded_strokes": 8,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "城",
+      "edb_id": "0765",
+      "bucket": "0001-1000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/0001-1000/0765.js",
+      "source_sha256": "0d0d338bd6bcc1a165087f02f2f97118fee3f4f4de3ded11f1a022c2a9b00994",
+      "listed_strokes": 9,
+      "decoded_strokes": 9,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "鳥",
+      "edb_id": "4671",
+      "bucket": "4001-ZC",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/4001-ZC/4671.js",
+      "source_sha256": "c63f1bf8767b0d2c11e45cebea533440de1c1062577f81b64503531ab450dd61",
+      "listed_strokes": 11,
+      "decoded_strokes": 11,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "巢",
+      "edb_id": "1134",
+      "bucket": "1001-2000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/1001-2000/1134.js",
+      "source_sha256": "702b9cc8869c582aa722a6afa045f32d70bbbda6fe3acc25f90b81824548c4b7",
+      "listed_strokes": 11,
+      "decoded_strokes": 11,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "故",
+      "edb_id": "1707",
+      "bucket": "1001-2000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/1001-2000/1707.js",
+      "source_sha256": "4dd5fbba84c1bb2263a48c9b26ca25e82ce24f6bc5e2fb0998d04fe008abe332",
+      "listed_strokes": 9,
+      "decoded_strokes": 9,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "宮",
+      "edb_id": "1016",
+      "bucket": "1001-2000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/1001-2000/1016.js",
+      "source_sha256": "738c9e32a56acee1792707a522cff3986307717a0804e0ad92ce3fb3aaa870d8",
+      "listed_strokes": 10,
+      "decoded_strokes": 10,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "慶",
+      "edb_id": "1412",
+      "bucket": "1001-2000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/1001-2000/1412.js",
+      "source_sha256": "db27cb41f7c9505b546f69f3275780f189b4598c5b5d13ce737cfbbe345a819e",
+      "listed_strokes": 15,
+      "decoded_strokes": 15,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "節",
+      "edb_id": "2989",
+      "bucket": "2001-3000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/2001-3000/2989.js",
+      "source_sha256": "4e0fc6df2db25a108c011efcb78ffadf59d53269717eca2d4712ba4c58944ccd",
+      "listed_strokes": 13,
+      "decoded_strokes": 13,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "煙",
+      "edb_id": "2403",
+      "bucket": "2001-3000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/2001-3000/2403.js",
+      "source_sha256": "39abd122628e6f67c512954ebd91d285bf929df438f8ad24f8a6895b8d8fc1d8",
+      "listed_strokes": 13,
+      "decoded_strokes": 13,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "花",
+      "edb_id": "3415",
+      "bucket": "3001-4000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/3001-4000/3415.js",
+      "source_sha256": "b9983ab69c5a95214ba6317d15175a0dcc11545ce4a1819e5836fb0b005138e3",
+      "listed_strokes": 8,
+      "decoded_strokes": 8,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "萬",
+      "edb_id": "2891",
+      "bucket": "2001-3000",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/2001-3000/2891.js",
+      "source_sha256": "04447380de5204ffcd5aa1ca12675ef5576e45913c90789a7d3fe4be2faff455",
+      "listed_strokes": 13,
+      "decoded_strokes": 13,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    },
+    {
+      "char": "里",
+      "edb_id": "4225",
+      "bucket": "4001-ZC",
+      "official_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/4001-ZC/4225.js",
+      "source_sha256": "7120771042ae4fa3be74af28ba19596daadd4ed393d3302894be5702f386555d",
+      "listed_strokes": 7,
+      "decoded_strokes": 7,
+      "timeline_identity_order": true,
+      "filled_outline_states_verified": true
+    }
+  ]
+}

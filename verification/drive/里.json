@@ -1,0 +1,10 @@
+{
+  "char": "里",
+  "id": "12QmUFN-M9IMVgdTroOETiTPAa1ynW_Ih",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/12QmUFN-M9IMVgdTroOETiTPAa1ynW_Ih/view",
+  "bytes": 173671,
+  "sha256": "728d34b1df274f953710b0488420cf2857b8afffb8dbdb9d995fc06040166b39",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

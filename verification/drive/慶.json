@@ -1,0 +1,10 @@
+{
+  "char": "慶",
+  "id": "1SLB6FvKNvoop921I-jzVtmQFKsJqf4aq",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1SLB6FvKNvoop921I-jzVtmQFKsJqf4aq/view",
+  "bytes": 472164,
+  "sha256": "6796d7ae4932f02b15aae154f393782d867ff79c86c78f871cb5e2c3c853fc4d",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

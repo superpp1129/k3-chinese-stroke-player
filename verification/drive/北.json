@@ -1,0 +1,10 @@
+{
+  "char": "北",
+  "id": "12C8v2osPQOiWO6TrLaZPqAUAluyGroYE",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/12C8v2osPQOiWO6TrLaZPqAUAluyGroYE/view",
+  "bytes": 135767,
+  "sha256": "466cc8d5b1ce9c84a7542cb20c552b051bcb89ab60e7a2a55845ee5c324b0c43",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

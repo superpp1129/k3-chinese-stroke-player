@@ -1,9 +1,9 @@
 {
   "url": "http://127.0.0.1:8877/",
-  "buttons_exercised": 47,
-  "character_cards": 21,
-  "word_cards": 8,
-  "downloads": 21,
+  "buttons_exercised": 121,
+  "character_cards": 43,
+  "word_cards": 27,
+  "downloads": 43,
   "native_playback_checks": [
     {
       "char": "我",
@@ -222,6 +222,422 @@
       "paused": false
     },
     {
+      "char": "們",
+      "src": "videos/們.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 29.7,
+      "paused": false
+    },
+    {
+      "char": "中",
+      "src": "videos/中.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 14.1,
+      "paused": false
+    },
+    {
+      "char": "國",
+      "src": "videos/國.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 32.3,
+      "paused": false
+    },
+    {
+      "char": "我",
+      "src": "videos/我.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 21.9,
+      "paused": false
+    },
+    {
+      "char": "們",
+      "src": "videos/們.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 29.7,
+      "paused": false
+    },
+    {
+      "char": "是",
+      "src": "videos/是.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 27.1,
+      "paused": false
+    },
+    {
+      "char": "中",
+      "src": "videos/中.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 14.1,
+      "paused": false
+    },
+    {
+      "char": "國",
+      "src": "videos/國.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 32.3,
+      "paused": false
+    },
+    {
+      "char": "人",
+      "src": "videos/人.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 8.9,
+      "paused": false
+    },
+    {
+      "char": "在",
+      "src": "videos/在.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 19.3,
+      "paused": false
+    },
+    {
+      "char": "香",
+      "src": "videos/香.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 27.1,
+      "paused": false
+    },
+    {
+      "char": "港",
+      "src": "videos/港.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 34.9,
+      "paused": false
+    },
+    {
+      "char": "我",
+      "src": "videos/我.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 21.9,
+      "paused": false
+    },
+    {
+      "char": "們",
+      "src": "videos/們.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 29.7,
+      "paused": false
+    },
+    {
+      "char": "在",
+      "src": "videos/在.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 19.3,
+      "paused": false
+    },
+    {
+      "char": "香",
+      "src": "videos/香.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 27.1,
+      "paused": false
+    },
+    {
+      "char": "港",
+      "src": "videos/港.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 34.9,
+      "paused": false
+    },
+    {
+      "char": "北",
+      "src": "videos/北.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 16.7,
+      "paused": false
+    },
+    {
+      "char": "京",
+      "src": "videos/京.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "有",
+      "src": "videos/有.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 19.3,
+      "paused": false
+    },
+    {
+      "char": "長",
+      "src": "videos/長.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "城",
+      "src": "videos/城.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 27.1,
+      "paused": false
+    },
+    {
+      "char": "北",
+      "src": "videos/北.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 16.7,
+      "paused": false
+    },
+    {
+      "char": "京",
+      "src": "videos/京.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "有",
+      "src": "videos/有.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 19.3,
+      "paused": false
+    },
+    {
+      "char": "長",
+      "src": "videos/長.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "城",
+      "src": "videos/城.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 27.1,
+      "paused": false
+    },
+    {
+      "char": "鳥",
+      "src": "videos/鳥.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 32.3,
+      "paused": false
+    },
+    {
+      "char": "巢",
+      "src": "videos/巢.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 32.3,
+      "paused": false
+    },
+    {
+      "char": "故",
+      "src": "videos/故.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 27.1,
+      "paused": false
+    },
+    {
+      "char": "宮",
+      "src": "videos/宮.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 29.7,
+      "paused": false
+    },
+    {
+      "char": "北",
+      "src": "videos/北.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 16.7,
+      "paused": false
+    },
+    {
+      "char": "京",
+      "src": "videos/京.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "有",
+      "src": "videos/有.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 19.3,
+      "paused": false
+    },
+    {
+      "char": "故",
+      "src": "videos/故.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 27.1,
+      "paused": false
+    },
+    {
+      "char": "宮",
+      "src": "videos/宮.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 29.7,
+      "paused": false
+    },
+    {
+      "char": "國",
+      "src": "videos/國.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 32.3,
+      "paused": false
+    },
+    {
+      "char": "慶",
+      "src": "videos/慶.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 42.7,
+      "paused": false
+    },
+    {
+      "char": "節",
+      "src": "videos/節.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 37.5,
+      "paused": false
+    },
+    {
+      "char": "煙",
+      "src": "videos/煙.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 37.5,
+      "paused": false
+    },
+    {
+      "char": "花",
+      "src": "videos/花.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "中",
+      "src": "videos/中.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 14.1,
+      "paused": false
+    },
+    {
+      "char": "國",
+      "src": "videos/國.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 32.3,
+      "paused": false
+    },
+    {
+      "char": "北",
+      "src": "videos/北.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 16.7,
+      "paused": false
+    },
+    {
+      "char": "京",
+      "src": "videos/京.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "故",
+      "src": "videos/故.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 27.1,
+      "paused": false
+    },
+    {
+      "char": "宮",
+      "src": "videos/宮.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 29.7,
+      "paused": false
+    },
+    {
+      "char": "萬",
+      "src": "videos/萬.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 37.5,
+      "paused": false
+    },
+    {
+      "char": "里",
+      "src": "videos/里.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 21.9,
+      "paused": false
+    },
+    {
+      "char": "長",
+      "src": "videos/長.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "城",
+      "src": "videos/城.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 27.1,
+      "paused": false
+    },
+    {
+      "char": "我",
+      "src": "videos/我.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 21.9,
+      "paused": false
+    },
+    {
       "char": "有",
       "src": "videos/有.mp4",
       "width": 1080,
@@ -379,6 +795,182 @@
       "width": 1080,
       "height": 1080,
       "duration": 16.7,
+      "paused": false
+    },
+    {
+      "char": "們",
+      "src": "videos/們.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 29.7,
+      "paused": false
+    },
+    {
+      "char": "中",
+      "src": "videos/中.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 14.1,
+      "paused": false
+    },
+    {
+      "char": "國",
+      "src": "videos/國.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 32.3,
+      "paused": false
+    },
+    {
+      "char": "是",
+      "src": "videos/是.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 27.1,
+      "paused": false
+    },
+    {
+      "char": "人",
+      "src": "videos/人.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 8.9,
+      "paused": false
+    },
+    {
+      "char": "在",
+      "src": "videos/在.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 19.3,
+      "paused": false
+    },
+    {
+      "char": "香",
+      "src": "videos/香.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 27.1,
+      "paused": false
+    },
+    {
+      "char": "港",
+      "src": "videos/港.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 34.9,
+      "paused": false
+    },
+    {
+      "char": "北",
+      "src": "videos/北.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 16.7,
+      "paused": false
+    },
+    {
+      "char": "京",
+      "src": "videos/京.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "長",
+      "src": "videos/長.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "城",
+      "src": "videos/城.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 27.1,
+      "paused": false
+    },
+    {
+      "char": "鳥",
+      "src": "videos/鳥.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 32.3,
+      "paused": false
+    },
+    {
+      "char": "巢",
+      "src": "videos/巢.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 32.3,
+      "paused": false
+    },
+    {
+      "char": "故",
+      "src": "videos/故.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 27.1,
+      "paused": false
+    },
+    {
+      "char": "宮",
+      "src": "videos/宮.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 29.7,
+      "paused": false
+    },
+    {
+      "char": "慶",
+      "src": "videos/慶.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 42.7,
+      "paused": false
+    },
+    {
+      "char": "節",
+      "src": "videos/節.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 37.5,
+      "paused": false
+    },
+    {
+      "char": "煙",
+      "src": "videos/煙.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 37.5,
+      "paused": false
+    },
+    {
+      "char": "花",
+      "src": "videos/花.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 24.5,
+      "paused": false
+    },
+    {
+      "char": "萬",
+      "src": "videos/萬.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 37.5,
+      "paused": false
+    },
+    {
+      "char": "里",
+      "src": "videos/里.mp4",
+      "width": 1080,
+      "height": 1080,
+      "duration": 21.9,
       "paused": false
     }
   ],

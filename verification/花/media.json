@@ -1,0 +1,23 @@
+{
+  "char": "花",
+  "strokes": 8,
+  "path": "site/videos/花.mp4",
+  "bytes": 201849,
+  "sha256": "f7ef89c07ae0f77196a226f951cc659bd74992241726057722b9ea6dc916274d",
+  "frames": 735,
+  "duration": 24.5,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 49,
+  "visual_review": "passed: six samples per stroke and completed encoded glyph; verification/visual-review.json"
+}

@@ -1,0 +1,57 @@
+{
+  "char": "人",
+  "edb_id": "0067",
+  "bucket": "0001-1000",
+  "target": [
+    752.2,
+    647.6
+  ],
+  "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/0001-1000/0067.js",
+  "source_sha256": "c30195b14b1eca4c1eac1ba292b3a6216d3bd1270ef632db535660f348206b51",
+  "strokes": 2,
+  "official_listed_strokes": 2,
+  "official_timeline": [
+    {
+      "start": 24,
+      "states": [
+        [
+          "shape_3"
+        ],
+        [
+          "shape_4"
+        ],
+        [
+          "shape_5"
+        ],
+        [
+          "shape_6"
+        ]
+      ],
+      "durations": [
+        24,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 48,
+      "states": [
+        [
+          "shape"
+        ],
+        [
+          "shape_1"
+        ],
+        [
+          "shape_2"
+        ]
+      ],
+      "durations": [
+        48,
+        3,
+        3
+      ]
+    }
+  ]
+}

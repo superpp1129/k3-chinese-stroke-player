@@ -1,0 +1,23 @@
+{
+  "char": "鳥",
+  "strokes": 11,
+  "path": "site/videos/鳥.mp4",
+  "bytes": 259433,
+  "sha256": "6f7b527bc62e75a3097af669133c8aeaa5af0528b4a1cbb5b28e8fc75338c5c1",
+  "frames": 969,
+  "duration": 32.3,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 67,
+  "visual_review": "passed: six samples per stroke and completed encoded glyph; verification/visual-review.json"
+}

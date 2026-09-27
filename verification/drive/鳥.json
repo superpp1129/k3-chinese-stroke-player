@@ -1,0 +1,10 @@
+{
+  "char": "鳥",
+  "id": "1jOzkZnFD5BvfzTXskAtPZxHmtSO2kPcc",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1jOzkZnFD5BvfzTXskAtPZxHmtSO2kPcc/view",
+  "bytes": 259433,
+  "sha256": "6f7b527bc62e75a3097af669133c8aeaa5af0528b4a1cbb5b28e8fc75338c5c1",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

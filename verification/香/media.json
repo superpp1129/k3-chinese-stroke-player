@@ -1,0 +1,23 @@
+{
+  "char": "香",
+  "strokes": 9,
+  "path": "site/videos/香.mp4",
+  "bytes": 251798,
+  "sha256": "1b78ceec67c3e4b9a9e2123d217cf729270a4baa70629bc3047ba978ec4436d1",
+  "frames": 813,
+  "duration": 27.1,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 55,
+  "visual_review": "passed: six samples per stroke and completed encoded glyph; verification/visual-review.json"
+}

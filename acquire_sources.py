@@ -5,8 +5,10 @@ ROOT=Path(__file__).resolve().parent
 OUT=ROOT/'sources';OUT.mkdir(exist_ok=True)
 def fetch(url, data=None):
     with urllib.request.urlopen(urllib.request.Request(url,data=data,headers={'User-Agent':'Mozilla/5.0'}),timeout=60) as r:return r.read()
+EXISTING='我有爸媽姐妹弟哥和祖父母老師消防員警察醫生'
+NEW='們中國是人在香港北京長城鳥巢故宮慶節煙花萬里'
 if __name__=='__main__':
-    for char in '我有爸媽姐妹弟哥和祖父母老師消防員警察醫生':
+    for char in EXISTING+NEW:
         dst=OUT/f'{char}.json'
         if dst.exists():continue
         data=urllib.parse.urlencode({'searchMethod':'char','searchCriteria':char,'sortBy':'stroke','jpC':'lshk'}).encode()
@@ -23,9 +25,19 @@ if __name__=='__main__':
         for line in text.splitlines():
             if 'Tween.get({})' not in line:continue
             states=re.findall(r'\.to\(\{state:\[(.*?)\]\}(?:,(\d+))?\)',line)
-            nonempty=[(re.findall(r't:this\.(shape(?:_\d+)?)',s),int(t or 0)) for s,t in states if s]
-            if nonempty:timelines.append({'start':nonempty[0][1],'states':[x[0] for x in nonempty],'durations':[x[1] for x in nonempty]})
+            nonempty=[]
+            for state,duration in states:
+                names=re.findall(r't:this\.(shape(?:_\d+)?)',state)
+                if names:
+                    nonempty.append((names,int(duration or 0)))
+            # Static one-state timelines are completed-character/grid layers, not strokes.
+            if len(nonempty) >= 2:
+                timelines.append({'start':nonempty[0][1],'states':[x[0] for x in nonempty],'durations':[x[1] for x in nonempty]})
         timelines.sort(key=lambda x:x['start'])
-        record={'char':char,'edb_id':eid,'bucket':bucket,'target':[float(grey[2]),float(grey[3])],'source_url':url,'source_sha256':hashlib.sha256(src).hexdigest(),'strokes':len(timelines),'official_timeline':timelines}
+        official_count_match=re.search(r'總筆畫數.*?<td>\s*(\d+)\s*畫',html,re.S)
+        if not official_count_match:raise ValueError(f'No official stroke count {char}')
+        official_count=int(official_count_match.group(1))
+        if official_count != len(timelines):raise ValueError(f'{char}: listed {official_count}, decoded {len(timelines)}')
+        record={'char':char,'edb_id':eid,'bucket':bucket,'target':[float(grey[2]),float(grey[3])],'source_url':url,'source_sha256':hashlib.sha256(src).hexdigest(),'strokes':len(timelines),'official_listed_strokes':official_count,'official_timeline':timelines}
         dst.write_text(json.dumps(record,ensure_ascii=False,indent=2))
         print(char,eid,len(timelines),flush=True)

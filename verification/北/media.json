@@ -1,0 +1,23 @@
+{
+  "char": "北",
+  "strokes": 5,
+  "path": "site/videos/北.mp4",
+  "bytes": 135767,
+  "sha256": "466cc8d5b1ce9c84a7542cb20c552b051bcb89ab60e7a2a55845ee5c324b0c43",
+  "frames": 501,
+  "duration": 16.7,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 31,
+  "visual_review": "passed: six samples per stroke and completed encoded glyph; verification/visual-review.json"
+}

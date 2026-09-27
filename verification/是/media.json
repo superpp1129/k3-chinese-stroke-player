@@ -1,0 +1,23 @@
+{
+  "char": "是",
+  "strokes": 9,
+  "path": "site/videos/是.mp4",
+  "bytes": 247404,
+  "sha256": "0575314bf409eed8945c41b61f8b4b5057924fa3740b6cc0df036eaca58133f8",
+  "frames": 813,
+  "duration": 27.1,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 55,
+  "visual_review": "passed: six samples per stroke and completed encoded glyph; verification/visual-review.json"
+}

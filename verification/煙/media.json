@@ -1,0 +1,23 @@
+{
+  "char": "煙",
+  "strokes": 13,
+  "path": "site/videos/煙.mp4",
+  "bytes": 340676,
+  "sha256": "bf2a9dfbc5b22445548a8278c4123ea5670c519c9477199477fc4bdf2916cd37",
+  "frames": 1125,
+  "duration": 37.5,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 79,
+  "visual_review": "passed: six samples per stroke and completed encoded glyph; verification/visual-review.json"
+}

@@ -4,11 +4,16 @@ import unittest
 from pathlib import Path
 
 import build
+import ui
 
 
 class StrokeSiteTests(unittest.TestCase):
     def test_theme_has_exact_requested_character_order(self):
-        self.assertEqual([item["char"] for item in build.CHARACTERS], list("我有爸媽姐妹弟哥和祖父母老師消防員警察醫生"))
+        self.assertEqual(
+            [item["char"] for item in build.CHARACTERS],
+            list("我有爸媽姐妹弟哥和祖父母老師消防員警察醫生們中國是人在香港北京長城鳥巢故宮慶節煙花萬里"),
+        )
+        self.assertEqual(len(build.CHARACTERS), 43)
 
     def test_frame_count_uses_approved_k3_timing(self):
         self.assertEqual(build.frame_count(6), 579)
@@ -28,11 +33,22 @@ class StrokeSiteTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             build.write_site(Path(tmp), render_videos=False)
             page = (Path(tmp) / "index.html").read_text()
-            self.assertEqual(page.count('class="character-card"'), 21)
-            self.assertEqual(page.count('class="word-card"'), 8)
-            self.assertEqual(page.count('download='), 21)
+            self.assertEqual(page.count('class="character-card"'), 43)
+            self.assertEqual(page.count('class="word-card"'), 27)
+            self.assertEqual(page.count('download='), 43)
             self.assertIn("他們都愛我", page)
+            self.assertIn("我愛中國", page)
             self.assertIn("aria-label=\"播放「我」字筆順\"", page)
+
+    def test_new_theme_has_exact_homework_and_reading_card_order(self):
+        page = build.page_html()
+        self.assertEqual(ui.HOMEWORK_WORDS, (
+            "我們", "中國", "我們是中國人", "在", "香港", "我們在香港", "北京", "有",
+            "長城", "北京有長城", "鳥巢", "故宮", "北京有故宮",
+        ))
+        self.assertEqual(ui.CHINA_READING_WORDS, ("國慶節", "煙花", "中國", "北京", "故宮", "萬里長城"))
+        self.assertLess(page.index('data-word="我們"'), page.index('data-word="中國"'))
+        self.assertEqual(page.count('data-word="我們是中國人"'), 7)  # card plus six playable characters
 
     def test_manifest_records_edb_source_for_every_character(self):
         for item in build.CHARACTERS:

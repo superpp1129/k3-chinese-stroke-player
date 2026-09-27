@@ -1,0 +1,10 @@
+{
+  "char": "國",
+  "id": "1O7fa1PQluuoIKsLAq2Zuli3xwB36nmou",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1O7fa1PQluuoIKsLAq2Zuli3xwB36nmou/view",
+  "bytes": 273780,
+  "sha256": "7c98fca0b7b978a329b323f4b22c6e8757ff5b77f1bd83c1a7c1b53a1a89fd29",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

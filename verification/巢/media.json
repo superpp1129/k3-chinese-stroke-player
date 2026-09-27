@@ -1,0 +1,23 @@
+{
+  "char": "巢",
+  "strokes": 11,
+  "path": "site/videos/巢.mp4",
+  "bytes": 289644,
+  "sha256": "58b80499d6a81db8324ea509c647197d34777f88779663b3dfad5dc9e3e93f35",
+  "frames": 969,
+  "duration": 32.3,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 67,
+  "visual_review": "passed: six samples per stroke and completed encoded glyph; verification/visual-review.json"
+}

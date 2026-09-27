@@ -12,6 +12,10 @@ from scipy.ndimage import distance_transform_edt
 
 ROOT=Path(__file__).resolve().parent
 
+def filled_names(names, shapes):
+    """Keep filled outlines; EDB timelines may also carry red direction markers."""
+    return [name for name in names if name in shapes]
+
 def progress_from_states(states):
     final=states[-1]
     if len(states)<2 or not final.any():raise ValueError('At least two official states required')
@@ -50,7 +54,10 @@ def prepare(item):
     shapes=shapes_for(record);masks=[];maps=[];evidence=[]
     for i,timeline in enumerate(record['official_timeline']):
         states=[]
-        for j,names in enumerate(timeline['states']):
+        filtered_states=[filled_names(names,shapes) for names in timeline['states']]
+        if any(not names for names in filtered_states):
+            raise ValueError(f'{char} stroke{i+1}: state has no filled official outline')
+        for j,names in enumerate(filtered_states):
             dest=work/f'key-{i+1:02}-{j+1:02}'
             if dest.with_suffix('.png').exists():
                 state=np.asarray(Image.open(dest.with_suffix('.png')).convert('RGBA'))[:,:,3]>10
@@ -65,7 +72,7 @@ def prepare(item):
             reconstructed=mask & (progress <= t+1e-6)
             checks.append(int(np.count_nonzero(cumulative ^ reconstructed)))
         if any(checks):raise ValueError(f'{char} stroke{i+1}: keyframe mismatch {checks}')
-        evidence.append({'stroke':i+1,'final_shapes':timeline['states'][-1],'source_states':timeline['states'],'thresholds':thresholds,'keyframe_difference_pixels':checks,'pixels':int(mask.sum())})
+        evidence.append({'stroke':i+1,'final_shapes':filtered_states[-1],'source_states':filtered_states,'excluded_nonfilled_shapes':[[n for n in raw if n not in shapes] for raw in timeline['states']],'thresholds':thresholds,'keyframe_difference_pixels':checks,'pixels':int(mask.sum())})
     report={'character':char,'source_url':record['source_url'],'source_sha256':record['source_sha256'],'geometry':'EDB CreateJS full filled outlines, original 1080 coordinates','mapping':'Identity: chronological EDB timeline -> rendered stroke','strokes':evidence}
     (work/'official-reveal.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
     return masks,maps

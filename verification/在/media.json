@@ -1,0 +1,23 @@
+{
+  "char": "在",
+  "strokes": 6,
+  "path": "site/videos/在.mp4",
+  "bytes": 177742,
+  "sha256": "12aaf05b5c5c2b38251b17ff20451ff350119b27d288887bd816f7e624fdb777",
+  "frames": 579,
+  "duration": 19.3,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 37,
+  "visual_review": "passed: six samples per stroke and completed encoded glyph; verification/visual-review.json"
+}

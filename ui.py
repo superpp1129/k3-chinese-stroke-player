@@ -8,14 +8,20 @@ from __future__ import annotations
 
 from pathlib import Path
 
-THEME = "他們都愛我"
-# The 21 taught characters, in the approved teaching order.
-CHARACTER_ORDER = "我有爸媽姐妹弟哥和祖父母老師消防員警察醫生"
+THEME = "中文筆順播放器"
+# All taught characters, preserving the original 21 and appending the exact
+# de-duplicated order needed by 《我愛中國》.
+CHARACTER_ORDER = "我有爸媽姐妹弟哥和祖父母老師消防員警察醫生們中國是人在香港北京長城鳥巢故宮慶節煙花萬里"
 # The original nine of the first theme, kept one tap away at the top.
 THEME_CHARACTERS = "我有爸媽姐妹弟哥和"
 # Reading words; every character is played individually, duplicates included.
-WORDS = ("爸爸", "媽媽", "祖父", "祖母", "老師", "消防員", "警察", "醫生")
-ORDINALS = "一二三四"
+OLD_READING_WORDS = ("爸爸", "媽媽", "祖父", "祖母", "老師", "消防員", "警察", "醫生")
+HOMEWORK_WORDS = (
+    "我們", "中國", "我們是中國人", "在", "香港", "我們在香港", "北京", "有",
+    "長城", "北京有長城", "鳥巢", "故宮", "北京有故宮",
+)
+CHINA_READING_WORDS = ("國慶節", "煙花", "中國", "北京", "故宮", "萬里長城")
+ORDINALS = "一二三四五六七八九十"
 
 
 def video_path(char: str) -> str:
@@ -63,21 +69,29 @@ def _word_card(word: str) -> str:
 def page_html(characters) -> str:
     """Full index.html for the given characters (dicts with a "char", or bare characters)."""
     chars = _ordered(characters)
-    required = list(THEME_CHARACTERS) + [c for word in WORDS for c in word]
+    all_words = OLD_READING_WORDS + HOMEWORK_WORDS + CHINA_READING_WORDS
+    required = list(THEME_CHARACTERS) + [c for word in all_words for c in word]
     missing = sorted({c for c in required if c not in chars})
     if missing:
         raise ValueError(f"missing characters needed by the page: {''.join(missing)}")
     cards = "".join(_character_card(char) for char in chars)
     quick = "".join(_quick_button(char) for char in THEME_CHARACTERS)
-    words = "".join(_word_card(word) for word in WORDS)
+    old_words = "".join(_word_card(word) for word in OLD_READING_WORDS)
+    homework_words = "".join(_word_card(word) for word in HOMEWORK_WORDS)
+    china_reading_words = "".join(_word_card(word) for word in CHINA_READING_WORDS)
     return f'''<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{THEME}｜中文筆順播放器</title><link rel="stylesheet" href="styles.css"></head><body>
-<header><p class="eyebrow">K3 中文筆順播放器</p><h1>{THEME}</h1><p class="intro">揀一個字，睇清楚每一筆。</p></header>
+<title>K3 中文筆順播放器</title><link rel="stylesheet" href="styles.css"></head><body>
+<header><p class="eyebrow">K3 中文筆順播放器</p><h1>中文筆順播放器</h1><p class="intro">揀一個字，睇清楚每一筆。</p></header>
 <main>
-<section class="panel" aria-labelledby="theme-title"><h2 class="panel-title" id="theme-title">{THEME}</h2>
+<section class="panel theme-panel old-theme" aria-labelledby="old-theme-title"><h2 class="panel-title" id="old-theme-title">《他們都愛我》</h2>
 <p class="panel-note">主題九個字，一撳就睇到。</p><div class="quick-row">{quick}</div></section>
-<section class="panel" aria-labelledby="words-title"><h2 class="panel-title" id="words-title">讀詞語</h2>
-<p class="panel-note">讀成個詞，再逐個字睇筆順。</p><div class="word-grid">{words}</div></section>
+<section class="panel" aria-labelledby="old-words-title"><h3 class="subsection-title" id="old-words-title">讀詞語</h3>
+<p class="panel-note">讀成個詞，再逐個字睇筆順。</p><div class="word-grid" id="old-reading-words">{old_words}</div></section>
+<section class="theme-group china-theme" aria-labelledby="china-theme-title"><h2 class="panel-title" id="china-theme-title">《我愛中國》</h2>
+<section class="panel" aria-labelledby="homework-title"><h3 class="subsection-title" id="homework-title">家課字詞</h3>
+<p class="panel-note">按家課次序排列，每個字都可以逐一播放。</p><div class="word-grid" id="homework-words">{homework_words}</div></section>
+<section class="panel" aria-labelledby="china-reading-title"><h3 class="subsection-title" id="china-reading-title">認讀詞語</h3>
+<p class="panel-note">跟主題認讀次序，逐個字睇筆順。</p><div class="word-grid" id="china-reading-words">{china_reading_words}</div></section></section>
 <section class="panel" aria-labelledby="all-title"><h2 class="panel-title" id="all-title">全部生字（{len(chars)}）</h2>
 <p class="panel-note">每個字都可以播放同下載。</p><div class="character-grid">{cards}</div></section>
 </main>
@@ -97,7 +111,7 @@ def write_ui(destination: Path, characters) -> None:
 
 CSS = r''':root{--ink:#202020;--muted:#6f6b64;--paper:#fffdf7;--line:#ece8de;--accent:#e53935}*{box-sizing:border-box}body{margin:0;background:#f7f3eb;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang HK",sans-serif}
 header{max-width:980px;margin:auto;padding:58px 24px 22px;text-align:center}.eyebrow{margin:0 0 10px;color:#a24735;font-size:15px;font-weight:750;letter-spacing:.16em}h1{margin:0;font-size:clamp(38px,7vw,64px);letter-spacing:.08em}.intro{margin:14px 0 0;color:var(--muted);font-size:18px}
-main{max-width:980px;margin:auto;padding:10px 24px 64px}.panel{margin:0 0 42px}.panel-title{margin:0;font-size:24px;letter-spacing:.06em}.panel-note{margin:6px 0 16px;color:var(--muted);font-size:16px}
+main{max-width:980px;margin:auto;padding:10px 24px 64px}.panel{margin:0 0 42px}.panel-title{margin:0;font-size:24px;letter-spacing:.06em}.subsection-title{margin:0;font-size:20px;letter-spacing:.04em}.panel-note{margin:6px 0 16px;color:var(--muted);font-size:16px}.theme-group{margin:0 -18px 48px;padding:26px 18px 4px;border:2px solid #edcf91;border-radius:28px;background:#fffaf0}.china-theme>.panel-title{color:#9d2f25;margin-bottom:22px}.old-theme{padding-left:18px;border-left:5px solid #a8b8cf}
 .quick-row{display:flex;flex-wrap:wrap;gap:12px}.quick-button{font-family:"Kaiti TC","BiauKai","DFKai-SB",serif;line-height:1;width:84px;height:84px;font-size:44px;border:1px solid var(--line);border-radius:20px;background:var(--paper);color:var(--ink);cursor:pointer;box-shadow:0 6px 18px rgba(73,61,43,.06)}
 .word-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.word-card{padding:18px;border:1px solid var(--line);border-radius:22px;background:white;box-shadow:0 8px 25px rgba(73,61,43,.06);text-align:center}.word{font-family:"Kaiti TC","BiauKai","DFKai-SB",serif;line-height:1;margin:0 0 14px;font-size:46px;letter-spacing:.06em}
 .word-parts{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}.word-button{font-family:"Kaiti TC","BiauKai","DFKai-SB",serif;line-height:1;width:66px;height:66px;font-size:34px;border:1px solid var(--line);border-radius:16px;background:var(--paper);color:var(--ink);cursor:pointer}
@@ -107,7 +121,7 @@ main{max-width:980px;margin:auto;padding:10px 24px 64px}.panel{margin:0 0 42px}.
 .download{display:block;padding:15px;text-align:center;text-decoration:none;color:#3f6296;font-weight:750;border-top:1px solid var(--line)}.download:hover{background:#f5f8fc}
 dialog{width:min(92vw,720px);border:0;border-radius:24px;padding:0;box-shadow:0 30px 90px #28231c55;background:white}dialog::backdrop{background:#27221dbd}.dialog-top{display:flex;align-items:center;justify-content:space-between;padding:18px 22px}.dialog-top>div{display:flex;align-items:baseline;gap:12px}.small{color:var(--muted)}#current-word:empty{display:none}#current-char{font-family:"Kaiti TC","BiauKai","DFKai-SB",serif;font-size:28px}#close{border:0;background:#f1eee7;border-radius:50%;width:44px;height:44px;font-size:30px;cursor:pointer}
 video{display:block;width:100%;aspect-ratio:1;background:var(--paper)}.dialog-actions{display:flex;gap:12px;padding:16px 20px 20px}.dialog-actions>*{flex:1;padding:14px;border-radius:12px;border:1px solid var(--line);background:white;color:var(--ink);text-align:center;text-decoration:none;font-size:16px;font-weight:750;cursor:pointer}
-@media(max-width:650px){header{padding-top:34px}.character-grid,.word-grid{grid-template-columns:repeat(2,1fr);gap:12px}.character-button{min-height:170px}.character{font-size:80px}.word{font-size:38px}.quick-button{width:72px;height:72px;font-size:38px}.word-button{width:56px;height:56px;font-size:28px}main{padding-inline:14px}.dialog-actions{flex-direction:column}}
+@media(max-width:650px){header{padding-top:34px}.theme-group{margin-inline:0;padding-inline:12px}.character-grid,.word-grid{grid-template-columns:repeat(2,1fr);gap:12px}.character-button{min-height:170px}.character{font-size:80px}.word{font-size:38px}.quick-button{width:72px;height:72px;font-size:38px}.word-button{width:56px;height:56px;font-size:28px}main{padding-inline:14px}.dialog-actions{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}'''
 
 JS = r'''(function(){

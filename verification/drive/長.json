@@ -1,0 +1,10 @@
+{
+  "char": "長",
+  "id": "1qQcwB8-O3gadkj0u2RFgPwFXyTwDji4Z",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1qQcwB8-O3gadkj0u2RFgPwFXyTwDji4Z/view",
+  "bytes": 193171,
+  "sha256": "3532fb9faddd9c5ec077c06b5d6fe47eb7072ce5932390d7cbf73440310f8c57",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

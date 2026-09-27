@@ -1,0 +1,23 @@
+{
+  "char": "慶",
+  "strokes": 15,
+  "path": "site/videos/慶.mp4",
+  "bytes": 472164,
+  "sha256": "6796d7ae4932f02b15aae154f393782d867ff79c86c78f871cb5e2c3c853fc4d",
+  "frames": 1281,
+  "duration": 42.7,
+  "codec": "h264",
+  "width": 1080,
+  "height": 1080,
+  "fps": "30/1",
+  "pix_fmt": "yuv420p",
+  "decode": "all frames passed ffmpeg -xerror",
+  "timing": {
+    "intro": 0.7,
+    "draw": 2,
+    "pause": 0.6,
+    "final": 3
+  },
+  "samples": 91,
+  "visual_review": "passed: six samples per stroke and completed encoded glyph; verification/visual-review.json"
+}

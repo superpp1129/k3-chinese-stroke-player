@@ -1,0 +1,10 @@
+{
+  "char": "煙",
+  "id": "1eo9kurwlP2IOraVHj0E6Q9czCPUrGWVz",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1eo9kurwlP2IOraVHj0E6Q9czCPUrGWVz/view",
+  "bytes": 340676,
+  "sha256": "bf2a9dfbc5b22445548a8278c4123ea5670c519c9477199477fc4bdf2916cd37",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

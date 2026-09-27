@@ -2,45 +2,72 @@
 
 Live: https://superpp1129.github.io/k3-chinese-stroke-player/
 
-21 individual characters: 我、有、爸、媽、姐、妹、弟、哥、和、祖、父、母、老、師、消、防、員、警、察、醫、生。
+The site now contains **43 distinct characters**. It preserves the previous 21 characters, the original nine quick-access buttons, and all eight 《他們都愛我》 reading cards, then adds a visually distinct 《我愛中國》 section.
 
-Eight reading cards: 爸爸、媽媽、祖父、祖母、老師、消防員、警察、醫生。Each printed character has its own playback button. Original nine quick-access buttons, individual cards and MP4 downloads remain available. Playback is silent (not text-to-speech).
+## 《我愛中國》 cards
 
-## Approved timing
+Homework cards, exact order: 我們、中國、我們是中國人、在、香港、我們在香港、北京、有、長城、北京有長城、鳥巢、故宮、北京有故宮。
 
-Every stroke draws for 2 seconds, then pauses 0.6 seconds. Intro 0.7 seconds; final hold 3 seconds. All videos: 1080×1080, 30 fps, H.264/yuv420p, fast-start MP4. Fixed red → blue → black → green cycle, pale ghost character and 米字格.
+Recognition cards, exact order: 國慶節、煙花、中國、北京、故宮、萬里長城。
 
-## Sources and regional correctness
+Every printed character in every word card is an individual playback button, including repeated characters. All 43 character cards have playback and MP4 download controls. Playback is silent.
 
-Hong Kong EDB 《香港小學學習字詞表》 official 1080 animation sources are frozen under `sources/`, with entry IDs, SHA-256 and chronological stroke states. The 12 additions use the **official filled outlines and reveal states**, not assumed generic Hanzi Writer data. This matters especially for 防 (7 strokes) and 警 (20 strokes), where generic segmentation differs.
+## Approved animation format
 
-The existing nine keep their previously approved filled geometry, frozen under `sources/geometry`, checked against EDB and rendered again at the approved slower speed. `verification/manifest.json` records every mapping and output hash. `comparison.jpg`/`mapping.json` are diagnostic automated overlap comparisons, **not authoritative production remaps**; production mappings and manual dispositions are in the consolidated manifest and visual-review report.
+Every stroke draws for 2.0 seconds, then pauses 0.6 seconds. Intro 0.7 seconds; final hold 3.0 seconds. All videos are 1080×1080, 30 fps, H.264/yuv420p, fast-start MP4. The fixed colour cycle is red → blue → black → green, with a pale ghost character and 米字格.
+
+## Hong Kong EDB authority
+
+Hong Kong EDB 《香港小學學習字詞表》 sources are frozen under `sources/`. The 22 《我愛中國》 additions use the official CreateJS full filled outlines and chronological reveal states only—not generic Hanzi geometry. Acquisition records the exact EDB entry ID, official listed stroke count, source URL, and raw JavaScript SHA-256. `verification/china-source-audit.json` confirms that every listed count equals the decoded chronological timeline count and that every filled source state reconstructs exactly.
+
+The previous 12 official-geometry additions remain unchanged. The original nine retain their previously approved frozen outlines and mappings.
 
 ## Build and test
 
-Requirements: Python, Node, ffmpeg/ffprobe, macOS `sips`, NumPy, Pillow, SciPy. On the current Mac, uv is `/Users/claudeuser/.hermes/bin/uv`.
+Requirements: Python, Node, ffmpeg/ffprobe, macOS `sips`, NumPy, Pillow, SciPy. On this Mac, uv is `/Users/claudeuser/.hermes/bin/uv`.
 
 ```sh
 uv venv .venv
 uv pip install --python .venv/bin/python3 numpy pillow scipy
 source .venv/bin/activate
 npm ci
-npm test
+PATH="$PWD/.venv/bin:$PATH" npm test
 python -c 'import build; build.write_site(render_videos=False)'
-python -m http.server 8877 --directory site
 ```
 
-`python build.py` renders all videos. Durable batches: `python render_batch.py 祖父母老師消`; existing verified files: `python render_batch.py 防警 --verify-only`. `python consolidate.py` asserts all21 coverage, timings, current SHA-256 and visual approvals.
+`python build.py` renders all videos. Durable new-character batches:
 
-Native browser acceptance: install Python Playwright and an H.264-capable browser, then run `python browser_acceptance.py [url]`. Set `BROWSER_EXECUTABLE` to use an explicit installed browser (for example `/usr/bin/chromium`). The verified fallback for a headless macOS service is native ARM64 Debian Chromium in Docker, with CJK fonts; a bundled Chromium headless shell may lack H.264 support, and x86 emulation is not a reliable substitute. Native acceptance exercises all47 playback triggers and all21 download links at desktop and phone sizes. See `verification/ui-local.json` / `ui-live.json`; failed browser launches or unsupported-codec errors are not UI passes.
+```sh
+python render_batch.py 們中國是人在香港北京長
+python render_batch.py 城鳥巢故宮慶節煙花萬里
+```
+
+`python consolidate.py` fails closed unless all 43 media files, visual approvals, official metadata, current hashes, and Drive records agree.
+
+## Browser acceptance
+
+`browser_acceptance.py [url]` checks actual H.264 playback advancement, all 121 playback triggers, all 43 downloads, modal controls, phone layout, and page errors. A bundled ARM headless shell may omit H.264, so the verified fallback is native ARM64 Debian Chromium with Noto CJK fonts:
+
+```sh
+docker build -t k3-browser-acceptance /Users/claudeuser/projects/k3-browser-acceptance
+docker run --rm --platform linux/arm64 \
+  -v "$PWD:/work:ro" \
+  -v "$PWD/verification:/work/verification" \
+  -v /Users/claudeuser/projects/k3-browser-acceptance/run.py:/runner.py:ro \
+  k3-browser-acceptance /runner.py
+```
+
+Pass the public URL after `/runner.py` for the live check. The external Docker helper directory is intentionally not committed.
 
 ## Evidence and publication
 
-- `verification/<字>/media.json`: ffprobe, full decode, frame count, output hash, visual disposition.
-- `verification/<字>/progress-sheet.jpg`: six samples for every stroke; `decoded-final.png` and `decoded-progress.png`: actual encoded video frames.
-- `verification/visual-review.json`: all21 visual review decisions.
-- `verification/parent-independent-review.json`, `parent-independent-media.json`: independent review/test/media checks.
-- `verification/drive/*.json`: exact Drive IDs and full downloaded-byte equality to local videos. Theme folder: https://drive.google.com/drive/folders/1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK
-- `publish_drive.py`: uses the existing authorized Claude Tools connector, never credential copies; same-name replacement and exact-ID readback.
+- `verification/<字>/media.json`: ffprobe, complete decode, frame count, output hash, visual disposition.
+- `verification/<字>/progress-sheet.jpg`: six samples for every stroke; `decoded-final.png` and `decoded-progress.png` are decoded MP4 frames.
+- `verification/china-progress-1.jpg` … `china-progress-6.jpg`: all new progress sheets at review resolution.
+- `verification/china-final22-review.jpg`, `encoded-all43-review.jpg`: new and combined final-state reviews.
+- `verification/manifest.json`: consolidated source, media, Drive, cards, timings, and hashes.
+- `verification/drive/*.json`: returned Drive IDs and exact downloaded-byte equality. Folder: https://drive.google.com/drive/folders/1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK
+- `publish_drive.py`: authorized connector upload/replacement plus exact-ID download; the unchanged previous 21 were not reuploaded.
+- `verification/ui-local.json`, `ui-live.json`, `public-readback.json`: native browser and exact public-byte acceptance.
 
-The source branch is `develop`; existing GitHub Pages uses `gh-pages` at repository root. Publish the verified `site/` tree only after media, visual, code and browser gates pass, then compare all21 public MP4 bytes to the local hashes. No framework or third-party runtime API is needed by the site.
+Source development uses `develop`; GitHub Pages serves the exact `site/` tree from `gh-pages` at repository root.

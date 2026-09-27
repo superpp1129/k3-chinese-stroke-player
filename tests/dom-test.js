@@ -14,9 +14,12 @@ const { execFileSync } = require('node:child_process');
 const { JSDOM } = require('jsdom');
 
 const ROOT = path.resolve(__dirname, '..');
-const ORDER = '我有爸媽姐妹弟哥和祖父母老師消防員警察醫生';
+const ORDER = '我有爸媽姐妹弟哥和祖父母老師消防員警察醫生們中國是人在香港北京長城鳥巢故宮慶節煙花萬里';
 const ORIGINAL = '我有爸媽姐妹弟哥和';
-const WORDS = ['爸爸', '媽媽', '祖父', '祖母', '老師', '消防員', '警察', '醫生'];
+const OLD_WORDS = ['爸爸', '媽媽', '祖父', '祖母', '老師', '消防員', '警察', '醫生'];
+const HOMEWORK = ['我們', '中國', '我們是中國人', '在', '香港', '我們在香港', '北京', '有', '長城', '北京有長城', '鳥巢', '故宮', '北京有故宮'];
+const READING = ['國慶節', '煙花', '中國', '北京', '故宮', '萬里長城'];
+const WORDS = [...OLD_WORDS, ...HOMEWORK, ...READING];
 
 function buildFixture() {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'k3-ui-'));
@@ -76,9 +79,9 @@ const video = doc.querySelector('#video');
 const download = doc.querySelector('#dialog-download');
 const text = (selector) => doc.querySelector(selector).textContent;
 
-// ---- structure: 21 character cards, canonical order, correct targets ----
+// ---- structure: 43 character cards, canonical order, correct targets ----
 const cards = [...doc.querySelectorAll('.character-card')];
-assert.equal(cards.length, 21);
+assert.equal(cards.length, 43);
 assert.equal(cards.map((card) => card.querySelector('.character-button').dataset.char).join(''), ORDER);
 for (const card of cards) {
   const button = card.querySelector('.character-button');
@@ -99,7 +102,12 @@ for (const button of quick) {
   assert.equal(button.getAttribute('aria-label'), `快速播放「${button.dataset.char}」字筆順`);
 }
 
-// ---- eight word cards, each with per-character buttons (duplicates included) ----
+// ---- old and new theme sections retain exact ordered word cards ----
+assert.equal(doc.querySelector('#old-theme-title').textContent, '《他們都愛我》');
+assert.equal(doc.querySelector('#china-theme-title').textContent, '《我愛中國》');
+assert.deepEqual([...doc.querySelectorAll('#old-reading-words .word-card')].map((card) => card.dataset.word), OLD_WORDS);
+assert.deepEqual([...doc.querySelectorAll('#homework-words .word-card')].map((card) => card.dataset.word), HOMEWORK);
+assert.deepEqual([...doc.querySelectorAll('#china-reading-words .word-card')].map((card) => card.dataset.word), READING);
 const wordCards = [...doc.querySelectorAll('.word-card')];
 assert.deepEqual(wordCards.map((card) => card.dataset.word), WORDS);
 let wordButtons = 0;
@@ -114,12 +122,12 @@ for (const card of wordCards) {
     assert.equal(button.dataset.word, word);
     assert.equal(button.dataset.video, `videos/${char}.mp4`);
     assert.equal(button.textContent, char);
-    assert.equal(button.getAttribute('aria-label'), `播放「${word}」第${'一二三'[index]}個字「${char}」筆順`);
-    assert.ok(ORDER.includes(char), `${char} must be one of the 21 rendered characters`);
+    assert.equal(button.getAttribute('aria-label'), `播放「${word}」第${'一二三四五六七八九十'[index]}個字「${char}」筆順`);
+    assert.ok(ORDER.includes(char), `${char} must be one of the 43 rendered characters`);
   });
   wordButtons += buttons.length;
 }
-assert.equal(wordButtons, 17); // 爸爸媽媽祖父祖母老師警察醫生 = 2 each, 消防員 = 3
+assert.equal(wordButtons, WORDS.reduce((total, word) => total + word.length, 0));
 
 // ---- modal: open from a character card ----
 doc.querySelector('[aria-label="播放「姐」字筆順"]').click();
@@ -175,5 +183,5 @@ assert.equal(dialog.hasAttribute('open'), true);
 doc.querySelector('#close').click();
 
 setTimeout(() => {
-  console.log('DOM test passed: 21 cards, 9 quick buttons, 8 word cards (17 character buttons), modal open/switch/replay/close/cancel, safe play() rejection');
+  console.log('DOM test passed: 43 cards, 9 quick buttons, 27 ordered word cards, duplicate character triggers, modal and downloads');
 }, 20);

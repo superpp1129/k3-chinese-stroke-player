@@ -1,0 +1,10 @@
+{
+  "char": "京",
+  "id": "1fXWgoFvvra-AGfSmxUpaMMoFmK0CaBga",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1fXWgoFvvra-AGfSmxUpaMMoFmK0CaBga/view",
+  "bytes": 186399,
+  "sha256": "60fdc4ae9940f1f7d4febc6c0b1d4157567145274bbfb82e89f792bbc1e1037a",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

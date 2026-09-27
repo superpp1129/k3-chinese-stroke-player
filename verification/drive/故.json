@@ -1,0 +1,10 @@
+{
+  "char": "故",
+  "id": "1Cz5Gx0FPHjlCegOZ3jbH8FrggD797635",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1Cz5Gx0FPHjlCegOZ3jbH8FrggD797635/view",
+  "bytes": 258768,
+  "sha256": "1c7b488a391282f4dc6c7a46f2940d408dbb2a32ec8f54eb6bfa78feb1fd3dda",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

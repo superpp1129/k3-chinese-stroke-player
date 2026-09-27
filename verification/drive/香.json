@@ -1,0 +1,10 @@
+{
+  "char": "香",
+  "id": "19RgBRjx4croek2P5hs024lNxC5udvfrK",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/19RgBRjx4croek2P5hs024lNxC5udvfrK/view",
+  "bytes": 251798,
+  "sha256": "1b78ceec67c3e4b9a9e2123d217cf729270a4baa70629bc3047ba978ec4436d1",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}

@@ -1,0 +1,10 @@
+{
+  "char": "節",
+  "id": "1nDnxhq_wFhlq8SmmZKv2k8W4JaghdEk8",
+  "folder_id": "1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK",
+  "url": "https://drive.google.com/file/d/1nDnxhq_wFhlq8SmmZKv2k8W4JaghdEk8/view",
+  "bytes": 349146,
+  "sha256": "637a452293d8617117936f3a4b41d84b4285f14ef84138d72d69d001a65f8422",
+  "exact_byte_readback": true,
+  "connector": "registered gdrive.py upload --replace, link, download"
+}
