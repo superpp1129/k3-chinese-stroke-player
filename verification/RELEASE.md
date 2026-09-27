@@ -70,4 +70,4 @@ Drive folder `1iZwfwFdhM2pEDiojTRf-stwYjgMebRDK` lists one exact-ID production M
 
 ## Review note
 
-Automated static/diff review evidence is in `code-review.json`. An independent Claude Code review was attempted but its OAuth session was expired; this limitation is recorded rather than misrepresented as an independent pass.
+Automated static/diff review evidence is in `code-review.json`. The initial Claude Code review attempt was unavailable because its OAuth session had expired. A separate independent read-only release review was subsequently completed and passed with no blocking findings; it re-ran 10 Python tests, the DOM test, the exact source/requirement audit, all-43 media checks, prior-release comparison, public 47-file readback, and a security-oriented scan. See `independent-release-review.json`.
