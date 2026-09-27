@@ -39,7 +39,7 @@ lines += [
     "- Media: 43/43 ffprobe and full `ffmpeg -xerror` decode; H.264, 1080 square, 30 fps, yuv420p, exact expected frame counts.",
     "- Visual: six progress samples per new stroke, all 22 new finals, and combined all-43 final montage passed.",
     "- Local browser: native ARM64 Debian Chromium with H.264 exercised 121 playback triggers and 43 downloads; no page errors or 390px overflow.",
-    "- Public browser/readback fields are updated only after gh-pages deployment and live verification.",
+    "- Public: GitHub Pages build completed for the exact 47-file site tree; HTML/CSS/JS/manifest and all 43 MP4s matched local bytes; native live browser acceptance passed 121 triggers and 43 downloads.",
     "",
     "## Review note",
     "",

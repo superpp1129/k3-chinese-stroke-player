@@ -1,23 +1,23 @@
 {
   "base_url": "https://superpp1129.github.io/k3-chinese-stroke-player/",
-  "files_verified": 25,
-  "video_count": 21,
+  "files_verified": 47,
+  "video_count": 43,
   "all_exact_byte_match": true,
   "records": [
     {
       "file": "index.html",
       "url": "https://superpp1129.github.io/k3-chinese-stroke-player/index.html",
       "status": 200,
-      "bytes": 13734,
-      "sha256": "24544dd63e8131d8b1fe07a0ca22d0f3fd4213e683b594fd73325ffe1fa07aea",
+      "bytes": 33272,
+      "sha256": "b2a6f9f96a3864e2b9af2642906e6aecd5f8114ba99e616ab339458eda206571",
       "exact_byte_match": true
     },
     {
       "file": "styles.css",
       "url": "https://superpp1129.github.io/k3-chinese-stroke-player/styles.css",
       "status": 200,
-      "bytes": 3939,
-      "sha256": "3b12dc469735dceaf6672ffc0f8ef2112b33e0500e65766c2c95df23c997b31a",
+      "bytes": 4287,
+      "sha256": "8cd941ad2e0e0075bae9e8a5bf686e984ef0acfc105820e7ebddcecdea9c1f30",
       "exact_byte_match": true
     },
     {
@@ -32,8 +32,8 @@
       "file": "manifest.json",
       "url": "https://superpp1129.github.io/k3-chinese-stroke-player/manifest.json",
       "status": 200,
-      "bytes": 49623,
-      "sha256": "4c884e31b3a6b11ca94fe57f6233d3af90ba30188f2ca9e2ec09da0dcb50a134",
+      "bytes": 140487,
+      "sha256": "73e1a6c9612d4eed93e574060e344216be02261af7cc6d695b08b3b0ab615c55",
       "exact_byte_match": true
     },
     {
@@ -202,6 +202,182 @@
       "status": 200,
       "bytes": 128481,
       "sha256": "06857b4ed27fc5c28d0dfb954bdfc7cea765a591ab2bd4107ddedbded4f58a58",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/們.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E5%80%91.mp4",
+      "status": 200,
+      "bytes": 248067,
+      "sha256": "00add9ebfbb69f8c78e619d6ce5ebb7da81341881505ff1f0b93f6e1a65fe2c6",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/中.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E4%B8%AD.mp4",
+      "status": 200,
+      "bytes": 103155,
+      "sha256": "f14902a8a36c15268618fc6636c5d2e0fec160fa652cdd2e01c08213ca4364f5",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/國.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E5%9C%8B.mp4",
+      "status": 200,
+      "bytes": 273780,
+      "sha256": "7c98fca0b7b978a329b323f4b22c6e8757ff5b77f1bd83c1a7c1b53a1a89fd29",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/是.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E6%98%AF.mp4",
+      "status": 200,
+      "bytes": 247404,
+      "sha256": "0575314bf409eed8945c41b61f8b4b5057924fa3740b6cc0df036eaca58133f8",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/人.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E4%BA%BA.mp4",
+      "status": 200,
+      "bytes": 83478,
+      "sha256": "d67b7016fade105a1f2dd3c5f9202d6bcd24b925c07000541e2df6bb1ee73758",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/在.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E5%9C%A8.mp4",
+      "status": 200,
+      "bytes": 177742,
+      "sha256": "12aaf05b5c5c2b38251b17ff20451ff350119b27d288887bd816f7e624fdb777",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/香.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E9%A6%99.mp4",
+      "status": 200,
+      "bytes": 251798,
+      "sha256": "1b78ceec67c3e4b9a9e2123d217cf729270a4baa70629bc3047ba978ec4436d1",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/港.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E6%B8%AF.mp4",
+      "status": 200,
+      "bytes": 334425,
+      "sha256": "248a426cdd4833bf0864c989b514cf50b727835c41ad010e1cf9cba2c9f0bef4",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/北.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E5%8C%97.mp4",
+      "status": 200,
+      "bytes": 135767,
+      "sha256": "466cc8d5b1ce9c84a7542cb20c552b051bcb89ab60e7a2a55845ee5c324b0c43",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/京.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E4%BA%AC.mp4",
+      "status": 200,
+      "bytes": 186399,
+      "sha256": "60fdc4ae9940f1f7d4febc6c0b1d4157567145274bbfb82e89f792bbc1e1037a",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/長.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E9%95%B7.mp4",
+      "status": 200,
+      "bytes": 193171,
+      "sha256": "3532fb9faddd9c5ec077c06b5d6fe47eb7072ce5932390d7cbf73440310f8c57",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/城.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E5%9F%8E.mp4",
+      "status": 200,
+      "bytes": 267765,
+      "sha256": "0f9b1cf03a478ea2eaa0a81f37f3e6b8896bc00916d51e76702deda9109b2dbd",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/鳥.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E9%B3%A5.mp4",
+      "status": 200,
+      "bytes": 259433,
+      "sha256": "6f7b527bc62e75a3097af669133c8aeaa5af0528b4a1cbb5b28e8fc75338c5c1",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/巢.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E5%B7%A2.mp4",
+      "status": 200,
+      "bytes": 289644,
+      "sha256": "58b80499d6a81db8324ea509c647197d34777f88779663b3dfad5dc9e3e93f35",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/故.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E6%95%85.mp4",
+      "status": 200,
+      "bytes": 258768,
+      "sha256": "1c7b488a391282f4dc6c7a46f2940d408dbb2a32ec8f54eb6bfa78feb1fd3dda",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/宮.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E5%AE%AE.mp4",
+      "status": 200,
+      "bytes": 239571,
+      "sha256": "2cb2088ca33b0393a2efb153bbdc6b60eaebdf70a91bf5240a3dbf0ed1effeb5",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/慶.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E6%85%B6.mp4",
+      "status": 200,
+      "bytes": 472164,
+      "sha256": "6796d7ae4932f02b15aae154f393782d867ff79c86c78f871cb5e2c3c853fc4d",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/節.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E7%AF%80.mp4",
+      "status": 200,
+      "bytes": 349146,
+      "sha256": "637a452293d8617117936f3a4b41d84b4285f14ef84138d72d69d001a65f8422",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/煙.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E7%85%99.mp4",
+      "status": 200,
+      "bytes": 340676,
+      "sha256": "bf2a9dfbc5b22445548a8278c4123ea5670c519c9477199477fc4bdf2916cd37",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/花.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E8%8A%B1.mp4",
+      "status": 200,
+      "bytes": 201849,
+      "sha256": "f7ef89c07ae0f77196a226f951cc659bd74992241726057722b9ea6dc916274d",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/萬.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E8%90%AC.mp4",
+      "status": 200,
+      "bytes": 347531,
+      "sha256": "ef42070b70c3bc553c262e1a371aca7c0cd8a78f00490f1fbf0ecb0bed08f0e3",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/里.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E9%87%8C.mp4",
+      "status": 200,
+      "bytes": 173671,
+      "sha256": "728d34b1df274f953710b0488420cf2857b8afffb8dbdb9d995fc06040166b39",
       "exact_byte_match": true
     }
   ]
