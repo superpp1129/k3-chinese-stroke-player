@@ -79,7 +79,8 @@ for _char, _order in ADDED_ORDERS.items():
 # reveal timeline.  Numbered labels avoid inventing stroke-type terminology:
 # the frozen states are the authoritative order and shape evidence.
 NEW_CHARACTERS = '們中國是人在香港北京長城鳥巢故宮慶節煙花萬里'
-for _char in NEW_CHARACTERS:
+TAKEOFF_CHARACTERS = '玉米真美味益的白菜一起吃飯早睡跳舞跑步游泳踢球踏單車'
+for _char in NEW_CHARACTERS + TAKEOFF_CHARACTERS:
     _source = json.loads((ROOT / 'sources' / f'{_char}.json').read_text())
     _source['stroke_order'] = [f'官方第{i}筆' for i in range(1, _source['strokes'] + 1)]
     _source['geometry'] = 'official-edb'
@@ -257,7 +258,7 @@ def write_site(destination: Path = SITE, render_videos: bool = True):
     (destination / "styles.css").write_text(CSS)
     (destination / "app.js").write_text(JS)
     (destination / "manifest.json").write_text(json.dumps({
-        "themes": ["他們都愛我", "我愛中國"],
+        "themes": ["他們都愛我", "我愛中國", "起飛吧！得得"],
         "count": len(CHARACTERS),
         "characters": CHARACTERS,
     }, ensure_ascii=False, indent=2))

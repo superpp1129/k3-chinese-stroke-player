@@ -1,0 +1,2314 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-HK" xml:lang="zh-HK">
+
+    <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-THZ49RG');</script>
+<!-- End Google Tag Manager -->	
+        <title>香港小學學習字詞表</title>
+        
+        <script src="Scripts/floating.js" type="text/javascript"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	/* text-align: justify; */
+	background-color:#FFFFFF;
+}
+#II{
+	float:right;
+}
+#p1{
+	font-size: 78%;
+}
+
+#topBanner {
+	background-image: url(assets/bgTop.gif);
+}
+
+div.topright{
+	display:block;
+
+	/*set the div in the top right corner*/
+	position:absolute;
+	right:0;
+	width:160px;
+}
+
+#textbox {
+	width:93%;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 35px;
+}
+#btnCollapse {
+	position:fixed;
+	width:25px;
+	height:100px;
+	z-index:500;
+	left: 0;
+	top: 110px;
+	visibility: visible;
+}
+#yellowbox {
+	background-color:#FFFFCC;
+	padding: 10px;
+	border: 1px solid #009900;
+    margin-bottom: 20px;
+}
+
+a#li2 {
+    text-decoration: none;
+}
+
+
+.topnavi{
+text-decoration: none;
+	color: #990000;
+	font-weight: bold;
+	font-size: 11pt;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.topnavien{
+	color: #990000;
+	font-size: 8pt;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+text-decoration: none;
+}
+
+.tit{
+text-decoration: none;
+	color: #990000;
+	font-weight: bold;
+	font-size: 31pt;
+	margin-left: 26px;
+	text-shadow: 2px 1px #998000;
+	font-family: Arial, Helvetica,SimHei;
+}
+
+.msie_alert {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+	background-color:#FFC04C;
+	padding: 10px 15px 10px 15px;
+	border-bottom: 1px solid #999999;
+}
+
+.handpointer{
+	cursor:pointer;
+}
+
+-->
+</style>
+
+<script src="js/jquery-3.5.0.js"></script>
+<script src="Scripts/mymouse.js"></script>
+
+
+<script type="text/javascript">
+// fix for position:fixed in IE6
+function move_box() {
+    var offset = 110; // set offset (likely equal to your css top)
+    var element = document.getElementById('btnCollapse');
+
+    element.style.top = (document.documentElement.scrollTop + offset) + 'px';
+}
+</script>
+<!--[if lt IE 7]>
+<style type="text/css">
+#btnCollapse {
+	position:absolute;
+	width:20px;
+	height:100px;
+	z-index:1;
+	left: 0;
+	top: 110px;
+	visibility: visible;
+}
+</style>
+<script type="text/javascript">
+	window.setInterval(move_box, 100);
+</script>
+<![endif]-->
+
+<link rel="stylesheet" href="css/common.css" type="text/css">
+<link rel="stylesheet" href="css/unsemantic/unsemantic-grid-responsive.css">
+
+<script type="text/javascript" src="js/jquery-3.5.0.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<style type="text/css">
+html {
+	overflow: hidden;
+}
+</style>
+
+</head>
+<script language=JavaScript>
+
+	   function doSoundyp(ydanp) {
+	var yp= ydanp.split(" ");
+	var audio = document.createElement('audio');
+audio.src = "/EmbziciwebRes/jyutping/"+yp[0]+".mp3";
+  audio.play();
+	var count=0;
+audio.addEventListener("ended", function() {
+    count ++;
+    audio.src = "/EmbziciwebRes/jyutping/"+yp[count]+".mp3";//"saat1.mp3";
+   if(count>yp.length-1) {count=0;}
+    else {audio.play(); }
+   },false);
+   }
+//-------------------------
+    function doSoundhp(ydanp) {
+	var yp= ydanp.split(" ");
+//	alert("ydanp="+ydanp);
+	var audio = document.createElement('audio');
+audio.src = "/EmbziciwebRes/pinyin/"+yp[0]+".mp3";
+  audio.play();
+	var count=0;
+audio.addEventListener("ended", function() {
+    count ++;
+    audio.src = "/EmbziciwebRes/pinyin/"+yp[count]+".mp3";//"saat1.mp3";
+   if(count>yp.length-1) {count=0;}
+    else {audio.play(); }
+   },false);
+}
+//------------------------
+
+//---------------------
+        var appendixPopup = null;
+        function MM_openBrWindow(theURL,winName,features) {
+            if (appendixPopup && !appendixPopup.closed) {
+                appendixPopup.close();
+            }
+            appendixPopup = window.open(theURL,winName,features);
+        }
+    </script>
+
+<body>
+
+	  
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THZ49RG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+    <script language="JavaScript">
+        (function () {  // Show warning for MS Internet Explorer
+            var trident = {
+              string: navigator.userAgent.match(/Trident\/(\d+)/)
+            };
+
+            trident.version = trident.string ? parseInt(trident.string[1], 10) : null;
+
+            if (trident.string) {
+              document.body.innerHTML = '<div class="msie_alert">Internet Explorer <span style="font-size:12pt;">或不能妥善顯示本頁內容，建議使用其他瀏覽器。</span></div>' + document.body.innerHTML;
+            }
+        })();
+    </script>
+
+
+<div class="content">
+
+  <h1>搜尋結果</h1>
+
+
+
+		<div class="content_text">
+
+
+        
+        
+        
+
+      <div class="content_left">
+   <!-- Stkdemo display -->
+        <iframe width='300px' height='370px' src='/EmbziciwebRes/stkdemo_js/0001-1000/0001.html?lang=ch' scrolling='no' style='border: 0px;'></iframe>
+      </div>
+
+      <div class="content_right">
+
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+
+<tr>
+
+
+
+
+
+</tr>
+
+<tr>
+
+
+
+
+</tr>
+
+</table>
+
+
+                <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                <tr>
+                    <td width="50%" bgcolor="#00ACA2" class="headerWhite">部首</td>
+				    <td bgcolor="#00ACA2" class="headerWhite">總筆畫數</td>
+                </tr>
+				<tr>
+                    <td>一部</td>
+                    <td>
+                        1 畫
+					</td>
+				</tr>
+				</table>
+                <table width="100%" border="0" cellspacing="1" cellpadding="1">
+                
+                <tr>
+                    <td colspan="2" bgcolor="#00ACA2" class="headerWhite"><div align="center">字音</div></td>
+				</tr>
+                <tr>
+                  <td width="50%" bgcolor="#00ACA2" class="headerWhite">普通話</td>
+                  <td width="50%" bgcolor="#00ACA2" class="headerWhite">粵語</td>
+                </tr>
+				<tr>
+                    <td class="pinyin12"><strong>
+                        yī<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span><br />
+                        <br />
+                                            </strong></td>
+				    <td>
+                        
+                            <span class="jyutping12"><strong> jat1<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></strong></span>〔日1〕<br />
+                            <span class="jyutping12"><strong> </strong></span><br />
+                            <span class="jyutping12"><strong> </strong></span>
+                       
+                    </td>
+				</tr>
+                
+				</table>
+                
+
+       </div>
+
+        <div class="content_bottom">
+            
+
+            
+            
+            <script language="JavaScript">
+                function updateTblCi(v) {
+                    var ie4 = (document.all);
+                    var tbl = document.getElementById("tblCi");
+                    var rx = tbl.rows;
+                    for (var i=0; i<rx.length; i++) {
+                        if (rx[i].className == "ks1" || rx[i].className == "eng1") {
+                            rx[i].style.display = (v == "ks1" || v == "ks12") ? (ie4) ? "block" : "table-row" : "none";
+                        } else if (rx[i].className == "ks2" || rx[i].className == "eng2") {
+                            rx[i].style.display = (v == "ks2" || v == "ks12") ? (ie4) ? "block" : "table-row" : "none";
+                        }
+                    }
+                }
+            </script>
+            <table id="tblCi" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="4" valign="top" bgcolor="#00ACA2" class="headerWhite">小學學習字詞表</td>
+                </tr>
+                <tr>
+                  <td colspan="4" valign="top" bgcolor="#a1e5fe" style="padding:5px 15px;font-weight:bold; line-height: 40px;">
+                        <strong>詞語顯示：</strong><br>
+                        <label><input type="radio" name="showKS" value="ks1" onClick="updateTblCi(this.value)">
+                        第一學習階段<span class="checkmark"></span></label>
+                        <label><input type="radio" name="showKS" value="ks2" onClick="updateTblCi(this.value)">
+                        第二學習階段<span class="checkmark"></span></label>
+                        <label><input type="radio" name="showKS" value="ks12" onClick="updateTblCi(this.value)" checked>
+                      第一及第二學習階段<span class="checkmark"></span></label>
+                      </td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yī<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一一</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yīyī<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi1 yi1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 jat1<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 jat1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一下</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yíxiɑ̀<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 xia4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 haa5<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 haa5')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一下子</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yíxiɑ̀zi<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 xia4 zi5-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 haa5 zi2<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 haa5 zi2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一口</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìkǒu<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 kou3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 hau2<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 hau2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一口氣</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìkǒuqì<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 kou3-B qi4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 hau2 hei3<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 hau2 hei3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一切</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yíqiè<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 qie4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 cai3<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 cai3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一心</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìxīn<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 xin1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 sam1<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 sam1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一手</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìshǒu<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 shou3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 sau2<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 sau2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一方面</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìfɑ̄ngmiɑ̀n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 fang1 mian4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 fong1 min6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 fong1 min6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一日千里</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yí rì qiɑ̄n lǐ<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 ri4 qian1 li3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 jat6 cin1 lei5<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 jat6 cin1 lei5')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一片</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yípiɑ̀n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 pian4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 pin3<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 pin3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一代</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yídɑ̀i<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 dai4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 doi6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 doi6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一半</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yíbɑ̀n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 ban4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 bun3<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 bun3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一旦</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yídɑ̀n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 dan4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 daan3<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 daan3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一本正經</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yì běn zhèng jīng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 ben3-B zheng4 jing1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 bun2 zing3 ging1<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 bun2 zing3 ging1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一生</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìshēng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 sheng1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 sang1<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 sang1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一目了然</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yí mù liɑ̌orɑ́n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 mu4 liao3-B ran2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 muk6 liu5 jin4<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 muk6 liu5 jin4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一共</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yígòng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 gong4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 gung6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 gung6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一再</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yízɑ̀i<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 zai4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 zoi3<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 zoi3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一同</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìtóng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 tong2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 tung4<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 tung4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一向</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yíxiɑ̀ng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 xiang4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 hoeng3<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 hoeng3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一如</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìrú<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 ru2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 jyu4<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 jyu4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一早</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìzɑ̌o<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 zao3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 zou2<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 zou2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一行</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìxíng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 xing2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 hang4<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 hang4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一系列</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yíxìliè<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 xi4 lie4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 hai6 lit6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 hai6 lit6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一身</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìshēn<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 shen1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 san1<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 san1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一事無成</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yí shì wúchéng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 shi4 wu2 cheng2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 si6 mou4 sing4<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 si6 mou4 sing4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一些</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìxiē<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 xie1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 se1<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 se1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一來</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìlɑ́i<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 lai2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 loi4<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 loi4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一味</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yíwèi<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 wei4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 mei6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 mei6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一定</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yídìng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 ding4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 ding6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 ding6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一直</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìzhí<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 zhi2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 zik6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 zik6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一度</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yídù<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 du4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 dou6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 dou6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一律</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yílǜ<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 lv4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 leot6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 leot6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一流</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìliú<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 liu2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 lau4<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 lau4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一致</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yízhì<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 zhi4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 zi3<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 zi3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一面</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yímiɑ̀n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 mian4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 min6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 min6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一席之地</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yì xí zhī dì<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 xi2 zhi1 di4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 zik6 zi1 dei6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 zik6 zi1 dei6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一旁</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìpɑ́ng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 pang2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 pong4<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 pong4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一時</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìshí<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 shi2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 si4<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 si4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一氣呵成</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yí qì hē chéng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 qi4 he1 cheng2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 hei3 ho1 sing4<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 hei3 ho1 sing4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一般</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìbɑ̄n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 ban1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 bun1<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 bun1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一起</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìqǐ<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 qi3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 hei2<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 hei2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一陣子</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yízhènzi<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 zhen4 zi5-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 zan6 zi2<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 zan6 zi2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一帶</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yídɑ̀i<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 dai4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 daai3<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 daai3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一貫</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yíguɑ̀n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 guan4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 gun3<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 gun3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一連</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìliɑ́n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 lian2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 lin4<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 lin4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一連串</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìliɑ́nchuɑ̀n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 lian2 chuan4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 lin4 cyun3<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 lin4 cyun3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom" ><img src="assets/l_top.gif"></td>
+                    <td nowrap class="ci" >一部分</td>
+                    <td style="width: 70%; "><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yí bùfen<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 bu4 fen5-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 bou6 fan6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 bou6 fan6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td >1</td>
+                </tr>
+                
+                <tr class="ks1">
+                    <td width="13" align="left" valign="top"  style="border-bottom:#007099 2px solid"><img src="assets/l_bottom.gif"></td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">一部份</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yí bùfen<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 bu4 fen5-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 bou6 fan6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 bou6 fan6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一勞永逸</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yì lɑ́o yǒng yì<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 lao2 yong3-B yi4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 lou4 wing5 jat6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 lou4 wing5 jat6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一無所知</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yì wú suǒ zhī<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 wu2 suo3-B zhi1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 mou4 so2 zi1<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 mou4 so2 zi1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一番</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìfɑ̄n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 fan1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 faan1<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 faan1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一絲不苟</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yì sī bù gǒu<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 si1 bu4 gou3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 si1 bat1 gau2<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 si1 bat1 gau2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一視同仁</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yí shì tóng rén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 shi4 tong2 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 si6 tung4 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 si6 tung4 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一塊（兒）</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yíkuɑ̀i(r)<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 kuai4 yi2 kuair4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 faai3(ji4)<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 jat1 faai3ji4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一會（兒）</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yíhuì(r)<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 hui4 yi2 huir4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 wui6(ji4)<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 jat1 wui6ji4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一路</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yílù<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 lu4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 lou6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 lou6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一道</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yídɑ̀o<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 dao4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 dou6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 dou6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一鳴驚人</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yì míng jīng rén<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 ming2 jing1 ren2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 ming4 ging1 jan4<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 ming4 ging1 jan4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一齊</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìqí<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 qi2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 cai4<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 cai4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一樣</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yíyɑ̀ng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 yang4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 joeng6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 joeng6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一模一樣</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yì mú yí yɑ̀ng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 mu2 yi2 yang4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 mou4 jat1 joeng6<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 mou4 jat1 joeng6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一輩子</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yíbèizi<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi2 bei4 zi5-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 bui3 zi2<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 bui3 zi2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一應俱全</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yì yīng jù quɑ́n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 ying1 ju4 quan2')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 jing3 keoi1 cyun4<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 jing3 keoi1 cyun4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一點（兒）</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìdiɑ̌n(r)<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 dian3-A yi4 dianr3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 dim2(ji4)<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 jat1 dim2ji4')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一點點</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìdiɑ̌ndiɑ̌n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 dian2 dian3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 dim2 dim2<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 dim2 dim2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一邊</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìbiɑ̄n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 bian1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 bin1<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 bin1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">一體</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yìtǐ<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi4 ti3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 tai2<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 tai2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom" ><img src="assets/l_top.gif"></td>
+                    <td nowrap class="ci" >瞬間</td>
+                    <td style="width: 70%; "><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  shùnjiɑ̄n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('shun4 jian1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> seon3 gaan1<span class='handpointer'><img id='v16' onclick="doSoundyp('seon3 gaan1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td >2</td>
+                </tr>
+                
+                <tr class="ks2">
+                    <td width="13" align="left" valign="top"  style="border-bottom:#007099 2px solid"><img src="assets/l_bottom.gif"></td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">一瞬間</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  yí shùnjiɑ̄n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('yi1 shun4 jian1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> jat1 seon3 gaan1<span class='handpointer'><img id='v16' onclick="doSoundyp('jat1 seon3 gaan1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">不一</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  bùyī<span class='handpointer'><img id='v16hp' onclick="doSoundhp('bu4 yi1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> bat1 jat1<span class='handpointer'><img id='v16' onclick="doSoundyp('bat1 jat1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">不一定</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  bùyídìng<span class='handpointer'><img id='v16hp' onclick="doSoundhp('bu4 yi2 ding4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> bat1 jat1 ding6<span class='handpointer'><img id='v16' onclick="doSoundyp('bat1 jat1 ding6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">不一會</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  bùyíhuì<span class='handpointer'><img id='v16hp' onclick="doSoundhp('bu4 yi2 hui4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> bat1 jat1 wui6<span class='handpointer'><img id='v16' onclick="doSoundyp('bat1 jat1 wui6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">同一</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  tóngyī<span class='handpointer'><img id='v16hp' onclick="doSoundhp('tong2 yi1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> tung4 jat1<span class='handpointer'><img id='v16' onclick="doSoundyp('tung4 jat1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">耳目一新</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  ěr mù yì xīn<span class='handpointer'><img id='v16hp' onclick="doSoundhp('er3-B mu4 yi4 xin1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> ji5 muk6 jat1 san1<span class='handpointer'><img id='v16' onclick="doSoundyp('ji5 muk6 jat1 san1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">首屈一指</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  shǒu qū yì zhǐ<span class='handpointer'><img id='v16hp' onclick="doSoundhp('shou3-B qu1 yi4 zhi3-A')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> sau2 wat1 jat1 zi2<span class='handpointer'><img id='v16' onclick="doSoundyp('sau2 wat1 jat1 zi2')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom" ><img src="assets/l_top.gif"></td>
+                    <td nowrap class="ci" >唯一</td>
+                    <td style="width: 70%; "><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  wéiyī<span class='handpointer'><img id='v16hp' onclick="doSoundhp('wei2 yi1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> wai4 jat1<span class='handpointer'><img id='v16' onclick="doSoundyp('wai4 jat1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td >2</td>
+                </tr>
+                
+                <tr class="ks2">
+                    <td width="13" align="left" valign="top"  style="border-bottom:#007099 2px solid"><img src="assets/l_bottom.gif"></td>
+                    <td class="ci"  style="border-bottom:#007099 2px solid">惟一</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  wéiyī<span class='handpointer'><img id='v16hp' onclick="doSoundhp('wei2 yi1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> wai4 jat1<span class='handpointer'><img id='v16' onclick="doSoundyp('wai4 jat1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">統一</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  tǒngyī<span class='handpointer'><img id='v16hp' onclick="doSoundhp('tong3-B yi1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> tung2 jat1<span class='handpointer'><img id='v16' onclick="doSoundyp('tung2 jat1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">逐一</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  zhúyī<span class='handpointer'><img id='v16hp' onclick="doSoundhp('zhu2 yi1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> zuk6 jat1<span class='handpointer'><img id='v16' onclick="doSoundyp('zuk6 jat1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">單一</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  dɑ̄nyī<span class='handpointer'><img id='v16hp' onclick="doSoundhp('dan1 yi1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> daan1 jat1<span class='handpointer'><img id='v16' onclick="doSoundyp('daan1 jat1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">進一步</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  jìnyíbù<span class='handpointer'><img id='v16hp' onclick="doSoundhp('jin4 yi2 bu4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> zeon3 jat1 bou6<span class='handpointer'><img id='v16' onclick="doSoundyp('zeon3 jat1 bou6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">煥然一新</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  huɑ̀n rɑ́n yì xīn<span class='handpointer'><img id='v16hp' onclick="doSoundhp('huan4 ran2 yi4 xin1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> wun6 jin4 jat1 san1<span class='handpointer'><img id='v16' onclick="doSoundyp('wun6 jin4 jat1 san1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">萬一</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  wɑ̀nyī<span class='handpointer'><img id='v16hp' onclick="doSoundhp('wan4 yi1')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> maan6 jat1<span class='handpointer'><img id='v16' onclick="doSoundyp('maan6 jat1')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks1">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">獨一無二</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  dú yī wú èr<span class='handpointer'><img id='v16hp' onclick="doSoundhp('du2 yi1 wu2 er4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> duk6 jat1 mou4 ji6<span class='handpointer'><img id='v16' onclick="doSoundyp('duk6 jat1 mou4 ji6')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">1</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                <tr  class="ks2">
+                    <td width="13" align="left" valign="bottom"  style="border-bottom:#007099 2px solid">&nbsp;</td>
+                    <td nowrap class="ci"  style="border-bottom:#007099 2px solid">難得一見</td>
+                    <td style="width: 70%;  border-bottom:#007099 2px solid;"><div class="pinyinGreen"><img src="assets/p_green.gif" align="absmiddle" alt="普通話讀音">  nɑ́ndé yí jiɑ̀n<span class='handpointer'><img id='v16hp' onclick="doSoundhp('nan2 de2 yi2 jian4')"  alt='播放讀音' src='assets/Volume16.gif' border=0 align='absmiddle'></span></div>
+                    <div class="jyutpingGreen"><img src="assets/c_green.gif" align="absmiddle" alt="粵語讀音"> naan4 dak1 jat1 gin3<span class='handpointer'><img id='v16' onclick="doSoundyp('naan4 dak1 jat1 gin3')" src='assets/Volume16.gif' border=0 align='absmiddle'></span></div></td>
+                    <td  style="border-bottom:#007099 2px solid">2</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                
+                
+            </table>
+            
+
+	    <!-- <p align="right"><span class="smallchn">[ <a href="../lexlist_zixing/searchpane.jsp"
+ target="leftFrame" title="leftFrame"
+ onClick="top.mainFrame.location='../lexlist_zixing/resultzixing.jsp?id=0001&sortBy=stroke&jpC=lshk';">▲按此往《常用字形表》&nbsp;
+		<span xml:lang="en" lang="en">
+
+		</span>一
+	    </a> ]</span></p> -->
+
+
+
+
+
+            
+            
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+					<td bgcolor="#CAC9E4" valign="top" colspan="3" class="headerBlack"><a name="fb01" id="fb01"></a>小學學習字詞表　附表一　四字詞語</td>
+					<td nowrap="nowrap" bgcolor="#cac9e4" class="headerBlack"><div align="right"><a href="#fb01"><img src="assets/btnFubiaoExplain.gif" alt="說明" width="75" height="34" border="0" onClick="MM_openBrWindow('fubiao1_shuoming.htm','popup','scrollbars=yes,width=400,height=300')" /></a></div></td>
+					</tr>
+				</table>
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一乾二淨
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一反常態
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一呼百應
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一命嗚呼
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一哄而散
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一塌糊塗
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一如既往
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一帆風順
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一年半載
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一廂情願
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一心一意
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一意孤行
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一成不變
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一掃而空
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一敗塗地
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一望無際
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一枝獨秀
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一波三折
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一清二楚
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一無所有
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一無是處
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一知半解
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一竅不通
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一筆勾銷
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一籌莫展
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一網打盡
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一臂之力
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一舉一動
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一舉兩得
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一舉成名
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一落千丈
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一見如故
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一觸即發
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一言為定
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一蹴而就
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一蹶不振
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一針見血
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一面之緣
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一頭霧水
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一飛衝天
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一馬當先
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一鱗半爪
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">一鼓作氣
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">千篇一律
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">千鈞一髮
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">不可一世
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">不屑一顧
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">不拘一格
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">不顧一切
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">功虧一簣
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">可見一斑
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">打成一片
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">名噪一時
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">多此一舉
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">如出一轍
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">別具一格
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">別樹一幟
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">奄奄一息
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">從一而終
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">莫衷一是
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">搖身一變
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">毀於一旦
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">萬無一失
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">萬眾一心
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">曇花一現
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">獨樹一幟
+				
+				</td>
+				
+				
+				</tr><tr>
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">獨當一面
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<img src="assets/clear13.gif" align="absmiddle">燬於一旦
+				
+				</td>
+				
+				
+				
+				<td class="ci" valign="top" style="border-bottom:#007099 2px solid; padding:5px 0;width: 400px;">
+				
+				
+					<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+					<td width="13" align="left" valign="bottom"><img src="assets/l_top.gif"></td>
+					<td class="ci">靈機一動</td>
+					</tr>
+					
+						<tr>
+						<td width="13" align="left" valign="top"><img src="assets/l_bottom.gif"></td>
+						<td class="ci">靈機一觸</td>
+						</tr>
+					
+					</table>
+				
+				</td>
+				
+				
+				</tr>
+				</table>
+				<BR>
+				
+			
+            
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td bgcolor="#CAC9E4" valign="top" colspan="1" class="headerBlack"><a name="fb02" id="fb02"></a>小學學習字詞表　附表二　多字熟語</td>
+                    <td nowrap="nowrap" bgcolor="#cac9e4" class="headerBlack"><div align="right"><a href="#fb02"><img src="assets/btnFubiaoExplain.gif" alt="說明" width="75" height="34" border="0" onClick="MM_openBrWindow('fubiao2_shuoming.htm','popup','scrollbars=yes,width=400,height=330')" /></a></div></td>
+                </tr>
+            </table>
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">一動不如一靜</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">一回生，兩回熟</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">一失足成千古恨</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">一寸光陰一寸金</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">一年之計在於春，一日之計在於晨</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">一波未平，一波又起</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">一發不可收拾</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">一而再，再而三</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">一言驚醒夢中人</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">冰凍三尺，非一日之寒</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">多一事不如少一事</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">百尺竿頭，更進一步</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">百聞不如一見</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">更上一層樓</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">爭一日之長短</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">牽一髮而動全身</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">智者千慮，必有一失</td>
+                </tr>
+                
+                <tr valign="top">
+					
+                    <td class="ci" style="border-bottom:#007099 2px solid; padding: 5px 0;padding-left: 13px;">道高一尺，魔高一丈</td>
+                </tr>
+                
+            </table>
+            <BR>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+
+        
+
+        </div>
+
+
+
+</div>
+
+<div class="footer">
+
+<a href="#" class="top_btn" onclick="window.parent.parent.scrollTo(0,0)">返回頁首</a>
+
+  <p>香港特別行政區政府教育局 課程發展處中國語文教育組<br>
+© 香港教育局
+</p>
+
+  <a href="https://www.w3.org/WAI/WCAG2AA-Conformance.html" target="_blank"><img src="images/wcag2.1AA-v.png" alt="wcag2.1AA-v"></a>
+</div>
+
+</div>
+
+<style>
+.content_right .headerWhite {
+  border: 2px #fff solid;
+}
+.headerWhite {
+  background-color: #007099;
+  color: #fff;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.content_bottom .headerWhite {
+  padding: 5px 15px;
+}
+.pinyin, .pinyinGreen, .pinyinPurple, .pinyin12, .jyutping, .jyutpingGreen, .jyutpingPurple, .jyutping12 {
+    font-family: Arial, "lucida sans unicode",  "DejaVu Sans", sans-serif;
+}
+</style>
+
+    </body>
+</html>

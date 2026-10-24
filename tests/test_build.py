@@ -11,9 +11,9 @@ class StrokeSiteTests(unittest.TestCase):
     def test_theme_has_exact_requested_character_order(self):
         self.assertEqual(
             [item["char"] for item in build.CHARACTERS],
-            list("我有爸媽姐妹弟哥和祖父母老師消防員警察醫生們中國是人在香港北京長城鳥巢故宮慶節煙花萬里"),
+            list("我有爸媽姐妹弟哥和祖父母老師消防員警察醫生們中國是人在香港北京長城鳥巢故宮慶節煙花萬里玉米真美味益的白菜一起吃飯早睡跳舞跑步游泳踢球踏單車"),
         )
-        self.assertEqual(len(build.CHARACTERS), 43)
+        self.assertEqual(len(build.CHARACTERS), 69)
 
     def test_frame_count_uses_approved_k3_timing(self):
         self.assertEqual(build.frame_count(6), 579)
@@ -33,11 +33,12 @@ class StrokeSiteTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             build.write_site(Path(tmp), render_videos=False)
             page = (Path(tmp) / "index.html").read_text()
-            self.assertEqual(page.count('class="character-card"'), 43)
-            self.assertEqual(page.count('class="word-card"'), 27)
-            self.assertEqual(page.count('download='), 43)
+            self.assertEqual(page.count('class="character-card"'), 69)
+            self.assertEqual(page.count('class="word-card"'), 45)
+            self.assertEqual(page.count('download='), 69)
             self.assertIn("他們都愛我", page)
             self.assertIn("我愛中國", page)
+            self.assertIn("起飛吧！得得", page)
             self.assertIn("aria-label=\"播放「我」字筆順\"", page)
 
     def test_new_theme_has_exact_homework_and_reading_card_order(self):
@@ -49,6 +50,22 @@ class StrokeSiteTests(unittest.TestCase):
         self.assertEqual(ui.CHINA_READING_WORDS, ("國慶節", "煙花", "中國", "北京", "故宮", "萬里長城"))
         self.assertLess(page.index('data-word="我們"'), page.index('data-word="中國"'))
         self.assertEqual(page.count('data-word="我們是中國人"'), 7)  # card plus six playable characters
+
+    def test_takeoff_theme_has_exact_homework_and_reading_card_order(self):
+        page = build.page_html()
+        self.assertEqual(ui.TAKEOFF_HOMEWORK_WORDS, (
+            "玉米", "真", "美味", "玉米真美味",
+            "有益", "的", "白菜", "有益的白菜",
+            "一起", "吃", "米飯", "我們一起吃米飯",
+        ))
+        self.assertEqual(ui.TAKEOFF_READING_WORDS, ("早睡早起", "跳舞", "跑步", "游泳", "踢球", "踏單車"))
+        homework = page.index('id="takeoff-homework-words"')
+        reading = page.index('id="takeoff-reading-words"')
+        self.assertLess(homework, reading)
+        self.assertLess(page.index('data-word="玉米"', homework), page.index('data-word="我們一起吃米飯"', homework))
+        self.assertLess(page.index('data-word="早睡早起"', reading), page.index('data-word="踏單車"', reading))
+        self.assertNotIn("Animal", page)
+        self.assertNotIn("識字冊", page)
 
     def test_manifest_records_edb_source_for_every_character(self):
         for item in build.CHARACTERS:

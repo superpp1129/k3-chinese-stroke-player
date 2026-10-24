@@ -2,7 +2,7 @@
 
 Live: https://superpp1129.github.io/k3-chinese-stroke-player/
 
-The site now contains **43 distinct characters**. It preserves the previous 21 characters, the original nine quick-access buttons, and all eight 《他們都愛我》 reading cards, then adds a visually distinct 《我愛中國》 section.
+The site now contains **69 distinct characters**. It preserves the previous 43 characters and both earlier themes, then adds a visually distinct 《起飛吧！得得》 section.
 
 ## 《我愛中國》 cards
 
@@ -10,7 +10,13 @@ Homework cards, exact order: 我們、中國、我們是中國人、在、香港
 
 Recognition cards, exact order: 國慶節、煙花、中國、北京、故宮、萬里長城。
 
-Every printed character in every word card is an individual playback button, including repeated characters. All 43 character cards have playback and MP4 download controls. Playback is silent.
+## 《起飛吧！得得》 cards
+
+Homework cards, exact order: 玉米、真、美味、玉米真美味、有益、的、白菜、有益的白菜、一起、吃、米飯、我們一起吃米飯。
+
+Recognition cards, exact order: 早睡早起、跳舞、跑步、游泳、踢球、踏單車。
+
+English words, workbook names and number-book page ranges are not stroke cards. Every printed Chinese character in every word card is an individual playback button. All 69 character cards have playback and MP4 download controls. Playback is silent.
 
 ## Approved animation format
 

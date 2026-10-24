@@ -1,0 +1,119 @@
+{
+  "char": "白",
+  "edb_id": "2701",
+  "bucket": "2001-3000",
+  "target": [
+    549.5307,
+    519.3221
+  ],
+  "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/2001-3000/2701.js",
+  "source_sha256": "58339bed4fb2ef5066cc1b11841215c1e54c27904eb00a80c21de92c0f388986",
+  "strokes": 5,
+  "official_listed_strokes": 5,
+  "official_timeline": [
+    {
+      "start": 24,
+      "states": [
+        [
+          "shape_15"
+        ],
+        [
+          "shape_16"
+        ],
+        [
+          "shape_17"
+        ]
+      ],
+      "durations": [
+        24,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 48,
+      "states": [
+        [
+          "shape_11"
+        ],
+        [
+          "shape_13",
+          "shape_12"
+        ],
+        [
+          "shape_14"
+        ]
+      ],
+      "durations": [
+        48,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 72,
+      "states": [
+        [
+          "shape_6"
+        ],
+        [
+          "shape_7"
+        ],
+        [
+          "shape_8"
+        ],
+        [
+          "shape_9"
+        ],
+        [
+          "shape_10"
+        ]
+      ],
+      "durations": [
+        72,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 96,
+      "states": [
+        [
+          "shape_3"
+        ],
+        [
+          "shape_4"
+        ],
+        [
+          "shape_5"
+        ]
+      ],
+      "durations": [
+        96,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 120,
+      "states": [
+        [
+          "shape"
+        ],
+        [
+          "shape_1"
+        ],
+        [
+          "shape_2"
+        ]
+      ],
+      "durations": [
+        120,
+        3,
+        3
+      ]
+    }
+  ]
+}

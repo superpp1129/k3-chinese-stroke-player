@@ -1,0 +1,38 @@
+{
+  "char": "一",
+  "edb_id": "0001",
+  "bucket": "0001-1000",
+  "target": [
+    540.3133,
+    514.5761
+  ],
+  "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/0001-1000/0001.js",
+  "source_sha256": "67be2800d23c5472af13016cb4471f101457053e3203649cc45084d3cf0d68f2",
+  "strokes": 1,
+  "official_listed_strokes": 1,
+  "official_timeline": [
+    {
+      "start": 23,
+      "states": [
+        [
+          "shape_1"
+        ],
+        [
+          "shape_2"
+        ],
+        [
+          "shape_3"
+        ],
+        [
+          "shape_4"
+        ]
+      ],
+      "durations": [
+        23,
+        3,
+        3,
+        3
+      ]
+    }
+  ]
+}

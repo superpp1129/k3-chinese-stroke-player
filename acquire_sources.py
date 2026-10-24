@@ -7,8 +7,9 @@ def fetch(url, data=None):
     with urllib.request.urlopen(urllib.request.Request(url,data=data,headers={'User-Agent':'Mozilla/5.0'}),timeout=60) as r:return r.read()
 EXISTING='我有爸媽姐妹弟哥和祖父母老師消防員警察醫生'
 NEW='們中國是人在香港北京長城鳥巢故宮慶節煙花萬里'
+TAKEOFF='玉米真美味益的白菜一起吃飯早睡跳舞跑步游泳踢球踏單車'
 if __name__=='__main__':
-    for char in EXISTING+NEW:
+    for char in EXISTING+NEW+TAKEOFF:
         dst=OUT/f'{char}.json'
         if dst.exists():continue
         data=urllib.parse.urlencode({'searchMethod':'char','searchCriteria':char,'sortBy':'stroke','jpC':'lshk'}).encode()
