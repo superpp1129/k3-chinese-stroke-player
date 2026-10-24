@@ -4,7 +4,7 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 ROOT=Path(__file__).resolve().parent
 BASE='https://superpp1129.github.io/k3-chinese-stroke-player/'
-CHARS=list('我有爸媽姐妹弟哥和祖父母老師消防員警察醫生們中國是人在香港北京長城鳥巢故宮慶節煙花萬里玉米真美味益的白菜一起吃飯早睡跳舞跑步游泳踢球踏單車馬路旁邊公園朋玩耍友善居鄰社區學校圖書好館海洋裏豚鯨魚要保護動物大象虎熊貓獅子猴園')
+CHARS=list(dict.fromkeys('我有爸媽姐妹弟哥和祖父母老師消防員警察醫生們中國是人在香港北京長城鳥巢故宮慶節煙花萬里玉米真美味益的白菜一起吃飯早睡跳舞跑步游泳踢球踏單車馬路旁邊公園朋玩耍友善居鄰社區學校圖書好館海洋裏豚鯨魚要保護動物大象虎熊貓獅子猴園'))
 def check(relative):
     local=(ROOT/'site'/relative).read_bytes();url=BASE+urllib.parse.quote(relative)
     req=urllib.request.Request(url,headers={'Cache-Control':'no-cache','User-Agent':'K3-production-byte-verifier/1.0'})
