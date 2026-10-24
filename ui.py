@@ -29,6 +29,17 @@ TAKEOFF_HOMEWORK_WORDS = (
     "一起", "吃", "米飯", "我們一起吃米飯",
 )
 TAKEOFF_READING_WORDS = ("早睡早起", "跳舞", "跑步", "游泳", "踢球", "踏單車")
+# 《小巴的願望》: verified final plan. Homework writing words first,
+# then recognition words. English, workbooks and number ranges are not stroke cards.
+BART_HOMEWORK_WORDS = ("馬路", "旁邊", "公園", "朋友", "玩耍", "我和朋友玩耍")
+BART_READING_WORDS = ("友善", "鄰居", "我們", "好朋友", "公園", "社區", "學校", "圖書館")
+# 《拯救小海豚》: verified 2026-2027 final plan and parent handbook.
+# Homework writing words first, then recognition words. English, workbooks and
+# page ranges are not stroke cards.
+DOLPHIN_HOMEWORK_WORDS = (
+    "海洋裏", "海豚", "鯨魚", "我們要保護海洋",
+)
+DOLPHIN_READING_WORDS = ("動物園", "大熊貓", "獅子", "大象", "老虎", "猴子", "海洋", "海豚")
 ORDINALS = "一二三四五六七八九十"
 
 
@@ -77,7 +88,7 @@ def _word_card(word: str) -> str:
 def page_html(characters) -> str:
     """Full index.html for the given characters (dicts with a "char", or bare characters)."""
     chars = _ordered(characters)
-    all_words = OLD_READING_WORDS + HOMEWORK_WORDS + CHINA_READING_WORDS + TAKEOFF_HOMEWORK_WORDS + TAKEOFF_READING_WORDS
+    all_words = OLD_READING_WORDS + HOMEWORK_WORDS + CHINA_READING_WORDS + TAKEOFF_HOMEWORK_WORDS + TAKEOFF_READING_WORDS + DOLPHIN_HOMEWORK_WORDS + DOLPHIN_READING_WORDS + BART_HOMEWORK_WORDS + BART_READING_WORDS
     required = list(THEME_CHARACTERS) + [c for word in all_words for c in word]
     missing = sorted({c for c in required if c not in chars})
     if missing:
@@ -89,6 +100,10 @@ def page_html(characters) -> str:
     china_reading_words = "".join(_word_card(word) for word in CHINA_READING_WORDS)
     takeoff_homework_words = "".join(_word_card(word) for word in TAKEOFF_HOMEWORK_WORDS)
     takeoff_reading_words = "".join(_word_card(word) for word in TAKEOFF_READING_WORDS)
+    dolphin_homework_words = "".join(_word_card(word) for word in DOLPHIN_HOMEWORK_WORDS)
+    dolphin_reading_words = "".join(_word_card(word) for word in DOLPHIN_READING_WORDS)
+    bart_homework_words = "".join(_word_card(word) for word in BART_HOMEWORK_WORDS)
+    bart_reading_words = "".join(_word_card(word) for word in BART_READING_WORDS)
     return f'''<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>K3 中文筆順播放器</title><link rel="stylesheet" href="styles.css"></head><body>
 <header><p class="eyebrow">K3 中文筆順播放器</p><h1>中文筆順播放器</h1><p class="intro">揀一個字，睇清楚每一筆。</p></header>
@@ -107,6 +122,16 @@ def page_html(characters) -> str:
 <p class="panel-note">按家課次序排列，每個字都可以逐一播放。</p><div class="word-grid" id="takeoff-homework-words">{takeoff_homework_words}</div></section>
 <section class="panel" aria-labelledby="takeoff-reading-title"><h3 class="subsection-title" id="takeoff-reading-title">認讀詞語</h3>
 <p class="panel-note">跟主題認讀次序，逐個字睇筆順。</p><div class="word-grid" id="takeoff-reading-words">{takeoff_reading_words}</div></section></section>
+<section class="theme-group dolphin-theme" aria-labelledby="dolphin-theme-title"><h2 class="panel-title" id="dolphin-theme-title">《拯救小海豚》</h2>
+<section class="panel" aria-labelledby="dolphin-homework-title"><h3 class="subsection-title" id="dolphin-homework-title">家課字詞</h3>
+<p class="panel-note">按家課次序排列，每個字都可以逐一播放。</p><div class="word-grid" id="dolphin-homework-words">{dolphin_homework_words}</div></section>
+<section class="panel" aria-labelledby="dolphin-reading-title"><h3 class="subsection-title" id="dolphin-reading-title">認讀詞語</h3>
+<p class="panel-note">跟主題認讀次序，逐個字睇筆順。</p><div class="word-grid" id="dolphin-reading-words">{dolphin_reading_words}</div></section></section>
+<section class="theme-group bart-theme" aria-labelledby="bart-theme-title"><h2 class="panel-title" id="bart-theme-title">《小巴的願望》</h2>
+<section class="panel" aria-labelledby="bart-homework-title"><h3 class="subsection-title" id="bart-homework-title">家課字詞</h3>
+<p class="panel-note">按家課次序排列，每個字都可以逐一播放。</p><div class="word-grid" id="bart-homework-words">{bart_homework_words}</div></section>
+<section class="panel" aria-labelledby="bart-reading-title"><h3 class="subsection-title" id="bart-reading-title">認讀詞語</h3>
+<p class="panel-note">跟主題認讀次序，逐個字睇筆順。</p><div class="word-grid" id="bart-reading-words">{bart_reading_words}</div></section></section>
 <section class="panel" aria-labelledby="all-title"><h2 class="panel-title" id="all-title">全部生字（{len(chars)}）</h2>
 <p class="panel-note">每個字都可以播放同下載。</p><div class="character-grid">{cards}</div></section>
 </main>
@@ -126,7 +151,7 @@ def write_ui(destination: Path, characters) -> None:
 
 CSS = r''':root{--ink:#202020;--muted:#6f6b64;--paper:#fffdf7;--line:#ece8de;--accent:#e53935}*{box-sizing:border-box}body{margin:0;background:#f7f3eb;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang HK",sans-serif}
 header{max-width:980px;margin:auto;padding:58px 24px 22px;text-align:center}.eyebrow{margin:0 0 10px;color:#a24735;font-size:15px;font-weight:750;letter-spacing:.16em}h1{margin:0;font-size:clamp(38px,7vw,64px);letter-spacing:.08em}.intro{margin:14px 0 0;color:var(--muted);font-size:18px}
-main{max-width:980px;margin:auto;padding:10px 24px 64px}.panel{margin:0 0 42px}.panel-title{margin:0;font-size:24px;letter-spacing:.06em}.subsection-title{margin:0;font-size:20px;letter-spacing:.04em}.panel-note{margin:6px 0 16px;color:var(--muted);font-size:16px}.theme-group{margin:0 -18px 48px;padding:26px 18px 4px;border:2px solid #edcf91;border-radius:28px;background:#fffaf0}.china-theme>.panel-title{color:#9d2f25;margin-bottom:22px}.takeoff-theme{border-color:#b7d7c9;background:#f7fbf8}.takeoff-theme>.panel-title{color:#1f6b4a;margin-bottom:22px}.old-theme{padding-left:18px;border-left:5px solid #a8b8cf}
+main{max-width:980px;margin:auto;padding:10px 24px 64px}.panel{margin:0 0 42px}.panel-title{margin:0;font-size:24px;letter-spacing:.06em}.subsection-title{margin:0;font-size:20px;letter-spacing:.04em}.panel-note{margin:6px 0 16px;color:var(--muted);font-size:16px}.theme-group{margin:0 -18px 48px;padding:26px 18px 4px;border:2px solid #edcf91;border-radius:28px;background:#fffaf0}.china-theme>.panel-title{color:#9d2f25;margin-bottom:22px}.takeoff-theme{border-color:#b7d7c9;background:#f7fbf8}.takeoff-theme>.panel-title{color:#1f6b4a;margin-bottom:22px}.dolphin-theme{border-color:#9ec9e0;background:#f3f9fc}.dolphin-theme>.panel-title{color:#1a5f8a;margin-bottom:22px}.bart-theme{border-color:#d8c7a2;background:#fffaf2}.bart-theme>.panel-title{color:#8a5a12;margin-bottom:22px}.old-theme{padding-left:18px;border-left:5px solid #a8b8cf}
 .quick-row{display:flex;flex-wrap:wrap;gap:12px}.quick-button{font-family:"Kaiti TC","BiauKai","DFKai-SB",serif;line-height:1;width:84px;height:84px;font-size:44px;border:1px solid var(--line);border-radius:20px;background:var(--paper);color:var(--ink);cursor:pointer;box-shadow:0 6px 18px rgba(73,61,43,.06)}
 .word-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.word-card{padding:18px;border:1px solid var(--line);border-radius:22px;background:white;box-shadow:0 8px 25px rgba(73,61,43,.06);text-align:center}.word{font-family:"Kaiti TC","BiauKai","DFKai-SB",serif;line-height:1;margin:0 0 14px;font-size:46px;letter-spacing:.06em}
 .word-parts{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}.word-button{font-family:"Kaiti TC","BiauKai","DFKai-SB",serif;line-height:1;width:66px;height:66px;font-size:34px;border:1px solid var(--line);border-radius:16px;background:var(--paper);color:var(--ink);cursor:pointer}

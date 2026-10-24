@@ -1,0 +1,238 @@
+{
+  "char": "耍",
+  "edb_id": "3236",
+  "bucket": "3001-4000",
+  "target": [
+    545.9,
+    539.1
+  ],
+  "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/3001-4000/3236.js",
+  "source_sha256": "53898d9eb99318cfad77d621484841636af983b3965a01c54d28e172921dcd68",
+  "strokes": 9,
+  "official_listed_strokes": 9,
+  "official_timeline": [
+    {
+      "start": 24,
+      "states": [
+        [
+          "shape"
+        ],
+        [
+          "shape_1"
+        ],
+        [
+          "shape_2"
+        ],
+        [
+          "shape_3"
+        ]
+      ],
+      "durations": [
+        24,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 48,
+      "states": [
+        [
+          "shape_4"
+        ],
+        [
+          "shape_5"
+        ],
+        [
+          "shape_6"
+        ],
+        [
+          "shape_7"
+        ]
+      ],
+      "durations": [
+        48,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 72,
+      "states": [
+        [
+          "shape_8"
+        ],
+        [
+          "shape_9"
+        ],
+        [
+          "shape_10"
+        ],
+        [
+          "shape_11"
+        ]
+      ],
+      "durations": [
+        72,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 96,
+      "states": [
+        [
+          "shape_12"
+        ],
+        [
+          "shape_13"
+        ],
+        [
+          "shape_14"
+        ],
+        [
+          "shape_15"
+        ],
+        [
+          "shape_16"
+        ]
+      ],
+      "durations": [
+        96,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 120,
+      "states": [
+        [
+          "shape_17"
+        ],
+        [
+          "shape_18"
+        ],
+        [
+          "shape_19"
+        ],
+        [
+          "shape_20"
+        ]
+      ],
+      "durations": [
+        120,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 144,
+      "states": [
+        [
+          "shape_21"
+        ],
+        [
+          "shape_22"
+        ],
+        [
+          "shape_23"
+        ],
+        [
+          "shape_24"
+        ]
+      ],
+      "durations": [
+        144,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 168,
+      "states": [
+        [
+          "shape_25"
+        ],
+        [
+          "shape_26"
+        ],
+        [
+          "shape_27"
+        ],
+        [
+          "shape_28"
+        ],
+        [
+          "shape_29"
+        ]
+      ],
+      "durations": [
+        168,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 192,
+      "states": [
+        [
+          "shape_30"
+        ],
+        [
+          "shape_31"
+        ],
+        [
+          "shape_32"
+        ],
+        [
+          "shape_33"
+        ],
+        [
+          "shape_34"
+        ]
+      ],
+      "durations": [
+        192,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 216,
+      "states": [
+        [
+          "shape_35"
+        ],
+        [
+          "shape_36"
+        ],
+        [
+          "shape_37"
+        ],
+        [
+          "shape_38"
+        ],
+        [
+          "shape_39"
+        ]
+      ],
+      "durations": [
+        216,
+        3,
+        3,
+        3,
+        3
+      ]
+    }
+  ]
+}

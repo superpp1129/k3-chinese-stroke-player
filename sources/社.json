@@ -1,0 +1,140 @@
+{
+  "char": "社",
+  "edb_id": "2859",
+  "bucket": "2001-3000",
+  "target": [
+    546.4,
+    544.8
+  ],
+  "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/2001-3000/2859.js",
+  "source_sha256": "2f5354e6aa558ba29f47017c9fd1478f0f909a198b35b6398c908091f1e2ff59",
+  "strokes": 7,
+  "official_listed_strokes": 7,
+  "official_timeline": [
+    {
+      "start": 24,
+      "states": [
+        [
+          "shape_17"
+        ],
+        [
+          "shape_18"
+        ]
+      ],
+      "durations": [
+        24,
+        3
+      ]
+    },
+    {
+      "start": 48,
+      "states": [
+        [
+          "shape_13"
+        ],
+        [
+          "shape_14"
+        ],
+        [
+          "shape_15"
+        ],
+        [
+          "shape_16"
+        ]
+      ],
+      "durations": [
+        48,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 72,
+      "states": [
+        [
+          "shape_10"
+        ],
+        [
+          "shape_11"
+        ],
+        [
+          "shape_12"
+        ]
+      ],
+      "durations": [
+        72,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 96,
+      "states": [
+        [
+          "shape_8"
+        ],
+        [
+          "shape_9"
+        ]
+      ],
+      "durations": [
+        96,
+        3
+      ]
+    },
+    {
+      "start": 120,
+      "states": [
+        [
+          "shape_6"
+        ],
+        [
+          "shape_7"
+        ]
+      ],
+      "durations": [
+        120,
+        3
+      ]
+    },
+    {
+      "start": 144,
+      "states": [
+        [
+          "shape_3"
+        ],
+        [
+          "shape_4"
+        ],
+        [
+          "shape_5"
+        ]
+      ],
+      "durations": [
+        144,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 168,
+      "states": [
+        [
+          "shape"
+        ],
+        [
+          "shape_1"
+        ],
+        [
+          "shape_2"
+        ]
+      ],
+      "durations": [
+        168,
+        3,
+        3
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "char": "好",
+  "edb_id": "0872",
+  "bucket": "0001-1000",
+  "target": [
+    547.0,
+    544.2
+  ],
+  "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/0001-1000/0872.js",
+  "source_sha256": "1b50dc5eb81b9c4f45b729f35d1557495a46a4331e87eff38b2215c96f58819c",
+  "strokes": 6,
+  "official_listed_strokes": 6,
+  "official_timeline": [
+    {
+      "start": 24,
+      "states": [
+        [
+          "shape_16"
+        ],
+        [
+          "shape_17"
+        ],
+        [
+          "shape_18"
+        ],
+        [
+          "shape_19"
+        ]
+      ],
+      "durations": [
+        24,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 48,
+      "states": [
+        [
+          "shape_13"
+        ],
+        [
+          "shape_14"
+        ],
+        [
+          "shape_15"
+        ]
+      ],
+      "durations": [
+        48,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 72,
+      "states": [
+        [
+          "shape_10"
+        ],
+        [
+          "shape_11"
+        ],
+        [
+          "shape_12"
+        ]
+      ],
+      "durations": [
+        72,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 96,
+      "states": [
+        [
+          "shape_6"
+        ],
+        [
+          "shape_7"
+        ],
+        [
+          "shape_8"
+        ],
+        [
+          "shape_9"
+        ]
+      ],
+      "durations": [
+        96,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 120,
+      "states": [
+        [
+          "shape_3"
+        ],
+        [
+          "shape_4"
+        ],
+        [
+          "shape_5"
+        ]
+      ],
+      "durations": [
+        120,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 144,
+      "states": [
+        [
+          "shape"
+        ],
+        [
+          "shape_1"
+        ],
+        [
+          "shape_2"
+        ]
+      ],
+      "durations": [
+        144,
+        3,
+        3
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "char": "朋",
+  "edb_id": "1830",
+  "bucket": "1001-2000",
+  "target": [
+    501.7,
+    560.4
+  ],
+  "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/1001-2000/1830.js",
+  "source_sha256": "2267ed9382bd3e25ea4cc4546fa4906be58c469c0dc55df72efe21b7efdb9598",
+  "strokes": 8,
+  "official_listed_strokes": 8,
+  "official_timeline": [
+    {
+      "start": 24,
+      "states": [
+        [
+          "shape"
+        ],
+        [
+          "shape_1"
+        ],
+        [
+          "shape_2"
+        ],
+        [
+          "shape_3"
+        ],
+        [
+          "shape_4"
+        ]
+      ],
+      "durations": [
+        24,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 48,
+      "states": [
+        [
+          "shape_5"
+        ],
+        [
+          "shape_6"
+        ],
+        [
+          "shape_7"
+        ],
+        [
+          "shape_8"
+        ],
+        [
+          "shape_9"
+        ]
+      ],
+      "durations": [
+        48,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 72,
+      "states": [
+        [
+          "shape_10"
+        ],
+        [
+          "shape_11"
+        ]
+      ],
+      "durations": [
+        72,
+        3
+      ]
+    },
+    {
+      "start": 96,
+      "states": [
+        [
+          "shape_12"
+        ],
+        [
+          "shape_13"
+        ]
+      ],
+      "durations": [
+        96,
+        3
+      ]
+    },
+    {
+      "start": 120,
+      "states": [
+        [
+          "shape_14"
+        ],
+        [
+          "shape_15"
+        ],
+        [
+          "shape_16"
+        ],
+        [
+          "shape_17"
+        ],
+        [
+          "shape_18"
+        ]
+      ],
+      "durations": [
+        120,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 144,
+      "states": [
+        [
+          "shape_19"
+        ],
+        [
+          "shape_20"
+        ],
+        [
+          "shape_21"
+        ],
+        [
+          "shape_22"
+        ],
+        [
+          "shape_23"
+        ]
+      ],
+      "durations": [
+        144,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 168,
+      "states": [
+        [
+          "shape_24"
+        ],
+        [
+          "shape_25"
+        ]
+      ],
+      "durations": [
+        168,
+        3
+      ]
+    },
+    {
+      "start": 192,
+      "states": [
+        [
+          "shape_26"
+        ],
+        [
+          "shape_27"
+        ]
+      ],
+      "durations": [
+        192,
+        3
+      ]
+    }
+  ]
+}

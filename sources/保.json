@@ -1,0 +1,198 @@
+{
+  "char": "保",
+  "edb_id": "0154",
+  "bucket": "0001-1000",
+  "target": [
+    837.3,
+    754.2
+  ],
+  "source_url": "https://www.edbchinese.hk/EmbziciwebRes/stkdemo_js/0001-1000/0154.js",
+  "source_sha256": "50163676c5674fc5a79bbdc1a48e8244e79ed74f3bc8aac43696505e21e4b065",
+  "strokes": 9,
+  "official_listed_strokes": 9,
+  "official_timeline": [
+    {
+      "start": 24,
+      "states": [
+        [
+          "shape_27"
+        ],
+        [
+          "shape_28"
+        ],
+        [
+          "shape_29"
+        ]
+      ],
+      "durations": [
+        24,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 48,
+      "states": [
+        [
+          "shape_24"
+        ],
+        [
+          "shape_25"
+        ],
+        [
+          "shape_26"
+        ]
+      ],
+      "durations": [
+        48,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 72,
+      "states": [
+        [
+          "shape_21"
+        ],
+        [
+          "shape_22"
+        ],
+        [
+          "shape_23"
+        ]
+      ],
+      "durations": [
+        72,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 96,
+      "states": [
+        [
+          "shape_17"
+        ],
+        [
+          "shape_18"
+        ],
+        [
+          "shape_19"
+        ],
+        [
+          "shape_20"
+        ]
+      ],
+      "durations": [
+        96,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 120,
+      "states": [
+        [
+          "shape_14"
+        ],
+        [
+          "shape_15"
+        ],
+        [
+          "shape_16"
+        ]
+      ],
+      "durations": [
+        120,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 144,
+      "states": [
+        [
+          "shape_10"
+        ],
+        [
+          "shape_11"
+        ],
+        [
+          "shape_12"
+        ],
+        [
+          "shape_13"
+        ]
+      ],
+      "durations": [
+        144,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 168,
+      "states": [
+        [
+          "shape_6"
+        ],
+        [
+          "shape_7"
+        ],
+        [
+          "shape_8"
+        ],
+        [
+          "shape_9"
+        ]
+      ],
+      "durations": [
+        168,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 192,
+      "states": [
+        [
+          "shape_3"
+        ],
+        [
+          "shape_4"
+        ],
+        [
+          "shape_5"
+        ]
+      ],
+      "durations": [
+        192,
+        3,
+        3
+      ]
+    },
+    {
+      "start": 216,
+      "states": [
+        [
+          "shape"
+        ],
+        [
+          "shape_1"
+        ],
+        [
+          "shape_2"
+        ]
+      ],
+      "durations": [
+        216,
+        3,
+        3
+      ]
+    }
+  ]
+}
