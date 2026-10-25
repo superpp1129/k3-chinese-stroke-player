@@ -80,7 +80,7 @@ for _char, _order in ADDED_ORDERS.items():
 # the frozen states are the authoritative order and shape evidence.
 NEW_CHARACTERS = '們中國是人在香港北京長城鳥巢故宮慶節煙花萬里'
 TAKEOFF_CHARACTERS = '玉米真美味益的白菜一起吃飯早睡跳舞跑步游泳踢球踏單車'
-BART_CHARACTERS = '馬路旁邊公園朋玩耍友善居鄰社區學校圖書好館'
+BART_CHARACTERS = '馬路旁邊公園朋玩耍友善居鄰社區學校圖書好館喜歡結交'
 DOLPHIN_CHARACTERS = '海洋裏豚鯨魚要保護動物大象虎熊貓獅子猴'
 for _char in NEW_CHARACTERS + TAKEOFF_CHARACTERS + BART_CHARACTERS + DOLPHIN_CHARACTERS:
     _source = json.loads((ROOT / 'sources' / f'{_char}.json').read_text())
@@ -260,7 +260,7 @@ def write_site(destination: Path = SITE, render_videos: bool = True):
     (destination / "styles.css").write_text(CSS)
     (destination / "app.js").write_text(JS)
     (destination / "manifest.json").write_text(json.dumps({
-        "themes": ["他們都愛我", "我愛中國", "起飛吧！得得", "拯救小海豚", "小巴的願望"],
+        "themes": ["他們都愛我", "我愛中國", "起飛吧！得得", "拯救小海豚", "巴特一家的新生活"],
         "count": len(CHARACTERS),
         "characters": CHARACTERS,
     }, ensure_ascii=False, indent=2))

@@ -29,9 +29,10 @@ TAKEOFF_HOMEWORK_WORDS = (
     "一起", "吃", "米飯", "我們一起吃米飯",
 )
 TAKEOFF_READING_WORDS = ("早睡早起", "跳舞", "跑步", "游泳", "踢球", "踏單車")
-# 《小巴的願望》: verified final plan. Homework writing words first,
-# then recognition words. English, workbooks and number ranges are not stroke cards.
-BART_HOMEWORK_WORDS = ("馬路", "旁邊", "公園", "朋友", "玩耍", "我和朋友玩耍")
+# 《巴特一家的新生活》: verified final plan, then parent-requested homework words.
+# Homework writing words first, then recognition words.
+# English, workbooks and number ranges are not stroke cards.
+BART_HOMEWORK_WORDS = ("馬路", "旁邊", "公園", "朋友", "玩耍", "我和朋友玩耍", "喜歡", "結交")
 BART_READING_WORDS = ("友善", "鄰居", "我們", "好朋友", "公園", "社區", "學校", "圖書館")
 # 《拯救小海豚》: verified 2026-2027 final plan and parent handbook.
 # Homework writing words first, then recognition words. English, workbooks and
@@ -127,7 +128,7 @@ def page_html(characters) -> str:
 <p class="panel-note">按家課次序排列，每個字都可以逐一播放。</p><div class="word-grid" id="dolphin-homework-words">{dolphin_homework_words}</div></section>
 <section class="panel" aria-labelledby="dolphin-reading-title"><h3 class="subsection-title" id="dolphin-reading-title">認讀詞語</h3>
 <p class="panel-note">跟主題認讀次序，逐個字睇筆順。</p><div class="word-grid" id="dolphin-reading-words">{dolphin_reading_words}</div></section></section>
-<section class="theme-group bart-theme" aria-labelledby="bart-theme-title"><h2 class="panel-title" id="bart-theme-title">《小巴的願望》</h2>
+<section class="theme-group bart-theme" aria-labelledby="bart-theme-title"><h2 class="panel-title" id="bart-theme-title">《巴特一家的新生活》</h2>
 <section class="panel" aria-labelledby="bart-homework-title"><h3 class="subsection-title" id="bart-homework-title">家課字詞</h3>
 <p class="panel-note">按家課次序排列，每個字都可以逐一播放。</p><div class="word-grid" id="bart-homework-words">{bart_homework_words}</div></section>
 <section class="panel" aria-labelledby="bart-reading-title"><h3 class="subsection-title" id="bart-reading-title">認讀詞語</h3>

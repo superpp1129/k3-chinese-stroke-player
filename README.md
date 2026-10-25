@@ -2,7 +2,7 @@
 
 Live: https://superpp1129.github.io/k3-chinese-stroke-player/
 
-The site now contains **109 distinct characters**. It preserves the earlier themes, then adds visually distinct 《拯救小海豚》 and 《小巴的願望》 sections.
+The site now contains **113 distinct characters**. It preserves the earlier themes, then adds visually distinct 《拯救小海豚》 and 《巴特一家的新生活》 sections.
 
 ## 《我愛中國》 cards
 
@@ -22,13 +22,13 @@ Homework cards follow the verified 2026-2027 final plan, in order: 海洋裏、�
 
 Recognition cards follow the parent handbook, in order: 動物園、大熊貓、獅子、大象、老虎、猴子、海洋、海豚。
 
-## 《小巴的願望》 cards
+## 《巴特一家的新生活》 cards
 
-Homework cards follow the verified final plan, not the superseded 「大象和老虎」 wording. Exact order: 馬路、旁邊、公園、朋友、玩耍、我和朋友玩耍。
+Homework cards follow the verified final plan, then the parent-requested writing words. Exact order: 馬路、旁邊、公園、朋友、玩耍、我和朋友玩耍、喜歡、結交。
 
 Recognition cards, exact order: 友善、鄰居、我們、好朋友、公園、社區、學校、圖書館。
 
-English words, workbook names and number-book page ranges are not stroke cards. Every printed Chinese character in every word card is an individual playback button. All 109 character cards have playback and MP4 download controls. Playback is silent.
+English words, workbook names and number-book page ranges are not stroke cards. Every printed Chinese character in every word card is an individual playback button. All 113 character cards have playback and MP4 download controls. Playback is silent.
 
 ## Approved animation format
 
