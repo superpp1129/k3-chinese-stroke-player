@@ -1,15 +1,15 @@
 {
   "base_url": "https://superpp1129.github.io/k3-chinese-stroke-player/",
-  "files_verified": 113,
-  "video_count": 109,
+  "files_verified": 117,
+  "video_count": 113,
   "all_exact_byte_match": true,
   "records": [
     {
       "file": "index.html",
       "url": "https://superpp1129.github.io/k3-chinese-stroke-player/index.html",
       "status": 200,
-      "bytes": 82745,
-      "sha256": "3ba18f2a08c9b47a81eaf196ca3a894580822cccca67df22f9af73ba3345f2b7",
+      "bytes": 85022,
+      "sha256": "ccc70f00634b7d52804cf8c59597dbb5273eb593ea2cdb09be726aeb1c6ddc43",
       "exact_byte_match": true
     },
     {
@@ -32,8 +32,8 @@
       "file": "manifest.json",
       "url": "https://superpp1129.github.io/k3-chinese-stroke-player/manifest.json",
       "status": 200,
-      "bytes": 424500,
-      "sha256": "86a4de30945c05ac60c015d62d0f8c59cfa657725cc489f107ab527877a39ae3",
+      "bytes": 447408,
+      "sha256": "21b9163961fef67123ffb54af1e40adc659a8d960477df51fd7ef3016e94d76f",
       "exact_byte_match": true
     },
     {
@@ -754,6 +754,38 @@
       "status": 200,
       "bytes": 432878,
       "sha256": "d99b61bdc3edd70cba808b4a47c7cd962b37bd05d4241735bf8bb053b7e0b396",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/喜.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E5%96%9C.mp4",
+      "status": 200,
+      "bytes": 303652,
+      "sha256": "cb551a30b631325422626cdb5bb7158a9b6990be25f4561a3d6dccacafee5414",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/歡.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E6%AD%A1.mp4",
+      "status": 200,
+      "bytes": 590019,
+      "sha256": "81ed7654f75adddc3f068770991172cb5780ec7cb1673028d9d78f2a5efe9160",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/結.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E7%B5%90.mp4",
+      "status": 200,
+      "bytes": 342732,
+      "sha256": "761844b2d9558767d0aaff4a580f42e787625615fb7684bff48ccaa62e676a69",
+      "exact_byte_match": true
+    },
+    {
+      "file": "videos/交.mp4",
+      "url": "https://superpp1129.github.io/k3-chinese-stroke-player/videos/%E4%BA%A4.mp4",
+      "status": 200,
+      "bytes": 186234,
+      "sha256": "3e6f64ca54ded6fb034762fe0afbe4087eb8da3f1a1144f3f0f9deec1e9de4bf",
       "exact_byte_match": true
     },
     {
